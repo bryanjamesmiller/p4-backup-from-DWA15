@@ -1,0 +1,132 @@
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size:200%;
+    color:white;
+    padding:.9em;
+    background-color:#980101;
+    border: solid white 1px;
+    border-radius: .4em;
+    font-weight: 900;   
+    margin:0em;
+    width:120em;
+}
+
+#wheatImage{
+    width:55em;   
+}
+
+#heading{
+    color:white;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    margin:.3em;   
+}
+
+table{
+    background-color:pink;
+    border-collapse:collapse;
+    border:3px solid black;
+    width:100%;
+    margin:.3em;
+}
+
+table,th,td
+{
+    border:1px solid black;
+}
+
+#studentName{
+    font-size:100%;
+}
+
+#tableHeaders{
+    background-color:#BFBBBC;   
+    font-weight: 900;
+}
+
+#name{
+    width:17em;
+    height:1em;
+    padding:.7em;
+    font-weight:500;
+    font-size:1em;
+}
+
+#courseNumber{
+    width:7em;   
+    background-color:pink;
+}
+
+#courseDelivery{
+    width:10.5em;
+}
+
+#crnNumber{
+    width:4em;   
+    background-color:pink;
+}
+
+#sectionNumber{
+    width:4em;   
+    background-color:pink;
+}
+
+#courseTitle{
+    width:17em;   
+    background-color:pink;
+}
+
+#days{
+    width:10em;   
+    background-color:pink;
+}
+
+#times{
+    width:10em;   
+    background-color:pink;
+}
+
+#year{
+    width:3em;   
+    background-color:pink;
+}
+
+#professor{
+    width:10em;   
+    background-color:pink;
+}
+
+#gradePoints{
+    width:4em;   
+    background-color:#980101;
+    font-weight:900;
+    color:white;
+}
+
+#transferCredits{
+    width:4em;   
+    background-color:pink;
+}
+
+#hesCredits{
+    width:4em;   
+    background-color:pink;
+}
+
+
+.dropboxlabels{
+    /*This changes the outside of all of the dropboxes*/
+    font-family: 'Open Sans', sans-serif;   
+    font-weight:500;
+}
+
+.dropdowns{  
+    /*This changes the inside of all of the dropboxes*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+}
+
+.textboxes{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+}
