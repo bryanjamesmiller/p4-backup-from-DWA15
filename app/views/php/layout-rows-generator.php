@@ -7,7 +7,7 @@
  */
 $hi ='';
 $i=0;
-//You must initialize the variable as san empty string before concatanating in a for lop
+//You must initialize the variable as an empty string before concatanating in a for lop
 $rows ='<tr>
 
                 <td><input type="text" class="textboxes" name="courseNumber" id="courseNumber"></td>
@@ -27,6 +27,7 @@ $rows ='<tr>
                 </td>
                 <td><input type="text" class="textboxes" name="crnNumber" id="crnNumber"></td>
                 <td><input type="text" class="textboxes" name="sectionNumber" id="sectionNumber"> </td>
+                <td><input type="text" class="textboxes" name="tuition" id="tuition"></td>
                 <td><input type="text" class="textboxes" name="courseTitle" id="courseTitle"> </td>
                 <td>
                     <select class="dropboxlabels" name="courseAttributes" id="courseAttributesA'.$i.'">

@@ -28,6 +28,7 @@
         <th>Course Delivery</th>
         <th>CRN#</th>
         <th>Section</th>
+        <th>Tuition</th>
         <th>Course Title</th>
         <th colspan="5">Course Attributes</th>
         <th>Semester</th>

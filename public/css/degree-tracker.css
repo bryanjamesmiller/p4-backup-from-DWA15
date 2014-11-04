@@ -66,6 +66,11 @@ table,th,td
     background-color:pink;
 }
 
+#tuition{
+    width:4em;
+    background-color:pink;
+}
+
 #sectionNumber{
     width:4em;   
     background-color:pink;
