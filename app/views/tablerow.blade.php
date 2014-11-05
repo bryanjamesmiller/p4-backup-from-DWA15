@@ -1,14 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Bryan
- * Date: 9/29/14
- * Time: 4:03 PM
- */
-$hi ='';
-$i=0;
-//You must initialize the variable as an empty string before concatanating in a for lop
-$rows ='<tr>
+<tr>
 
                 <td><input type="text" class="textboxes" name="courseNumber" id="courseNumber"></td>
                 <td>
@@ -206,12 +196,4 @@ $rows ='<tr>
                 <td id="gradePoints"> <input type="text" class="textboxes" name="gradePoints" id="gradePoints"> </td>
                 <td><input type="text" class="textboxes" name="transferCredits" id="transferCredits"></td>
                 <td><input type="text" class="textboxes" name="hesCredits" id="hesCredits"></td>
-            </tr>';
-
-function print_rows($rows)
-{
-    for($i=0; $i<30; $i++)
-     echo $rows;
-}
-
-?>
+            </tr>

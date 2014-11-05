@@ -7,17 +7,16 @@
      This HTML resetter messes up the iPhone/mobile colors, although the rest works fine*-->
         <link rel="stylesheet" href="css/degree-tracker.css" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <?php include(app_path().'/views/php/layout-rows-generator.php'); ?>
+
+        @yield('head')
     </head>
     <body>
 
-    @yield('heading_banner')
+    @yield('top')
 
-    @yield('table_header')
+    @yield('middle')
 
-    @yield('table_body')
-
-    @yield('bottom_chart')
+    @yield('bottom')
 
 </body>
 </html>

@@ -1,12 +1,15 @@
 @extends('_base')
 
+@section('head')
+
+@stop
 
 @section('title')
 Degree Tracker PET
 @stop
 
 
-@section('heading_banner')
+@section('top')
     <div id="heading">
         <h1 id="wheatImage">
             <img src="images/wheat logo.PNG" alt="wheat logo">
@@ -20,8 +23,8 @@ Degree Tracker PET
     </div>
 @stop
 
+@section('middle')
 <table id="myTable" class="tablesorter">
-@section('table_header')
         <thead>
         <tr id="tableHeaders">
             <th>Course Number</th>
@@ -43,13 +46,13 @@ Degree Tracker PET
             <th>HES Credits</th>
         </tr>
         </thead>
+@for ($i = 0; $i < 30; $i++)
+    <p> @include('tablerow')</p>
+@endfor
+        </table>
 @stop
 
-@section('table_body')
-    <?php print_rows($rows); ?>
-@stop
-</table>
-
-@section('bottom_chart')
+@section('bottom')
 
 @stop
+
