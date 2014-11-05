@@ -1,5 +1,4 @@
 {{ Form::open(array('url' => '/list')) }}
-@for ($i = 0; $i < 30; $i++)
 <tr>
 
     <td> {{Form::text('courseNumber', '', array('id' => 'courseNumber'))}}</td>
@@ -86,6 +85,5 @@
     <td> {{Form::text('transferCredits', '', array('id' => 'transferCredits'))}}</td>
     <td> {{Form::text('hesCredits', '', array('id' => 'hesCredits'))}}</td>
 </tr>
-@endfor
 {{ Form::submit('Save Table and Calculate Program Information')}}
 {{ Form::close() }}
