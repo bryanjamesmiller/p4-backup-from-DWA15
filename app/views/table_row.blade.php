@@ -1,7 +1,7 @@
 {{ Form::open(array('url' => '/list')) }}
 <tr>
 
-    <td> {{Form::text('courseNumber', '', array('id' => 'courseNumber'))}}</td>
+    <td> {{Form::text('course_number', '', array('id' => 'course_number'))}}</td>
     <td>
         <select class="dropboxlabels" name="course_delivery" id="course_delivery">
             <optgroup class="dropdowns">
@@ -16,7 +16,7 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('crnNumber', '', array('id' => 'crn_number'))}}</td>
+    <td> {{Form::text('crn_number', '', array('id' => 'crn_number'))}}</td>
     <td> {{Form::text('section', '', array('id' => 'section'))}}</td>
     <td> {{Form::text('tuition', '', array('id' => 'tuition'))}}</td>
     <td> {{Form::text('course_title', '', array('id' => 'course_title'))}}</td>
