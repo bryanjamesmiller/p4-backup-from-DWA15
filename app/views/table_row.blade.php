@@ -3,7 +3,7 @@
 
     <td> {{Form::text('courseNumber', '', array('id' => 'courseNumber'))}}</td>
     <td>
-        <select class="dropboxlabels" name="courseDelivery" id="courseDelivery">
+        <select class="dropboxlabels" name="course_delivery" id="course_delivery">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -16,15 +16,15 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('crnNumber', '', array('id' => 'crnNumber'))}}</td>
-    <td> {{Form::text('sectionNumber', '', array('id' => 'sectionNumber'))}}</td>
+    <td> {{Form::text('crnNumber', '', array('id' => 'crn_number'))}}</td>
+    <td> {{Form::text('section', '', array('id' => 'section'))}}</td>
     <td> {{Form::text('tuition', '', array('id' => 'tuition'))}}</td>
-    <td> {{Form::text('courseTitle', '', array('id' => 'courseTitle'))}}</td>
+    <td> {{Form::text('course_title', '', array('id' => 'course_title'))}}</td>
 
     @include('course_attributes_columns')
 
     <td>
-        <select class="dropboxlabels" name="courseSemester" id="courseSemester">
+        <select class="dropboxlabels" name="semester" id="semester">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -42,7 +42,7 @@
     <td> {{Form::text('year', '', array('id' => 'year'))}}</td>
     <td> {{Form::text('professor', '', array('id' => 'professor'))}}</td>
     <td>
-        <select class="dropboxlabels" name="courseStatus" id="courseStatus">
+        <select class="dropboxlabels" name="status" id="status">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -56,7 +56,7 @@
         </select>
     </td>
     <td>
-        <select class="dropboxlabels" name="letterGrade" id="letterGrade">
+        <select class="dropboxlabels" name="letter_grade" id="letter_grade">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -77,9 +77,9 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('gradePoints', '', array('id' => 'gradePoints'))}}</td>
-    <td> {{Form::text('transferCredits', '', array('id' => 'transferCredits'))}}</td>
-    <td> {{Form::text('hesCredits', '', array('id' => 'hesCredits'))}}</td>
+    <td> {{Form::text('grade_points', '', array('id' => 'grade_points'))}}</td>
+    <td> {{Form::text('transfer_credits', '', array('id' => 'transfer_credits'))}}</td>
+    <td> {{Form::text('hes_credits', '', array('id' => 'hes_credits'))}}</td>
 </tr>
-{{ Form::submit('Save Table and Calculate Program Information')}}
+{{ Form::submit('Add Course')}}
 {{ Form::close() }}
