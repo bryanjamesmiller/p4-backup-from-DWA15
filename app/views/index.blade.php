@@ -10,17 +10,19 @@ Degree Tracker PET
 
 
 @section('top')
-    <p> @include('banner_header')</p>
+    @include('banner_header')
 @stop
 
 @section('middle')
 
-<p> @include('table_header')</p>
+@include('table_header')
 
 @for ($i = 0; $i < 30; $i++)
-    <p> @include('tablerow')</p>
+    @include('tablerow')
 @endfor
-        </table>
+
+@include('table_bottom')
+
 @stop
 
 @section('bottom')
