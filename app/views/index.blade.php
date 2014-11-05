@@ -14,16 +14,9 @@ Degree Tracker PET
 @stop
 
 @section('middle')
-
-@include('table_header')
-
-@include('table_row')
-
-@include('z_table_bottom')
-
+    @include('table_row')
 @stop
 
 @section('bottom')
-
 @stop
 
