@@ -22,10 +22,6 @@
     <td> {{Form::text('courseTitle', '', array('id' => 'courseTitle'))}}</td>
 
     @include('course_attributes_columns')
-    @include('course_attributes_columns')
-    @include('course_attributes_columns')
-    @include('course_attributes_columns')
-    @include('course_attributes_columns')
 
     <td>
         <select class="dropboxlabels" name="courseSemester" id="courseSemesterA'.$i.'">
