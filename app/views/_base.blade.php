@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>@yield('title','PET')</title>
+        <meta charset="utf-8">
+        <!-- <link rel="stylesheet" href="css/html5doctor-css-reset.css" type="text/css">
+     This HTML resetter messes up the iPhone/mobile colors, although the rest works fine*-->
+        <link rel="stylesheet" href="css/degree-tracker.css" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <?php include(app_path().'/views/php/layout-rows-generator.php'); ?>
+    </head>
+    <body>
 
-    <title>@yield('title','Foobooks')</title>
-    <meta charset='utf-8'>
+    @yield('heading_banner')
 
-<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-    <link rel='stylesheet' href='/css/foobooks.css' type='text/css'>
+    @yield('table_header')
 
-    @yield('head')
+    @yield('table_body')
 
-
-</head>
-<body>
-
-<a href='/'><img class='logo' src='/images/foobooks-picture.PNG' alt='Foobooks logo'></a>
-
-<a href='https://github.com/susanBuck/foobooks'>View on Github</a>
-
-	<nav>
-		<ul>
-			<li><a href='/list'>List All</a></li>
-			<li><a href='/add'>+ Add Book</a></li>
-		</ul>
-	</nav>
-
-@yield('content')
-
-@yield('body')
+    @yield('bottom_chart')
 
 </body>
 </html>
