@@ -16,6 +16,12 @@ Route::get('/', function()
 	return View::make('index');
 });
 
+Route::post('/list', array('before' => 'csrf', function()
+{
+    // Handle our posted form data.
+    echo Pre::render($_POST);
+}));
+
 Route::get('mysql-test', function() {
 
         # Print environment

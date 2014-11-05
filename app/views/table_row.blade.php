@@ -1,4 +1,4 @@
-{{ Form::open(array('url' => 'our/target/route')) }}
+{{ Form::open(array('url' => '/list')) }}
 @for ($i = 0; $i < 30; $i++)
 <tr>
 
@@ -86,5 +86,6 @@
     <td> {{Form::text('transferCredits', '', array('id' => 'transferCredits'))}}</td>
     <td> {{Form::text('hesCredits', '', array('id' => 'hesCredits'))}}</td>
 </tr>
-{{ Form::close() }}
 @endfor
+{{ Form::submit('Save Table and Calculate Program Information')}}
+{{ Form::close() }}
