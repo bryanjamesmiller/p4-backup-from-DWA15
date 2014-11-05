@@ -19,7 +19,7 @@ Degree Tracker PET
 
 @include('table_row')
 
-@include('table_bottom')
+@include('z_table_bottom')
 
 @stop
 
