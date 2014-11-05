@@ -52,16 +52,16 @@ table,th,td
     font-size:1em;
 }
 
-#courseNumber{
+#course_number{
     width:7em;   
     background-color:pink;
 }
 
-#courseDelivery{
+#course_delivery{
     width:10.5em;
 }
 
-#crnNumber{
+#crn_number{
     width:4em;   
     background-color:pink;
 }
@@ -71,12 +71,12 @@ table,th,td
     background-color:pink;
 }
 
-#sectionNumber{
+#section{
     width:4em;   
     background-color:pink;
 }
 
-#courseTitle{
+#course_title{
     width:17em;   
     background-color:pink;
 }
@@ -101,19 +101,19 @@ table,th,td
     background-color:pink;
 }
 
-#gradePoints{
+#grade_points{
     width:4em;   
     background-color:#980101;
     font-weight:900;
     color:white;
 }
 
-#transferCredits{
+#transfer_credits{
     width:4em;   
     background-color:pink;
 }
 
-#hesCredits{
+#hes_credits{
     width:4em;   
     background-color:pink;
 }
