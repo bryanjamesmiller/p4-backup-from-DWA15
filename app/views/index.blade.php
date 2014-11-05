@@ -8,9 +8,7 @@
 Degree Tracker PET
 @stop
 
-
 @section('top')
-    @include('banner_header')
 @stop
 
 @section('middle')
