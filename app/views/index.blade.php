@@ -17,9 +17,7 @@ Degree Tracker PET
 
 @include('table_header')
 
-@for ($i = 0; $i < 30; $i++)
-    @include('tablerow')
-@endfor
+@include('table_row')
 
 @include('table_bottom')
 
