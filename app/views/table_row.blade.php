@@ -3,7 +3,7 @@
 
     <td> {{Form::text('courseNumber', '', array('id' => 'courseNumber'))}}</td>
     <td>
-        <select class="dropboxlabels" name="courseDelivery" id="'courseDelivery' . $i . ">
+        <select class="dropboxlabels" name="courseDelivery" id="courseDelivery">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -42,7 +42,7 @@
     <td> {{Form::text('year', '', array('id' => 'year'))}}</td>
     <td> {{Form::text('professor', '', array('id' => 'professor'))}}</td>
     <td>
-        <select class="dropboxlabels" name="courseSemester" id="courseSemesterB'.$i.'">
+        <select class="dropboxlabels" name="courseStatus" id="courseStatus">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -56,7 +56,7 @@
         </select>
     </td>
     <td>
-        <select class="dropboxlabels" name="courseSemester" id="courseSemesterC'.$i.'">
+        <select class="dropboxlabels" name="letterGrade" id="letterGrade">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
