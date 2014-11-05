@@ -4,9 +4,9 @@
 {{ Form::open(array('url' => '/list')) }}
         </h1>
         <caption>
-            <h1 id="studentName">
-                <label for="name" id="name">Student Name: </label>
-                <input type="text" class="textboxes" name="name" id="name">
+            <h1>
+                <label for="student_name" id="student_name">Student Name: </label>
+                <input type="text" class="textboxes" name="student_name" id="student_name">
             </h1>
         </caption>
     </div>
