@@ -2,7 +2,7 @@
 @for ($i = 0; $i < 30; $i++)
 <tr>
 
-    <td><input type="text" class="textboxes" name="courseNumber" id="courseNumber"></td>
+    <td> {{Form::text('courseNumber', '', array('id' => 'courseNumber'))}}</td>
     <td>
         <select class="dropboxlabels" name="courseDelivery" id="'courseDelivery' . $i . ">
             <optgroup class="dropdowns">
