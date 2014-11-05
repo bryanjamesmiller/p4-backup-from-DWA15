@@ -24,7 +24,7 @@
     @include('course_attributes_columns')
 
     <td>
-        <select class="dropboxlabels" name="courseSemester" id="courseSemesterA'.$i.'">
+        <select class="dropboxlabels" name="courseSemester" id="courseSemester">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
