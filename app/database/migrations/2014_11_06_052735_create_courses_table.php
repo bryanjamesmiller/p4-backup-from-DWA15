@@ -5,13 +5,13 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateCoursesTable extends Migration {
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
         Schema::create('courses', function($table) {
 
             # Increments method will make a Primary, Auto-Incrementing field.
@@ -23,6 +23,7 @@ class CreateCoursesTable extends Migration {
             $table->timestamps();
 
             # The rest of the fields...
+            $table->string('student_name');
             $table->string('course_number');
             $table->string('course_delivery');
             $table->integer('crn_number');
@@ -48,16 +49,16 @@ class CreateCoursesTable extends Migration {
             # FYI: We're skipping the 'tags' field for now; more on that later.
 
         });
-	}
+    }
 
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
         Schema::drop('courses');
-	}
+    }
 
 }
