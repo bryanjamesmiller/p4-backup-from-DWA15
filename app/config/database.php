@@ -53,11 +53,11 @@ return array(
 		),
 
 		'mysql' => array(
-			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'pets',
-			'username'  => 'root',
-			'password'  => '',
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'pets',
+            'username'  => 'root',
+            'password'  => 'hH6NKiy9cPe',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
