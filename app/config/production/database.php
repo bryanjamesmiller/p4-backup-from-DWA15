@@ -25,7 +25,7 @@ return array(
             'host'      => 'localhost',
             'database'  => 'pets',
             'username'  => 'root',
-            'password'  => 'hH6NKiy9cPe',
+            'password'  => 'hH6NKiy9cP',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
