@@ -119,6 +119,6 @@
     <td> {{Form::text('transfer_credits', '', array('id' => 'transfer_credits'))}}</td>
     <td> {{Form::text('hes_credits', '', array('id' => 'hes_credits'))}}</td>
 </tr>
+</table>
 {{ Form::submit('Add Course')}}
 {{ Form::close() }}
-</table>
