@@ -28,7 +28,7 @@
 
         # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
         foreach($allCourses as $oneCourse) {
-               echo '<td id="course_number">' . $oneCourse->course_name. '</td>';
+               echo '<td id="course_number">' . $oneCourse->course_number. '</td>';
 
                         echo '<td id="course_delivery" class="dropdowns">' .$oneCourse->course_delivery.' </td>';
                         echo '<td id="crn_number">' .$oneCourse->crn_number.'</td> ';
@@ -47,11 +47,11 @@
                                     echo  '<td id="professors">' .$oneCourse->professors . '</td> ';
                                     echo  '<td class="dropdowns" id="status>' .$oneCourse->status . '</td> ';
                                     echo '<td class="dropdowns" id="letter_grade">' .$oneCourse->letter_grade . '</td> ';
-                                    echo  '<class="dropdowns" td id="grade_points">' .$oneCourse->grade_points . '</td> ';
+                                    echo  '<td class="dropdowns" id="grade_points">' .$oneCourse->grade_points . '</td> ';
                                     echo  '<td id="transfer_credits">' .$oneCourse->transfer_credits . '</td>';
                                     echo '<td id="hes_credits">' . $oneCourse->hes_credits . '</td></tr> ';
 
-            
+
         }
     }
     else {
