@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('index');
+    return View::make('index');
 });
 
 Route::get('/list', function(){
@@ -24,13 +24,77 @@ Route::get('/list', function(){
 
 Route::post('/list', function() {
     // Output all current courses that are saved in the database
-    return "this is a post";
+    $student_name = Input::get('student_name');
+    $course_number = Input::get('course_number');
+    $course_delivery = Input::get('course_delivery');
+    $crn_number = Input::get('crn_number');
+    $section= Input::get('section');
+    $tuition= Input::get('tuition');
+    $course_title= Input::get('course_title');
+    $course_attributes_1 = Input::get('course_attributes_1');
+    $course_attributes_2 = Input::get('course_attributes_2');
+    $course_attributes_3 = Input::get('course_attributes_3');
+    $course_attributes_4 = Input::get('course_attributes_4');
+    $course_attributes_5 = Input::get('course_attributes_5');
+
+    $semester = Input::get('semester');
+    $days = Input::get('days');
+    $times = Input::get('times');
+    $year = Input::get('year');
+    $professors = Input::get('professors');
+    $status= Input::get('status');
+    $letter_grade = Input::get('letter_grade');
+    $grade_points = Input::get('grade_points');
+    $transfer_credits = Input::get('transfer_credits');
+    $hes_credits = Input::get('hes_credits');
+    $course = new Course();
+
+    $course->student_name = $student_name;
+    $course->course_number = $course_number;
+    $course->course_delivery = $course_delivery;
+    $course->crn_number = $crn_number;
+    $course->section = $section;
+    $course->tuition = $tuition;
+    $course->course_title = $course_title;
+    $course->course_attributes_1 = $course_attributes_1;
+    $course->course_attributes_2 = $course_attributes_2;
+    $course->course_attributes_3 = $course_attributes_3;
+    $course->course_attributes_4 = $course_attributes_4;
+    $course->course_attributes_5 = $course_attributes_5;
+    $course->semester = $semester;
+    $course->days = $days;
+    $course->times = $times;
+    $course->year = $year;
+    $course->professors = $professors;
+    $course->status = $status;
+    $course->letter_grade = $letter_grade;
+    $course->grade_points = $grade_points;
+    $course->transfer_credits = $transfer_credits;
+    $course->hes_credits = $hes_credits;
+    $course->save();
+
+    # The all() method will fetch all the rows from a Model/table
+#    $allCourses =Course::all();
+
+    # Make sure we have results before trying to print them...
+ #   if($allCourses->isEmpty() != TRUE) {
+
+        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
+  #      foreach($allCourses as $oneCourse) {
+   #         #echo Pre::render($oneCourse).'<br>';
+    #    }
+    #}
+    #else {
+     #   return 'No courses found';
+    #}
+    return 'Course information saved!';
+
 
 });
 Route::get('mysql-test', function() {
 
-        # Print environment
-        echo 'Environment: '.App::environment().'<br>';
+    # Print environment
+    echo 'Environment: '.App::environment().'<br>';
 
     # Use the DB component to select all the databases
     $results = DB::select('SHOW DATABASES;');
@@ -42,17 +106,17 @@ Route::get('mysql-test', function() {
 
 Route::get('/get-environment',function() {
 
-        echo "Environment: ".App::environment();
+    echo "Environment: ".App::environment();
 
 });
 
 
 Route::get('/trigger-error',function() {
 
-        # Class Foobar should not exist, so this should create an error
-        $foo = new Foobar;
+    # Class Foobar should not exist, so this should create an error
+    $foo = new Foobar;
 
-    });
+});
 
 # /app/routes.php
 Route::get('/debug', function() {
