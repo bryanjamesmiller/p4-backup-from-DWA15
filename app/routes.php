@@ -81,7 +81,7 @@ Route::post('/list', function() {
 
         # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
         foreach($allCourses as $oneCourse) {
-            echo Pre::render($oneCourse).'<br>';
+            echo $oneCourse->student_name.'<br>';
         }
     }
     else {
