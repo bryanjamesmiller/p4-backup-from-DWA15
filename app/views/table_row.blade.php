@@ -78,7 +78,7 @@
     <td> {{Form::text('days', '', array('id' => 'days'))}}</td>
     <td> {{Form::text('times', '', array('id' => 'times'))}}</td>
     <td> {{Form::text('year', '', array('id' => 'year'))}}</td>
-    <td> {{Form::text('professor', '', array('id' => 'professor'))}}</td>
+    <td> {{Form::text('professors', '', array('id' => 'professors'))}}</td>
     <td>
         <select class="dropboxlabels" name="status" id="status">
             <optgroup class="dropdowns">

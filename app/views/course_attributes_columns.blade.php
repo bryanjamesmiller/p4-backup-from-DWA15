@@ -1,5 +1,5 @@
 <td>
-    <select class="dropboxlabels" name="courseAttributes_1" id="courseAttributes_1">
+    <select class="dropboxlabels" name="course_attributes_1" id="course_attributes_1">
         <optgroup class="dropdowns">
             <option>Select Here</option>
             <option>...</option>
@@ -23,7 +23,7 @@
     </select>
 </td>
 <td>
-    <select class="dropboxlabels" name="courseAttributes_2" id="courseAttributes_2">
+    <select class="dropboxlabels" name="course_attributes_2" id="course_attributes_2">
         <optgroup class="dropdowns">
             <option>Select Here</option>
             <option>...</option>
@@ -47,7 +47,7 @@
     </select>
 </td>
 <td>
-    <select class="dropboxlabels" name="courseAttributes_3" id="courseAttributes_3">
+    <select class="dropboxlabels" name="course_attributes_3" id="course_attributes_3">
         <optgroup class="dropdowns">
             <option>Select Here</option>
             <option>...</option>
@@ -71,7 +71,7 @@
     </select>
 </td>
 <td>
-    <select class="dropboxlabels" name="courseAttributes_4" id="courseAttributes_4">
+    <select class="dropboxlabels" name="course_attributes_4" id="course_attributes_4">
         <optgroup class="dropdowns">
             <option>Select Here</option>
             <option>...</option>
@@ -95,7 +95,7 @@
     </select>
 </td>
 <td>
-    <select class="dropboxlabels" name="courseAttributes_5" id="courseAttributes_5">
+    <select class="dropboxlabels" name="course_attributes_5" id="course_attributes_5">
         <optgroup class="dropdowns">
             <option>Select Here</option>
             <option>...</option>
