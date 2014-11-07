@@ -17,24 +17,14 @@ Route::get('/', function()
 });
 
 Route::get('/list', function(){
-    return "this is a get";
-    $student_name = Input::get('student_name');
-    echo $student_name;
-    // Handle our posted form data.
+
+    // Output all current courses that are saved in the database
     return View::make('list');
 });
 
 Route::post('/list', function() {
-
+    // Output all current courses that are saved in the database
     return "this is a post";
-    # Print environment
-    echo 'Environment: '.App::environment().'<br>';
-
-    # Use the DB component to select all the databases
-    $results = DB::select('SHOW DATABASES;');
-
-    # If the "Pre" package is not installed, you should output using print_r instead
-    echo Pre::render($results);
 
 });
 Route::get('mysql-test', function() {

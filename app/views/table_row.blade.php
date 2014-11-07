@@ -5,8 +5,13 @@
         </h1>
         <caption>
             <h1>
-                <label for="student_name" id="student_name">Student Name: </label>
-                <input type="text" class="textboxes" name="student_name" id="student_name">
+        {{ Form::label('student_name','Student Name') }}
+		{{ Form::text('student_name'); }}
+
+{{-- the password value is not in the database as it currently is pending either Susan's login code she's going to give us, or maybe I can include it in database #2 and have it talk to database #1, or I could just add another migration file with updating the original database with 1 new value just like in Susan's class notes in migrations in lecture 8 I think. --}}
+        {{ Form::label('student_password','Password') }}
+		{{ Form::text('student_password'); }}
+
             </h1>
         </caption>
     </div>
