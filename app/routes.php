@@ -76,18 +76,9 @@ Route::post('/list', function() {
     # The all() method will fetch all the rows from a Model/table
     $allCourses = Course::all();
 
-    # Make sure we have results before trying to print them...
-    if($allCourses->isEmpty() != TRUE) {
 
-        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
-        foreach($allCourses as $oneCourse) {
-            echo $oneCourse->student_name.'<br>';
-        }
-    }
-    else {
-        return 'No courses found';
-    }
-    return 'Course information saved!';
+    return View::make('list')
+        ->with('allCourses', $allCourses);
 });
 
 Route::get('mysql-test', function() {
