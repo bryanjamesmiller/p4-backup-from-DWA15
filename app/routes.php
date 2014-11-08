@@ -81,6 +81,29 @@ Route::post('/list', function() {
         ->with('allCourses', $allCourses);
 });
 
+Route::get('/delete/{format?}', function($format = 'html') {
+    $all_the_courses = Course::all();
+    if($all_the_courses->isEmpty() != TRUE) {
+
+        foreach ($all_the_courses as $possible_course_to_delete) {
+            if ($possible_course_to_delete->id == $format) {
+                $possible_course_to_delete->delete();
+            }
+        }
+    }
+    $allCourses = Course::all();
+    return View::make('list')
+        ->with('allCourses', $allCourses);
+});
+
+Route::get('/edit/{format?}', function($format = 'html') {
+
+    return View::make('list');
+
+});
+
+
+
 Route::get('mysql-test', function() {
 
     # Print environment
