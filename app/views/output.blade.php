@@ -1,3 +1,4 @@
+
 <p>
 <table id="myTable" class="tablesorter">
         <thead>
@@ -25,11 +26,9 @@
 
     <?php
     if($allCourses->isEmpty() != TRUE) {
-
         # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
         foreach($allCourses as $oneCourse) {
                echo '<td id="course_number">' . $oneCourse->course_number. '</td>';
-
                         echo '<td id="course_delivery" class="dropdowns">' .$oneCourse->course_delivery.' </td>';
                         echo '<td id="crn_number">' .$oneCourse->crn_number.'</td> ';
                         echo '<td id="section">' . $oneCourse->section . '</td> ';
@@ -50,21 +49,24 @@
                                     echo  '<td class="dropdowns" id="grade_points">' .$oneCourse->grade_points . '</td> ';
                                     echo  '<td id="transfer_credits">' .$oneCourse->transfer_credits . '</td>';
                                     echo '<td id="hes_credits">' . $oneCourse->hes_credits . '</td>
-                                    </tr>
-                                    <tr>
+</tr>
+           
+<tr>
+       <td colspan="22">
                                     <nav>
                                     <ul>
-                                    <li>
-                                     <a href="/edit">edit course information (above)</a>
-                                    </li>
+                                           <li>
+                                               <a href="/edit">edit course information (above)</a>
+                                           </li>
 
-                                    <li>
-                                     <a href="/delete">delete course entry (above)</a>
-                                    </li>
+
+                                           <li>
+                                               <a href="/delete">delete course entry (above)</a>
+                                           </li>
                                     </ul>
-                                    </nav></tr></tr> ';
-
-
+                                    </nav>
+       </td>
+</tr> ';
         }
     }
     else {
