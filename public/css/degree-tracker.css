@@ -11,6 +11,19 @@ h1{
     width:55em;
 }
 
+nav ul li {
+    display:inline;
+    margin-right:7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+    color:#980101;
+    font-size:75%;
+}
+
+a:link, a:visited, a:active, a:hover {
+    text-decoration:underline;
+}
+
 #wheatImage{
     width:55em;   
 }
