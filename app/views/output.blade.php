@@ -45,11 +45,13 @@
                                     echo  '<td id="times">' .$oneCourse->times . '</td> ';
                                     echo  '<td id="year">' .$oneCourse->year . '</td> ';
                                     echo  '<td id="professors">' .$oneCourse->professors . '</td> ';
-                                    echo  '<td class="dropdowns" id="status>' .$oneCourse->status . '</td> ';
+                                    echo  '<td class="dropdowns" id="status">' .$oneCourse->status . '</td> ';
                                     echo '<td class="dropdowns" id="letter_grade">' .$oneCourse->letter_grade . '</td> ';
                                     echo  '<td class="dropdowns" id="grade_points">' .$oneCourse->grade_points . '</td> ';
                                     echo  '<td id="transfer_credits">' .$oneCourse->transfer_credits . '</td>';
-                                    echo '<td id="hes_credits">' . $oneCourse->hes_credits . '</td></tr> ';
+                                    echo '<td id="hes_credits">' . $oneCourse->hes_credits . '</td><a href="/edit">edit above course information</a>
+
+                                                                                                    <a href="/delete">(soft) delete above course entry</a></tr> ';
 
 
         }
