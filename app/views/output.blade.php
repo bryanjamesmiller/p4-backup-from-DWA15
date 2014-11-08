@@ -56,12 +56,12 @@
                                     <nav>
                                     <ul>
                                            <li>
-                                               <a href="/edit">edit course information (above)</a>
+                                               <a href="/edit/' . $oneCourse->id . '"> edit course information (above)</a>
                                            </li>
 
 
                                            <li>
-                                               <a href="/delete">delete course entry (above)</a>
+                                               <a href="/delete/' . $oneCourse->id .'"> delete course entry (above)</a>
                                            </li>
                                     </ul>
                                     </nav>
