@@ -92,7 +92,8 @@ Route::get('/delete/{format?}', function($format = 'html') {
         }
     }
     $allCourses = Course::all();
-    return View::make('list')
+
+    return View::make('delete')
         ->with('allCourses', $allCourses);
 });
 
