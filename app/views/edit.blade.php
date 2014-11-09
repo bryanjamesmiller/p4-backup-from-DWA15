@@ -45,7 +45,7 @@ Edit Course Information
 {{Form::text('new_value', '', array('id' => 'new_value'))}}
 {{ Form::submit('Click to Update Changes!')}}
 {{ Form::close() }}
-{{$format}}
+
 @stop
 
 @section('bottom')
