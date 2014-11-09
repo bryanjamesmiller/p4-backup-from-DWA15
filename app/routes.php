@@ -17,6 +17,7 @@ Route::get('/', function()
 });
 
 Route::get('/list', function(){
+    echo "get";
     $allCourses = Course::all();
 
     // Output all current courses that are saved in the database
@@ -26,6 +27,7 @@ Route::get('/list', function(){
 });
 
 Route::post('/list', function() {
+    echo "post";
     // Output all current courses that are saved in the database
     $student_name = Input::get('student_name');
     $course_number = Input::get('course_number');
@@ -111,8 +113,8 @@ Route::post('/edit/{format?}', function($format = 'html') {
     if($all_the_courses->isEmpty() != TRUE) {
         foreach ($all_the_courses as $possible_course_to_edit) {
             if ($possible_course_to_edit->id == $format) {
-                //hard coding it to "course name" for now but eventually want switch statement to determine which column in table was selected to be edited:
-                $possible_course_to_edit->course_name = Input::get('edit_options');
+                //hard coding it to "course title" for now but eventually want switch statement to determine which column in table was selected to be edited:
+                $possible_course_to_edit->course_title = Input::get('edit_options');
             }
         }
     }
