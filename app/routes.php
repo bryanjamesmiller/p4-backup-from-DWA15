@@ -102,14 +102,14 @@ Route::get('/delete/{format?}', function($format = 'html') {
 Route::get('/edit/{format?}', function($format = 'html') {
 echo "get";
     echo Input::get('new_value');
-
+$user_input = 'testttt';
 
     $all_the_courses = Course::all();
     if($all_the_courses->isEmpty() != TRUE) {
         foreach ($all_the_courses as $possible_course_to_edit) {
             if ($possible_course_to_edit->id == $format) {
                 //hard coding it to "course title" for now but eventually want switch statement to determine which column in table was selected to be edited:
-                $possible_course_to_edit->course_title = 'test';
+                $possible_course_to_edit->course_title = '' . $user_input;
                 $possible_course_to_edit->save();
             }
         }
