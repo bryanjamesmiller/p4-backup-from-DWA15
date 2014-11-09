@@ -115,6 +115,7 @@ Route::post('/edit/{format?}', function($format = 'html') {
             if ($possible_course_to_edit->id == $format) {
                 //hard coding it to "course title" for now but eventually want switch statement to determine which column in table was selected to be edited:
                 $possible_course_to_edit->course_title = Input::get('edit_options');
+                $possible_course_to_edit->save();
             }
         }
     }
