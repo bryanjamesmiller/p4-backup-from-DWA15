@@ -103,14 +103,6 @@ Route::get('/edit/{format?}', function($format = 'html') {
         ->with('format', $format);
 });
 
-Route::get('/edited', function() {
-
-//    $update_value = Input::get('edit_options');
-
-    return View::make('edited');
-//        ->with('update_value', $update_value);
-});
-
 
 Route::get('mysql-test', function() {
 
