@@ -15,7 +15,7 @@ Edit Course Information
 @section('middle')
 <p>Select the item to edit:</p>
 
-{{ Form::open(array('url' => 'edited')) }}
+{{ Form::open(array('url' => 'edit')) }}
 <select class="dropboxlabels" name="edit_options" id="edit_options">
             <optgroup class="dropdowns">
                 <option>Course Number</option>
@@ -45,7 +45,7 @@ Edit Course Information
 {{Form::text('new_value', '', array('id' => 'new_value'))}}
 {{ Form::submit('Click to Update Changes!')}}
 {{ Form::close() }}
-
+{{$format}}
 @stop
 
 @section('bottom')
