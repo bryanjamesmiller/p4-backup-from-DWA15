@@ -120,10 +120,11 @@ echo "get";
 });
 
 Route::post('/edit/{format?}', function($format = 'html') {
-    echo "post";
-    echo "<p>Update Successful!</p>";
-    return View::make('edit')
-        ->with('format', $format);
+
+    echo '<img src="images/wheat logo.PNG" alt="wheat logo"> <p>Update Successful!</p>
+    <div>
+<p><a href="/list">Click here</a> to view a list of your courses.</p>
+</div>';
 });
 
 
