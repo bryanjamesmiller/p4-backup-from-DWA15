@@ -99,22 +99,16 @@ Route::get('/delete/{format?}', function($format = 'html') {
 
 Route::get('/edit/{format?}', function($format = 'html') {
 
-    $update_value = Input::get('edit_options');
-
-
     return View::make('edit')
-        ->with('format', $format)
-        ->with('update_value', $update_value);
-
+        ->with('format', $format);
 });
 
 Route::get('/edited', function() {
 
-    $update_value = Input::get('edit_options');
-    echo $update_value;
+//    $update_value = Input::get('edit_options');
 
-    return View::make('edited')
-        ->with('update_value', $update_value);
+    return View::make('edited');
+//        ->with('update_value', $update_value);
 });
 
 
