@@ -17,9 +17,12 @@ Route::get('/', function()
 });
 
 Route::get('/list', function(){
+    $allCourses = Course::all();
 
     // Output all current courses that are saved in the database
-    return View::make('list');
+    return View::make('list')
+        ->with('allCourses', $allCourses);
+
 });
 
 Route::post('/list', function() {
@@ -91,18 +94,28 @@ Route::get('/delete/{format?}', function($format = 'html') {
             }
         }
     }
-    $allCourses = Course::all();
-
-    return View::make('delete')
-        ->with('allCourses', $allCourses);
+    return View::make('delete');
 });
 
 Route::get('/edit/{format?}', function($format = 'html') {
 
-    return View::make('list');
+    $update_value = Input::get('edit_options');
+
+
+    return View::make('edit')
+        ->with('format', $format)
+        ->with('update_value', $update_value);
 
 });
 
+Route::get('/edited', function() {
+
+    $update_value = Input::get('edit_options');
+    echo $update_value;
+
+    return View::make('edited')
+        ->with('update_value', $update_value);
+});
 
 
 Route::get('mysql-test', function() {

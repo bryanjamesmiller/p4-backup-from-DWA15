@@ -4,7 +4,7 @@
 @stop
 
 @section('title')
-Degree Tracker PET
+List of Courses
 @stop
 
 @section('top')
