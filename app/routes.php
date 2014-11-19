@@ -26,7 +26,7 @@ Route::get('/list', function(){
 
 });
 
-Route::post('/list', function() {
+Route::post('/list', array('before' => 'csrf', function() {
     echo "post";
     // Output all current courses that are saved in the database
     $student_name = Input::get('student_name');
@@ -84,7 +84,7 @@ Route::post('/list', function() {
 
     return View::make('list')
         ->with('allCourses', $allCourses);
-});
+}));
 
 Route::get('/delete/{format?}', function($format = 'html') {
     $all_the_courses = Course::all();
@@ -99,34 +99,77 @@ Route::get('/delete/{format?}', function($format = 'html') {
     return View::make('delete');
 });
 
-Route::get('/edit/{format?}', function($format = 'html') {
-echo "get";
-    echo Input::get('new_value');
-$user_input = 'testttt';
+
+Route::get('/process_edit/{format?}', function($format = 'html'){
+echo $_POST[2];
+    $user_input =  Input::get('new_value');
 
     $all_the_courses = Course::all();
+
+
     if($all_the_courses->isEmpty() != TRUE) {
         foreach ($all_the_courses as $possible_course_to_edit) {
             if ($possible_course_to_edit->id == $format) {
-                //hard coding it to "course title" for now but eventually want switch statement to determine which column in table was selected to be edited:
                 $possible_course_to_edit->course_title = '' . $user_input;
                 $possible_course_to_edit->save();
             }
         }
     }
+    return View::make('process_edit');
+
+});
+
+Route::post('/process_edit/{format?}', function($format = 'html'){
+
+
+
+    $user_input =  Input::get('new_value');
+
+    $all_the_courses = Course::all();
+
+
+    if($all_the_courses->isEmpty() != TRUE) {
+        foreach ($all_the_courses as $possible_course_to_edit) {
+            if ($possible_course_to_edit->id == $format) {
+                $possible_course_to_edit->course_title = '' . $user_input;
+                $possible_course_to_edit->save();
+            }
+        }
+    }
+    return View::make('process_edit');
+
+});
+
+
+
+Route::get('/edit/{id?}', function($id = 'null') {
+
+    try{
+        $course = Course::findOrFail($id);
+    }
+    catch(exception $e){
+        return Redirect::to('/list')->with('flash_message', 'Book not found');
+    }
 
     return View::make('edit')
-        ->with('format', $format);
+        ->with('course', $course);
 });
 
-Route::post('/edit/{format?}', function($format = 'html') {
 
-    echo '<img src="images/wheat logo.PNG" alt="wheat logo"> <p>Update Successful!</p>
-    <div>
-<p><a href="/list">Click here</a> to view a list of your courses.</p>
-</div>';
+Route::post('/edit', function() {
+    try {
+        $course = Course::findOrFail(Input::get('id'));
+    }
+    catch(exception $e) {
+        return Redirect::to('/list')->with('flash_message', 'Course not found');
+    }
+    # http://laravel.com/docs/4.2/eloquent#mass-assignment
+    $course->course_title = Input::get('new_value');
+    $course->save();
+
+    return Redirect::to('/list')->with('flash_message','Your changes have been saved.');
+
 });
-
 
 Route::get('mysql-test', function() {
 

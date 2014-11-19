@@ -131,6 +131,15 @@ table,th,td
     background-color:pink;
 }
 
+.flash-message {
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:yellow;
+    text-align:center;
+    padding:5px;
+}
 
 .dropboxlabels{
     /*This changes the outside of all of the dropboxes*/

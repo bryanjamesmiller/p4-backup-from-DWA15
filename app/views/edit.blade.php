@@ -9,13 +9,13 @@ Edit Course Information
 @stop
 
 @section('top')
- <img src="images/wheat logo.PNG" alt="wheat logo">
+ <img src="/images/wheat logo.PNG" alt="wheat logo">
 @stop
 
 @section('middle')
 <p>Select the item to edit:</p>
 
-{{ Form::open(array('url' => 'edit')) }}
+{{ Form::open(array('url' => 'edit'))}}
 <select class="dropboxlabels" name="edit_options" id="edit_options">
             <optgroup class="dropdowns">
                 <option>Course Number</option>
@@ -42,17 +42,20 @@ Edit Course Information
      </optgroup>
 </select>
 <p>Enter new value:</p>
-{{Form::text('new_value', '', array('id' => 'new_value'))}}
+{{ Form::text('new_value', '', array('id' => 'new_value'))}}
+{{ Form::hidden('id', $course['id']); }}
 {{ Form::submit('Click to Update Changes!')}}
 {{ Form::close() }}
 
 @stop
 
 @section('bottom')
+
 <div>
 <p><a href="/list">Click here</a> to view a list of your courses.</p>
 </div>
 @stop
+
 
 
 

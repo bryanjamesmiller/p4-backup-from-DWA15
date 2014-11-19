@@ -7,5 +7,5 @@
  */
 
 class Course extends Eloquent {
-
+    protected $guarded = array('id');
 }

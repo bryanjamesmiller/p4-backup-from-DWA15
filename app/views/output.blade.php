@@ -26,48 +26,48 @@
 
     <?php
     if($allCourses->isEmpty() != TRUE) {
-        # Typically we'd pass $books to a View, but for quick and dirty demonstration, let's just output here...
-        foreach($allCourses as $oneCourse) {
-               echo '<td id="course_number">' . $oneCourse->course_number. '</td>';
-                        echo '<td id="course_delivery" class="dropdowns">' .$oneCourse->course_delivery.' </td>';
-                        echo '<td id="crn_number">' .$oneCourse->crn_number.'</td> ';
-                        echo '<td id="section">' . $oneCourse->section . '</td> ';
-                                    echo '<td id="tuition">' .$oneCourse->tuition . '</td> ';
-                                    echo '<td id="course_title">' .$oneCourse->course_title . '</td> ';
-                                    echo '<td class="dropdowns">' .$oneCourse->course_attributes_1 . ' </td>';
-                                    echo '<td class="dropdowns">' .$oneCourse->course_attributes_2 . '</td> ';
-                                    echo '<td class="dropdowns">' .$oneCourse->course_attributes_3 . '</td> ';
-                                    echo '<td class="dropdowns">' .$oneCourse->course_attributes_4 . '</td> ';
-                                    echo '<td class="dropdowns">' .$oneCourse->course_attributes_5 . '</td> ';
-                                    echo  '<td class="dropdowns" id="semester">' .$oneCourse->semester . '</td> ';
-                                    echo  '<td id="days">' .$oneCourse->days . '</td> ';
-                                    echo  '<td id="times">' .$oneCourse->times . '</td> ';
-                                    echo  '<td id="year">' .$oneCourse->year . '</td> ';
-                                    echo  '<td id="professors">' .$oneCourse->professors . '</td> ';
-                                    echo  '<td class="dropdowns" id="status">' .$oneCourse->status . '</td> ';
-                                    echo '<td class="dropdowns" id="letter_grade">' .$oneCourse->letter_grade . '</td> ';
-                                    echo  '<td class="dropdowns" id="grade_points">' .$oneCourse->grade_points . '</td> ';
-                                    echo  '<td id="transfer_credits">' .$oneCourse->transfer_credits . '</td>';
-                                    echo '<td id="hes_credits">' . $oneCourse->hes_credits . '</td>
-</tr>
-           
-<tr>
-       <td colspan="22">
-                                    <nav>
-                                    <ul>
-                                           <li>
-                                               <a href="/edit/' . $oneCourse->id . '"> edit course information (above)</a>
-                                           </li>
+        ?>
+        @foreach($allCourses as $oneCourse)
+               <td id="course_number">{{{$oneCourse->course_number}}}</td>
+                                       <td id="course_delivery" class="dropdowns">  {{{$oneCourse->course_delivery }}} </td>
+                                       <td id="crn_number">  {{{$oneCourse->crn_number }}}</td>
+                                       <td id="section">  {{{ $oneCourse->section  }}}</td>
+                                                   <td id="tuition">  {{{$oneCourse->tuition  }}}</td>
+                                                   <td id="course_title">  {{{$oneCourse->course_title  }}}</td>
+                                                   <td class="dropdowns">  {{{$oneCourse->course_attributes_1  }}} </td>
+                                                   <td class="dropdowns">  {{{$oneCourse->course_attributes_2  }}}</td>
+                                                   <td class="dropdowns">  {{{$oneCourse->course_attributes_3  }}}</td>
+                                                   <td class="dropdowns">  {{{$oneCourse->course_attributes_4  }}}</td>
+                                                   <td class="dropdowns">  {{{$oneCourse->course_attributes_5  }}}</td>
+                                                   <td class="dropdowns" id="semester">  {{{$oneCourse->semester  }}}</td>
+                                                   <td id="days">  {{{$oneCourse->days  }}}</td>
+                                                   <td id="times">  {{{$oneCourse->times  }}}</td>
+                                                   <td id="year">  {{{$oneCourse->year  }}}</td>
+                                                   <td id="professors">  {{{$oneCourse->professors  }}}</td>
+                                                   <td class="dropdowns" id="status">  {{{$oneCourse->status  }}}</td>
+                                                   <td class="dropdowns" id="letter_grade">  {{{$oneCourse->letter_grade  }}}</td>
+                                                   <td class="dropdowns" id="grade_points">  {{{$oneCourse->grade_points  }}}</td>
+                                                   <td id="transfer_credits">  {{{$oneCourse->transfer_credits  }}}</td>
+                                                   <td id="hes_credits">  {{{ $oneCourse->hes_credits  }}}</td>
+              </tr>
 
+              <tr>
+                     <td colspan="22">
+                                                  <nav>
+                                                  <ul>
+                                                         <li>
+                                                             <a href="/edit/{{$oneCourse->id}}" > edit course information (above)</a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="/delete/{{$oneCourse->id}}" > delete course entry (above)</a>
+                                                         </li>
+                                                  </ul>
+                                                  </nav>
+                     </td>
+              </tr>
+              @endforeach
 
-                                           <li>
-                                               <a href="/delete/' . $oneCourse->id .'"> delete course entry (above)</a>
-                                           </li>
-                                    </ul>
-                                    </nav>
-       </td>
-</tr> ';
-        }
+        <?php
     }
     else {
         return 'No courses found';
