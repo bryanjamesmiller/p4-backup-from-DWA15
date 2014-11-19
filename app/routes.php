@@ -163,8 +163,9 @@ Route::post('/edit', function() {
     catch(exception $e) {
         return Redirect::to('/list')->with('flash_message', 'Course not found');
     }
-    # http://laravel.com/docs/4.2/eloquent#mass-assignment
-    $course->course_title = Input::get('new_value');
+
+    $edit_option = Input::get('edit_options');
+    $course->$edit_option = Input::get('new_value');
     $course->save();
 
     return Redirect::to('/list')->with('flash_message','Your changes have been saved.');

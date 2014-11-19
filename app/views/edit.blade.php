@@ -18,27 +18,27 @@ Edit Course Information
 {{ Form::open(array('url' => 'edit'))}}
 <select class="dropboxlabels" name="edit_options" id="edit_options">
             <optgroup class="dropdowns">
-                <option>Course Number</option>
-                <option>Course Delivery</option>
-                <option>CRN#</option>
-                <option>Section</option>
-                <option>Tuition</option>
-                <option>Course Title</option>
-                <option>Course Attribute #1</option>
-                <option>Course Attribute #2</option>
- <option>Course Attribute #3</option>
-                <option>Course Attribute #4</option>
-                <option>Course Attribute #5</option>
-                <option>Semester</option>
-                <option>Day(s)</option>
- <option>Time(s)</option>
-                <option>Year</option>
-                <option>Professor(s)</option>
-                <option>Status</option>
-                <option>Grade</option>
-<option>Grade Points</option>
-<option>Transfer Credits</option>
-<option>HES Credits</option>
+                <option value="course_number">Course Number</option>
+                <option value="course_delivery">Course Delivery</option>
+                <option value="crn_number">CRN#</option>
+                <option value="section">Section</option>
+                <option value="tuition">Tuition</option>
+                <option value="course_title">Course Title</option>
+                <option value="course_attribute_1">Course Attribute #1</option>
+                <option value="course_attribute_2">Course Attribute #2</option>
+                <option value="course_attribute_3">Course Attribute #3</option>
+                <option value="course_attribute_4">Course Attribute #4</option>
+                <option value="course_attribute_5">Course Attribute #5</option>
+                <option value="semester">Semester</option>
+                <option value="days">Day(s)</option>
+                <option value="times">Time(s)</option>
+                <option value="year">Year</option>
+                <option value="professors">Professor(s)</option>
+                <option value="status">Status</option>
+                <option value="grade">Grade</option>
+                <option value="grade_points">Grade Points</option>
+                <option value="transfer_credits">Transfer Credits</option>
+                <option value="hes_credits">HES Credits</option>
      </optgroup>
 </select>
 <p>Enter new value:</p>
