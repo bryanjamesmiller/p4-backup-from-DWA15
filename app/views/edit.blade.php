@@ -13,6 +13,54 @@ Edit Course Information
 @stop
 
 @section('middle')
+<table id="myTable" class="tablesorter">
+    <thead>
+    <tr id="tableHeaders">
+        <th id="course_number">Course Number</th>
+        <th id="course_delivery">Course Delivery</th>
+        <th id="crn_number">CRN#</th>
+        <th  id="section">Section</th>
+        <th id="tuition">Tuition</th>
+        <th id="course_title">Course Title</th>
+        <th id="course_attributes" colspan="5">Course Attributes</th>
+        <th id="semester">Semester</th>
+        <th id="days">Day(s)</th>
+        <th id="time">Time(s)</th>
+        <th id="year">Year</th>
+        <th id="professors">Professor(s)</th>
+        <th id="status">Status</th>
+        <th id="letter_grade">Grade</th>
+        <th id="grade_points">Grade Points</th>
+        <th id="transfer_credits">Transfer Credits</th>
+        <th id="hes_credits">HES Credits</th>
+    </tr>
+    </thead>
+    <tr>
+        <td id="course_number">{{{$course->course_number}}}</td>
+        <td id="course_delivery" class="dropdowns">  {{{$course->course_delivery }}} </td>
+        <td id="crn_number">  {{{$course->crn_number }}}</td>
+        <td id="section">  {{{ $course->section  }}}</td>
+        <td id="tuition">  {{{$course->tuition  }}}</td>
+        <td id="course_title">  {{{$course->course_title  }}}</td>
+        <td class="dropdowns">  {{{$course->course_attributes_1  }}} </td>
+        <td class="dropdowns">  {{{$course->course_attributes_2  }}}</td>
+        <td class="dropdowns">  {{{$course->course_attributes_3  }}}</td>
+        <td class="dropdowns">  {{{$course->course_attributes_4  }}}</td>
+        <td class="dropdowns">  {{{$course->course_attributes_5  }}}</td>
+        <td class="dropdowns" id="semester">  {{{$course->semester  }}}</td>
+        <td id="days">  {{{$course->days  }}}</td>
+        <td id="times">  {{{$course->times  }}}</td>
+        <td id="year">  {{{$course->year  }}}</td>
+        <td id="professors">  {{{$course->professors  }}}</td>
+        <td class="dropdowns" id="status">  {{{$course->status  }}}</td>
+        <td class="dropdowns" id="letter_grade">  {{{$course->letter_grade  }}}</td>
+        <td class="dropdowns" id="grade_points">  {{{$course->grade_points  }}}</td>
+        <td id="transfer_credits">  {{{$course->transfer_credits  }}}</td>
+        <td id="hes_credits">  {{{ $course->hes_credits  }}}</td>
+    </tr>
+</table>
+
+
 <p>Select the item to edit:</p>
 
 {{ Form::open(array('url' => 'edit'))}}
