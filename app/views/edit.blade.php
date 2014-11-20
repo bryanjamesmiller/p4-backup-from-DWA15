@@ -13,50 +13,50 @@ Edit Course Information
 @stop
 
 @section('middle')
-<table id="myTable" class="tablesorter">
+<table class="myTable">
     <thead>
-    <tr id="tableHeaders">
-        <th id="course_number_header">Course Number</th>
-                    <th id="course_delivery_header">Course Delivery</th>
-                    <th id="crn_number_header">CRN#</th>
-                    <th  id="section_header">Section</th>
-                    <th id="tuition_header">Tuition</th>
-                    <th id="course_title_header">Course Title</th>
-                    <th id="course_attributes_header" colspan="5">Course Attributes</th>
-                    <th id="semester_header">Semester</th>
-                    <th id="days_header">Day(s)</th>
-                    <th id="time_header">Time(s)</th>
-                    <th id="year_header">Year</th>
-                    <th id="professors_header">Professor(s)</th>
-                    <th id="status_header">Status</th>
-                    <th id="letter_grade_header">Grade</th>
-                    <th id="grade_points_header">Grade Points</th>
-                    <th id="transfer_credits_header">Transfer Credits</th>
-                    <th id="hes_credits_header">HES Credits</th>
+    <tr class="tableHeaders">
+        <th class="course_number_header">Course Number</th>
+                    <th class="course_delivery_header">Course Delivery</th>
+                    <th class="crn_number_header">CRN#</th>
+                    <th  class="section_header">Section</th>
+                    <th class="tuition_header">Tuition</th>
+                    <th class="course_title_header">Course Title</th>
+                    <th class="course_attributes_header" colspan="5">Course Attributes</th>
+                    <th class="semester_header">Semester</th>
+                    <th class="days_header">Day(s)</th>
+                    <th class="time_header">Time(s)</th>
+                    <th class="year_header">Year</th>
+                    <th class="professors_header">Professor(s)</th>
+                    <th class="status_header">Status</th>
+                    <th class="letter_grade_header">Grade</th>
+                    <th class="grade_points_header">Grade Points</th>
+                    <th class="transfer_credits_header">Transfer Credits</th>
+                    <th class="hes_credits_header">HES Credits</th>
     </tr>
     </thead>
     <tr>
-        <td id="course_number">{{{$course->course_number}}}</td>
-        <td id="course_delivery" class="dropdowns">  {{{$course->course_delivery }}} </td>
-        <td id="crn_number">  {{{$course->crn_number }}}</td>
-        <td id="section">  {{{ $course->section  }}}</td>
-        <td id="tuition">  {{{$course->tuition  }}}</td>
-        <td id="course_title">  {{{$course->course_title  }}}</td>
+        <td class="course_number">{{{$course->course_number}}}</td>
+        <td class="course_delivery" class="dropdowns">  {{{$course->course_delivery }}} </td>
+        <td class="crn_number">  {{{$course->crn_number }}}</td>
+        <td class="section">  {{{ $course->section  }}}</td>
+        <td class="tuition">  {{{$course->tuition  }}}</td>
+        <td class="course_title">  {{{$course->course_title  }}}</td>
         <td class="dropdowns">  {{{$course->course_attributes_1  }}} </td>
         <td class="dropdowns">  {{{$course->course_attributes_2  }}}</td>
         <td class="dropdowns">  {{{$course->course_attributes_3  }}}</td>
         <td class="dropdowns">  {{{$course->course_attributes_4  }}}</td>
         <td class="dropdowns">  {{{$course->course_attributes_5  }}}</td>
-        <td class="dropdowns" id="semester">  {{{$course->semester  }}}</td>
-        <td id="days">  {{{$course->days  }}}</td>
-        <td id="times">  {{{$course->times  }}}</td>
-        <td id="year">  {{{$course->year  }}}</td>
-        <td id="professors">  {{{$course->professors  }}}</td>
-        <td class="dropdowns" id="status">  {{{$course->status  }}}</td>
-        <td class="dropdowns" id="letter_grade">  {{{$course->letter_grade  }}}</td>
-        <td class="dropdowns" id="grade_points">  {{{$course->grade_points  }}}</td>
-        <td id="transfer_credits">  {{{$course->transfer_credits  }}}</td>
-        <td id="hes_credits">  {{{ $course->hes_credits  }}}</td>
+        <td class="dropdowns" class="semester">  {{{$course->semester  }}}</td>
+        <td class="days">  {{{$course->days  }}}</td>
+        <td class="times">  {{{$course->times  }}}</td>
+        <td class="year">  {{{$course->year  }}}</td>
+        <td class="professors">  {{{$course->professors  }}}</td>
+        <td class="dropdowns" class="status">  {{{$course->status  }}}</td>
+        <td class="dropdowns" class="letter_grade">  {{{$course->letter_grade  }}}</td>
+        <td class="dropdowns" class="grade_points">  {{{$course->grade_points  }}}</td>
+        <td class="transfer_credits">  {{{$course->transfer_credits  }}}</td>
+        <td class="hes_credits">  {{{ $course->hes_credits  }}}</td>
     </tr>
 </table>
 
