@@ -22,6 +22,7 @@ nav ul li {
 
 a:link, a:visited, a:active, a:hover {
     text-decoration:underline;
+    color:black;
 }
 
 #wheatImage{
@@ -91,6 +92,11 @@ table,th,td
 
 .course_title{
     width:17em;   
+    background-color:pink;
+}
+
+.status{
+    width:10em;
     background-color:pink;
 }
 
@@ -224,10 +230,6 @@ table,th,td
     background-color:#BFBBBC;
 }
 
-.status_header{
-    width:4em;
-    background-color:#BFBBBC;
-}
 
 .letter_grade_header{
     width:4em;
@@ -252,3 +254,7 @@ table,th,td
     background-color:#BFBBBC;
 }
 
+.edit_or_delete_rows{
+    background-color:white;
+    vertical-align: top;
+}

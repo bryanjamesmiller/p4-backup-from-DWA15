@@ -1,8 +1,8 @@
 
 <p>
-<table class="myTable">
+<table>
     <thead>
-    <tr class="tableHeaders">
+    <tr>
                 <th class="course_number_header">Course Number</th>
               <th class="course_delivery_header">Course Delivery</th>
               <th class="crn_number_header">CRN#</th>
@@ -12,7 +12,7 @@
               <th class="course_attributes_header" colspan="5">Course Attributes</th>
               <th class="semester_header">Semester</th>
               <th class="days_header">Day(s)</th>
-              <th class="time_header">Time(s)</th>
+              <th class="times_header">Time(s)</th>
               <th class="year_header">Year</th>
               <th class="professors_header">Professor(s)</th>
               <th class="status_header">Status</th>
@@ -52,7 +52,7 @@
                        <td class="hes_credits">  {{{ $oneCourse->hes_credits  }}}</td>
                    </tr>
 
-                   <tr>
+                   <tr class = "edit_or_delete_rows">
                        <td colspan="22">
                            <nav>
                                <ul>
