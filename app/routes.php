@@ -125,7 +125,7 @@ Route::post('/edit', function() {
     $course->$edit_option = Input::get('new_value');
     $course->save();
 
-    return Redirect::to('/edit')->with('flash_message','Your changes have been saved.');
+    return Redirect::to('/edit/{id?}')->with('flash_message','Your changes have been saved.');
 
 });
 
