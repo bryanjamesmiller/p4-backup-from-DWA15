@@ -17,17 +17,16 @@ Route::get('/', function()
 });
 
 Route::get('/list', function(){
-    echo "get";
     $allCourses = Course::all();
 
     // Output all current courses that are saved in the database
     return View::make('list')
-        ->with('allCourses', $allCourses);
+        ->with('allCourses', $allCourses)
+        ->with('flash_message', 'New course added');
 
 });
 
 Route::post('/list', array('before' => 'csrf', function() {
-    echo "post";
     // Output all current courses that are saved in the database
     $student_name = Input::get('student_name');
     $course_number = Input::get('course_number');
