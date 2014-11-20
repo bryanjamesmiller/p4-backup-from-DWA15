@@ -99,49 +99,6 @@ Route::get('/delete/{format?}', function($format = 'html') {
     return View::make('delete');
 });
 
-
-Route::get('/process_edit/{format?}', function($format = 'html'){
-echo $_POST[2];
-    $user_input =  Input::get('new_value');
-
-    $all_the_courses = Course::all();
-
-
-    if($all_the_courses->isEmpty() != TRUE) {
-        foreach ($all_the_courses as $possible_course_to_edit) {
-            if ($possible_course_to_edit->id == $format) {
-                $possible_course_to_edit->course_title = '' . $user_input;
-                $possible_course_to_edit->save();
-            }
-        }
-    }
-    return View::make('process_edit');
-
-});
-
-Route::post('/process_edit/{format?}', function($format = 'html'){
-
-
-
-    $user_input =  Input::get('new_value');
-
-    $all_the_courses = Course::all();
-
-
-    if($all_the_courses->isEmpty() != TRUE) {
-        foreach ($all_the_courses as $possible_course_to_edit) {
-            if ($possible_course_to_edit->id == $format) {
-                $possible_course_to_edit->course_title = '' . $user_input;
-                $possible_course_to_edit->save();
-            }
-        }
-    }
-    return View::make('process_edit');
-
-});
-
-
-
 Route::get('/edit/{id?}', function($id = 'null') {
 
     try{
@@ -168,7 +125,7 @@ Route::post('/edit', function() {
     $course->$edit_option = Input::get('new_value');
     $course->save();
 
-    return Redirect::to('/list')->with('flash_message','Your changes have been saved.');
+    return Redirect::to('/edit')->with('flash_message','Your changes have been saved.');
 
 });
 
