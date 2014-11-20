@@ -15,9 +15,9 @@
             </h1>
         </caption>
     </div>
-<table id="myTable">
+<table class="myTable">
         <thead>
-        <tr id="tableHeaders">
+        <tr class="tableHeaders">
           <th class="course_number_header">Course Number</th>
                       <th class="course_delivery_header">Course Delivery</th>
                       <th class="crn_number_header">CRN#</th>
