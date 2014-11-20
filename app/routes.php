@@ -83,7 +83,7 @@ Route::post('/list', array('before' => 'csrf', function() {
         ->with('flash_message', 'New course added!');
 }));
 
-Route::get('/delete/{format?}', function($format = 'html') {
+Route::get('/delete/{format?}', function($format = 'null') {
     $all_the_courses = Course::all();
     if($all_the_courses->isEmpty() != TRUE) {
 
@@ -93,7 +93,8 @@ Route::get('/delete/{format?}', function($format = 'html') {
             }
         }
     }
-    return View::make('delete');
+    return Redirect::to('/list')
+        ->with('flash_message', 'Course deleted!');
 });
 
 Route::get('/edit/{id?}', function($id = 'null') {
