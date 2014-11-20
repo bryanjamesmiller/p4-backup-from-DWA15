@@ -16,23 +16,23 @@ Edit Course Information
 <table id="myTable" class="tablesorter">
     <thead>
     <tr id="tableHeaders">
-        <th id="course_number">Course Number</th>
-        <th id="course_delivery">Course Delivery</th>
-        <th id="crn_number">CRN#</th>
-        <th  id="section">Section</th>
-        <th id="tuition">Tuition</th>
-        <th id="course_title">Course Title</th>
-        <th id="course_attributes" colspan="5">Course Attributes</th>
-        <th id="semester">Semester</th>
-        <th id="days">Day(s)</th>
-        <th id="time">Time(s)</th>
-        <th id="year">Year</th>
-        <th id="professors">Professor(s)</th>
-        <th id="status">Status</th>
-        <th id="letter_grade">Grade</th>
-        <th id="grade_points">Grade Points</th>
-        <th id="transfer_credits">Transfer Credits</th>
-        <th id="hes_credits">HES Credits</th>
+        <th id="course_number_header">Course Number</th>
+                    <th id="course_delivery_header">Course Delivery</th>
+                    <th id="crn_number_header">CRN#</th>
+                    <th  id="section_header">Section</th>
+                    <th id="tuition_header">Tuition</th>
+                    <th id="course_title_header">Course Title</th>
+                    <th id="course_attributes_header" colspan="5">Course Attributes</th>
+                    <th id="semester_header">Semester</th>
+                    <th id="days_header">Day(s)</th>
+                    <th id="time_header">Time(s)</th>
+                    <th id="year_header">Year</th>
+                    <th id="professors_header">Professor(s)</th>
+                    <th id="status_header">Status</th>
+                    <th id="letter_grade_header">Grade</th>
+                    <th id="grade_points_header">Grade Points</th>
+                    <th id="transfer_credits_header">Transfer Credits</th>
+                    <th id="hes_credits_header">HES Credits</th>
     </tr>
     </thead>
     <tr>

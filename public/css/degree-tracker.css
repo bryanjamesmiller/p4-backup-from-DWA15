@@ -157,3 +157,69 @@ table,th,td
     font-family: 'Open Sans', sans-serif;
     font-weight:500;
 }
+
+#course_number_header{
+    width:7em;
+    background-color:#BFBBBC;
+}
+
+#course_delivery_header{
+    width:10.5em;
+}
+
+#crn_number_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+#tuition_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+#section_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+#course_title_header{
+    width:17em;
+    background-color:#BFBBBC;
+}
+
+#days_header{
+    width:10em;
+    background-color:#BFBBBC;
+}
+
+#times_header{
+    width:10em;
+    background-color:#BFBBBC;
+}
+
+#year_header{
+    width:3em;
+    background-color:#BFBBBC;
+}
+
+#professors_header{
+    width:10em;
+    background-color:#BFBBBC;
+}
+
+#grade_points_header{
+    width:4em;
+    background-color:#980101;
+    font-weight:900;
+    color:white;
+}
+
+#transfer_credits_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+#hes_credits_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
