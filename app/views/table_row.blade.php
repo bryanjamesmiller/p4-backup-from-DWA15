@@ -14,32 +14,31 @@
 
             </h1>
         </caption>
-    </div>
-<table class="myTable">
+</div>
+   <table>
         <thead>
-        <tr class="tableHeaders">
-          <th class="course_number_header">Course Number</th>
-                      <th class="course_delivery_header">Course Delivery</th>
-                      <th class="crn_number_header">CRN#</th>
-                      <th  class="section_header">Section</th>
-                      <th class="tuition_header">Tuition</th>
-                      <th class="course_title_header">Course Title</th>
-                      <th class="course_attributes_header" colspan="5">Course Attributes</th>
-                      <th class="semester_header">Semester</th>
-                      <th class="days_header">Day(s)</th>
-                      <th class="times_header">Time(s)</th>
-                      <th class="year_header">Year</th>
-                      <th class="professors_header">Professor(s)</th>
-                      <th class="status_header">Status</th>
-                      <th class="letter_grade_header">Grade</th>
-                      <th class="grade_points_header">Grade Points</th>
-                      <th class="transfer_credits_header">Transfer Credits</th>
-                      <th class="hes_credits_header">HES Credits</th>
-
+        <tr>
+            <th class="course_number_header">Course Number</th>
+            <th class="course_delivery_header">Course Delivery</th>
+            <th class="crn_number_header">CRN#</th>
+            <th  class="section_header">Section</th>
+            <th class="tuition_header">Tuition</th>
+            <th class="course_title_header">Course Title</th>
+            <th class="course_attributes_header" colspan="5">Course Attributes</th>
+            <th class="semester_header">Semester</th>
+            <th class="days_header">Day(s)</th>
+            <th class="times_header">Time(s)</th>
+            <th class="year_header">Year</th>
+            <th class="professors_header">Professor(s)</th>
+            <th class="status_header">Status</th>
+            <th class="letter_grade_header">Grade</th>
+            <th class="grade_points_header">Grade Points</th>
+            <th class="transfer_credits_header">Transfer Credits</th>
+            <th class="hes_credits_header">HES Credits</th>
         </tr>
         </thead>
-<tr>
 
+    <tr>
     <td> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
     <td>
         <select class="dropboxlabels" name="course_delivery" class="course_delivery">

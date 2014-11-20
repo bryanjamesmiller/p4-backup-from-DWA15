@@ -1,5 +1,5 @@
 
-<p>
+
 <table>
     <thead>
     <tr>
@@ -52,15 +52,15 @@
                        <td class="hes_credits">  {{{ $oneCourse->hes_credits  }}}</td>
                    </tr>
 
-                   <tr class = "edit_or_delete_rows">
-                       <td colspan="22">
+                   <tr>
+                       <td class = "edit_or_delete_rows" colspan="22">
                            <nav>
                                <ul>
                                    <li>
-                                       <a href="/edit/{{$oneCourse->id}}" > edit course information (above)</a>
+                                       <a class="edit_or_delete_text" href="/edit/{{$oneCourse->id}}" > edit course information (above)</a>
                                    </li>
                                    <li>
-                                       <a href="/delete/{{$oneCourse->id}}" > delete course entry (above)</a>
+                                       <a class="edit_or_delete_text" href="/delete/{{$oneCourse->id}}" > delete course entry (above)</a>
                                    </li>
                                </ul>
                            </nav>
@@ -75,4 +75,3 @@
         return 'No courses found';
     }
    ?>
-   </p>

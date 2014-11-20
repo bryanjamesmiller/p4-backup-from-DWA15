@@ -165,96 +165,101 @@ table,th,td
 }
 
 .course_number_header{
-    width:5em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .course_delivery_header{
-    width:10.5em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .crn_number_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .tuition_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .section_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .course_title_header{
-    width:17em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .course_attributes_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .semester_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 
 .days_header{
-    width:10em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .times_header{
-    width:10em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .year_header{
-    width:3em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .professors_header{
-    width:10em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .status_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 
 .letter_grade_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 
 .grade_points_header{
-    width:4em;
+    width:1em;
     background-color:#980101;
     font-weight:900;
     color:white;
 }
 
 .transfer_credits_header{
-    width:4em;
+    width:1em;
     background-color:#BFBBBC;
 }
 
 .hes_credits_header{
-    width:4em;
+    width:3em;
     background-color:#BFBBBC;
 }
 
-.edit_or_delete_rows{
-    background-color:white;
+ .edit_or_delete_rows{
+    background-color:pink;
+     line-height: 15px;
+    vertical-align: top;
+}
+ .edit_or_delete_text{
+line-height: 15px;
     vertical-align: top;
 }
