@@ -52,12 +52,12 @@ table,th,td
     font-size:100%;
 }
 
-#tableHeaders{
+.tableHeaders{
     background-color:#BFBBBC;   
     font-weight: 900;
 }
 
-#name{
+.name{
     width:17em;
     height:1em;
     padding:.7em;
@@ -65,68 +65,68 @@ table,th,td
     font-size:1em;
 }
 
-#course_number{
+.course_number{
     width:7em;   
     background-color:pink;
 }
 
-#course_delivery{
+.course_delivery{
     width:10.5em;
 }
 
-#crn_number{
+.crn_number{
     width:4em;   
     background-color:pink;
 }
 
-#tuition{
+.tuition{
     width:4em;
     background-color:pink;
 }
 
-#section{
+.section{
     width:4em;   
     background-color:pink;
 }
 
-#course_title{
+.course_title{
     width:17em;   
     background-color:pink;
 }
 
-#days{
+.days{
     width:10em;   
     background-color:pink;
 }
 
-#times{
+.times{
     width:10em;   
     background-color:pink;
 }
 
-#year{
+.year{
     width:3em;   
     background-color:pink;
 }
 
-#professors{
+.professors{
     width:10em;   
     background-color:pink;
 }
 
-#grade_points{
+.grade_points{
     width:4em;   
     background-color:#980101;
     font-weight:900;
     color:white;
 }
 
-#transfer_credits{
+.transfer_credits{
     width:4em;   
     background-color:pink;
 }
 
-#hes_credits{
+.hes_credits{
     width:4em;   
     background-color:pink;
 }
@@ -158,68 +158,97 @@ table,th,td
     font-weight:500;
 }
 
-#course_number_header{
-    width:7em;
+.course_number_header{
+    width:5em;
     background-color:#BFBBBC;
 }
 
-#course_delivery_header{
+.course_delivery_header{
     width:10.5em;
+    background-color:#BFBBBC;
 }
 
-#crn_number_header{
+.crn_number_header{
     width:4em;
     background-color:#BFBBBC;
 }
 
-#tuition_header{
+.tuition_header{
     width:4em;
     background-color:#BFBBBC;
 }
 
-#section_header{
+.section_header{
     width:4em;
     background-color:#BFBBBC;
 }
 
-#course_title_header{
+.course_title_header{
     width:17em;
     background-color:#BFBBBC;
 }
 
-#days_header{
+.course_attributes_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+.semester_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+
+.days_header{
     width:10em;
     background-color:#BFBBBC;
 }
 
-#times_header{
+.times_header{
     width:10em;
     background-color:#BFBBBC;
 }
 
-#year_header{
+.year_header{
     width:3em;
     background-color:#BFBBBC;
 }
 
-#professors_header{
+.professors_header{
     width:10em;
     background-color:#BFBBBC;
 }
 
-#grade_points_header{
+.status_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+.status_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+.letter_grade_header{
+    width:4em;
+    background-color:#BFBBBC;
+}
+
+
+.grade_points_header{
     width:4em;
     background-color:#980101;
     font-weight:900;
     color:white;
 }
 
-#transfer_credits_header{
+.transfer_credits_header{
     width:4em;
     background-color:#BFBBBC;
 }
 
-#hes_credits_header{
+.hes_credits_header{
     width:4em;
     background-color:#BFBBBC;
 }
+

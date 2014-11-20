@@ -15,33 +15,34 @@
             </h1>
         </caption>
     </div>
-<table id="myTable" class="tablesorter">
+<table id="myTable">
         <thead>
         <tr id="tableHeaders">
-            <th>Course Number</th>
-            <th>Course Delivery</th>
-            <th>CRN#</th>
-            <th>Section</th>
-            <th>Tuition</th>
-            <th>Course Title</th>
-            <th colspan="5">Course Attributes</th>
-            <th>Semester</th>
-            <th>Day(s)</th>
-            <th>Time(s)</th>
-            <th>Year</th>
-            <th>Professor(s)</th>
-            <th>Status</th>
-            <th>Grade</th>
-            <th>Grade Points</th>
-            <th>Transfer Credits</th>
-            <th>HES Credits</th>
+          <th class="course_number_header">Course Number</th>
+                      <th class="course_delivery_header">Course Delivery</th>
+                      <th class="crn_number_header">CRN#</th>
+                      <th  class="section_header">Section</th>
+                      <th class="tuition_header">Tuition</th>
+                      <th class="course_title_header">Course Title</th>
+                      <th class="course_attributes_header" colspan="5">Course Attributes</th>
+                      <th class="semester_header">Semester</th>
+                      <th class="days_header">Day(s)</th>
+                      <th class="times_header">Time(s)</th>
+                      <th class="year_header">Year</th>
+                      <th class="professors_header">Professor(s)</th>
+                      <th class="status_header">Status</th>
+                      <th class="letter_grade_header">Grade</th>
+                      <th class="grade_points_header">Grade Points</th>
+                      <th class="transfer_credits_header">Transfer Credits</th>
+                      <th class="hes_credits_header">HES Credits</th>
+
         </tr>
         </thead>
 <tr>
 
-    <td> {{Form::text('course_number', '', array('id' => 'course_number'))}}</td>
+    <td> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
     <td>
-        <select class="dropboxlabels" name="course_delivery" id="course_delivery">
+        <select class="dropboxlabels" name="course_delivery" class="course_delivery">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -54,15 +55,15 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('crn_number', '', array('id' => 'crn_number'))}}</td>
-    <td> {{Form::text('section', '', array('id' => 'section'))}}</td>
-    <td> {{Form::text('tuition', '', array('id' => 'tuition'))}}</td>
-    <td> {{Form::text('course_title', '', array('id' => 'course_title'))}}</td>
+    <td> {{Form::text('crn_number', '', array('class' => 'crn_number'))}}</td>
+    <td> {{Form::text('section', '', array('class' => 'section'))}}</td>
+    <td> {{Form::text('tuition', '', array('class' => 'tuition'))}}</td>
+    <td> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
 
     @include('course_attributes_columns')
 
     <td>
-        <select class="dropboxlabels" name="semester" id="semester">
+        <select class="dropboxlabels" name="semester" class="semester">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -75,12 +76,12 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('days', '', array('id' => 'days'))}}</td>
-    <td> {{Form::text('times', '', array('id' => 'times'))}}</td>
-    <td> {{Form::text('year', '', array('id' => 'year'))}}</td>
-    <td> {{Form::text('professors', '', array('id' => 'professors'))}}</td>
+    <td> {{Form::text('days', '', array('class' => 'days'))}}</td>
+    <td> {{Form::text('times', '', array('class' => 'times'))}}</td>
+    <td> {{Form::text('year', '', array('class' => 'year'))}}</td>
+    <td> {{Form::text('professors', '', array('class' => 'professors'))}}</td>
     <td>
-        <select class="dropboxlabels" name="status" id="status">
+        <select class="dropboxlabels" name="status" class="status">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -94,7 +95,7 @@
         </select>
     </td>
     <td>
-        <select class="dropboxlabels" name="letter_grade" id="letter_grade">
+        <select class="dropboxlabels" name="letter_grade" class="letter_grade">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -115,9 +116,9 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('grade_points', '', array('id' => 'grade_points'))}}</td>
-    <td> {{Form::text('transfer_credits', '', array('id' => 'transfer_credits'))}}</td>
-    <td> {{Form::text('hes_credits', '', array('id' => 'hes_credits'))}}</td>
+    <td> {{Form::text('grade_points', '', array('class' => 'grade_points'))}}</td>
+    <td> {{Form::text('transfer_credits', '', array('class' => 'transfer_credits'))}}</td>
+    <td> {{Form::text('hes_credits', '', array('class' => 'hes_credits'))}}</td>
 </tr>
 </table>
 {{ Form::submit('Add Course')}}
