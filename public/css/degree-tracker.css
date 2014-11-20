@@ -136,9 +136,9 @@ table,th,td
     position:absolute;
     top:0;
     left:0;
-    background-color:yellow;
+    background-color:blue;
     text-align:center;
-    padding:5px;
+    padding:7px;
 }
 
 .dropboxlabels{

@@ -17,4 +17,5 @@ Link to my Jing screencast:
 
 ###A list of any plugins, libraries, packages or outside code used in the project:  
 I used some Google Fonts, as well as a concept from my internship provider, but
-all of the code is 100% mine.
+all of the code is mine.  I utilized Susan Buck's flash message creation and changed
+ some things in it to meet my needs.

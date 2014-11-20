@@ -81,9 +81,9 @@ Route::post('/list', array('before' => 'csrf', function() {
     # The all() method will fetch all the rows from a Model/table
     $allCourses = Course::all();
 
-
     return View::make('list')
-        ->with('allCourses', $allCourses);
+        ->with('allCourses', $allCourses)
+        ->with('flash_message', 'New course added');
 }));
 
 Route::get('/delete/{format?}', function($format = 'html') {
@@ -105,7 +105,7 @@ Route::get('/edit/{id?}', function($id = 'null') {
         $course = Course::findOrFail($id);
     }
     catch(exception $e){
-        return Redirect::to('/list')->with('flash_message', 'Book not found');
+        return Redirect::to('/list')->with('flash_message', 'Course not found');
     }
 
     return View::make('edit')
