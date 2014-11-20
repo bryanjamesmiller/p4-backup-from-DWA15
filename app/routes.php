@@ -21,9 +21,7 @@ Route::get('/list', function(){
 
     // Output all current courses that are saved in the database
     return View::make('list')
-        ->with('allCourses', $allCourses)
-        ->with('flash_message', 'New course added');
-
+        ->with('allCourses', $allCourses);
 });
 
 Route::post('/list', array('before' => 'csrf', function() {
@@ -80,9 +78,9 @@ Route::post('/list', array('before' => 'csrf', function() {
     # The all() method will fetch all the rows from a Model/table
     $allCourses = Course::all();
 
-    return View::make('list')
+    return Redirect::to('/list')
         ->with('allCourses', $allCourses)
-        ->with('flash_message', 'New course added');
+        ->with('flash_message', 'New course added!');
 }));
 
 Route::get('/delete/{format?}', function($format = 'html') {
@@ -104,7 +102,7 @@ Route::get('/edit/{id?}', function($id = 'null') {
         $course = Course::findOrFail($id);
     }
     catch(exception $e){
-        return Redirect::to('/list')->with('flash_message', 'Course not found');
+        return Redirect::to('/list')->with('flash_message', 'Course not found!');
     }
 
     return View::make('edit')
@@ -117,7 +115,7 @@ Route::post('/edit', function() {
         $course = Course::findOrFail(Input::get('id'));
     }
     catch(exception $e) {
-        return Redirect::to('/list')->with('flash_message', 'Course not found');
+        return Redirect::to('/list')->with('flash_message', 'Course not found!');
     }
 
     $edit_option = Input::get('edit_options');
@@ -125,7 +123,7 @@ Route::post('/edit', function() {
     $course->save();
 
     $link = Input::get('id');
-    return Redirect::to('/edit/' . $link)->with('flash_message','Your changes have been saved.');
+    return Redirect::to('/edit/' . $link)->with('flash_message','Your changes have been saved!');
 
 });
 
