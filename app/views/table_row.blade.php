@@ -40,9 +40,9 @@
 
     <tr>
     <td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
-    <td>
-        <select class="dropboxlabels" name="course_delivery">
-            <optgroup class="dropdowns">
+    <td class="course_delivery_box">
+        <select name="course_delivery">
+            <optgroup>
                 <option>Select Here</option>
                 <option>...</option>
                 <option>On Campus</option>
@@ -62,8 +62,8 @@
     @include('course_attributes_columns')
 
     <td class="semester_box">
-        <select class="dropboxlabels" name="semester">
-            <optgroup class="dropdowns">
+        <select name="semester">
+            <optgroup>
                 <option>Select Here</option>
                 <option>...</option>
                 <option>Fall</option>
@@ -80,8 +80,8 @@
     <td class="year_box"> {{Form::text('year', '', array('class' => 'year'))}}</td>
     <td class="professors_box"> {{Form::text('professors', '', array('class' => 'professors'))}}</td>
     <td class="status_box">
-        <select class="dropboxlabels" name="status" class="status">
-            <optgroup class="dropdowns">
+        <select name="status" class="status">
+            <optgroup>
                 <option>Select Here</option>
                 <option>...</option>
                 <option>Incomplete</option>
@@ -94,8 +94,8 @@
         </select>
     </td>
     <td class="letter_grade_box">
-        <select class="dropboxlabels" name="letter_grade" class="letter_grade">
-            <optgroup class="dropdowns">
+        <select name="letter_grade" class="letter_grade">
+            <optgroup>
                 <option>Select Here</option>
                 <option>...</option>
                 <option>A</option>
