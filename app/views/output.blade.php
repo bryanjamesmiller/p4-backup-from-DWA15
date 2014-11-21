@@ -62,6 +62,9 @@
              </span>
     </td>
 </tr>
+<tr>
+    <td class = "separator_row" colspan="22">
+</tr>
               @endforeach
 
         <?php

@@ -272,9 +272,14 @@ table,th,td
 line-height: 15px;
     vertical-align: top;
 padding:.5em;
-
 }
 
+.separator_row{
+    background-color: white;
+    height:.5em;
+    border-left-style:hidden;
+    border-right-style: hidden;
+}
 
 .course_number_box{
     min-width:5em;
@@ -311,7 +316,7 @@ padding:.5em;
 
 .semester_box{
     min-width:5em;
-    background-color:#BFBBBC;
+    background-color:pink;
 }
 
 .status_box{
