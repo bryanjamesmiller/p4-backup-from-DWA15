@@ -263,12 +263,16 @@ table,th,td
     background-color:pink;
      line-height: 15px;
     vertical-align: top;
-     height:1em;
+
+     padding:.7em;
+     padding-top:.1em;
+     height:1.5em;
 }
  .edit_or_delete_text{
 line-height: 15px;
     vertical-align: top;
-     height: 1em;
+padding:.5em;
+
 }
 
 
