@@ -275,22 +275,19 @@ table,th,td
 
  .edit_or_delete_rows{
     background-color:pink;
-     line-height: 15px;
     vertical-align: top;
-
-     padding:.7em;
+     padding:.4em;
      padding-top:.1em;
-     height:1.5em;
+     height:1em;
 }
  .edit_or_delete_text{
-line-height: 15px;
     vertical-align: top;
-padding:.5em;
+padding:.4em;
 }
 
 .separator_row{
     background-color: white;
-    height:.5em;
+    height:1em;
     border-left-style:hidden;
     border-right-style: hidden;
 }
