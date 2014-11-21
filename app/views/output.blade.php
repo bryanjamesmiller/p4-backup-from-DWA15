@@ -45,9 +45,9 @@
                        <td class="times_box">  {{{$oneCourse->times  }}}</td>
                        <td class="year_box">  {{{$oneCourse->year  }}}</td>
                        <td class="professors_box">  {{{$oneCourse->professors  }}}</td>
-                       <td class="dropdowns_box" class="status">  {{{$oneCourse->status  }}}</td>
-                       <td class="dropdowns_box" class="letter_grade">  {{{$oneCourse->letter_grade  }}}</td>
-                       <td class="dropdowns_box" class="grade_points">  {{{$oneCourse->grade_points  }}}</td>
+                       <td class="dropdowns_box" class="status_box">  {{{$oneCourse->status  }}}</td>
+                       <td class="dropdowns_box" class="letter_grade_box">  {{{$oneCourse->letter_grade  }}}</td>
+                       <td class="dropdowns_box" class="grade_points_box">  {{{$oneCourse->grade_points  }}}</td>
                        <td class="transfer_credits_box">  {{{$oneCourse->transfer_credits  }}}</td>
                        <td class="hes_credits_box">  {{{ $oneCourse->hes_credits  }}}</td>
                    </tr>
