@@ -41,7 +41,7 @@
     <tr>
     <td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
     <td class="course_delivery_box">
-        <select name="course_delivery">
+        <select name="course_delivery" class="course_delivery">
             <optgroup>
                 <option>Select Here</option>
                 <option>...</option>
@@ -62,7 +62,7 @@
     @include('course_attributes_columns')
 
     <td class="semester_box">
-        <select name="semester">
+        <select name="semester" class="semester">
             <optgroup>
                 <option>Select Here</option>
                 <option>...</option>

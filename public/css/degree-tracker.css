@@ -72,6 +72,7 @@ table,th,td
     font-weight: 900;
 }
 
+
 .name{
     width:17em;
     height:1em;
@@ -80,6 +81,9 @@ table,th,td
     font-size:1em;
 }
 
+/*
+The below are for the INPUT FORMS (with no suffixes)
+*/
 .course_number{
     background-color:pink;
     width:5.9em;
@@ -115,6 +119,11 @@ table,th,td
 }
 
 .status{
+    width:5.9em;
+    background-color:pink;
+}
+
+.letter_grade{
     width:5.9em;
     background-color:pink;
 }
