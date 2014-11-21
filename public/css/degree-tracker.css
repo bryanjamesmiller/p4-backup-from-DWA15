@@ -20,10 +20,24 @@ nav ul li {
     font-size:75%;
 }
 
-a:link, a:visited, a:active, a:hover {
+a:link{
     text-decoration:underline;
     color:black;
 }
+
+a:visited{
+    text-decoration:underline;
+    color:dimgray;
+}
+
+a:hover {
+    text-decoration:underline;
+    color:#980101;
+}
+a:active {
+      text-decoration:underline;
+      color:yellow;
+ }
 
 #wheatImage{
     width:55em;   

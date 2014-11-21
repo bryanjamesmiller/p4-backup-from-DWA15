@@ -55,10 +55,10 @@
 <tr>
     <td class = "edit_or_delete_rows" colspan="22">
              <span>
-                    <a class="edit_or_delete_text" href="/edit/{{$oneCourse->id}}" > edit course information (above)</a>
+                    <a class="edit_or_delete_text" href="/edit/{{$oneCourse->id}}" > Edit course information</a>
              </span>
              <span>
-                    <a class="edit_or_delete_text" href="/delete/{{$oneCourse->id}}" > delete course entry (above)</a>
+                    <a class="edit_or_delete_text" href="/delete/{{$oneCourse->id}}" > Delete course entry </a>
              </span>
     </td>
 </tr>
