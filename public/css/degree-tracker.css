@@ -113,6 +113,11 @@ The below are for the INPUT FORMS (with no suffixes)
     background-color:pink;
 }
 
+.course_attributes{
+    width:5.9em;
+    background-color:pink;
+}
+
 .semester{
     width:5.9em;
     background-color:#BFBBBC;
@@ -311,6 +316,9 @@ padding:.4em;
 {
 }
 
+/**
+These control the pink table rows
+**/
 .course_number_box{
     min-width:5em;
     background-color:pink;
@@ -318,6 +326,7 @@ padding:.4em;
 
 .course_delivery_box{
     min-width:5em;
+    background-color:pink;
 }
 
 .crn_number_box{
