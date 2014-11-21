@@ -85,7 +85,7 @@ table,th,td
 The below are for the INPUT FORMS (with no suffixes)
 */
 .course_number{
-    background-color:pink;
+    background-color:#BFBBBC;
     width:5.9em;
 }
 
@@ -95,12 +95,12 @@ The below are for the INPUT FORMS (with no suffixes)
 
 .crn_number{
     width:5.9em;
-    background-color:pink;
+    background-color:#BFBBBC;
 }
 
 .tuition{
     width:5.9em;
-    background-color:pink;
+    background-color:#BFBBBC;
 }
 
 .section{

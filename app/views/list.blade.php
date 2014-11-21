@@ -11,7 +11,7 @@ List of Courses
 @stop
 
 @section('middle')
-    @include('forms_user_input_table')
+    @include('forms_input')
 @stop
 
 @section('bottom')
