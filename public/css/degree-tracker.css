@@ -67,73 +67,78 @@ table,th,td
 }
 
 .course_number{
-    width:7em;
     background-color:pink;
+    min-width:5em;
 }
 
 .course_delivery{
-    width:10.5em;
+    width:1em;
 }
 
 .crn_number{
-    width:4em;   
+    width:1em;
     background-color:pink;
 }
 
 .tuition{
-    width:4em;
+    width:1em;
     background-color:pink;
 }
 
 .section{
-    width:4em;   
+    width:1em;
     background-color:pink;
 }
 
 .course_title{
-    width:17em;   
+    width:1em;
     background-color:pink;
 }
 
+.semester{
+    width:1em;
+    background-color:#BFBBBC;
+}
+
 .status{
-    width:10em;
+    width:1em;
     background-color:pink;
 }
 
 .days{
-    width:10em;   
+    width:1em;
     background-color:pink;
 }
 
 .times{
-    width:10em;   
+    width:1em;
     background-color:pink;
 }
 
 .year{
-    width:3em;   
+    width:1em;
     background-color:pink;
 }
 
 .professors{
-    width:10em;   
+    width:1em;
     background-color:pink;
 }
 
 .grade_points{
-    width:4em;   
+    width:1em;
     background-color:#980101;
     font-weight:900;
     color:white;
 }
 
 .transfer_credits{
-    width:4em;   
+    width:1em;
     background-color:pink;
 }
 
 .hes_credits{
-    width:4em;   
+    width:3em;
     background-color:pink;
 }
 
@@ -167,6 +172,7 @@ table,th,td
 .course_number_header{
     width:1em;
     background-color:#BFBBBC;
+    min-width:5em;
 }
 
 .course_delivery_header{
@@ -262,4 +268,88 @@ table,th,td
  .edit_or_delete_text{
 line-height: 15px;
     vertical-align: top;
+}
+
+
+.course_number_box{
+    min-width:5em;
+    background-color:pink;
+}
+
+.course_delivery_box{
+    width:1em;
+}
+
+.crn_number_box{
+    width:1em;
+    background-color:pink;
+}
+
+.tuition_box{
+    width:1em;
+    background-color:pink;
+}
+
+.section_box{
+    width:1em;
+    background-color:pink;
+}
+
+.course_title_box{
+    width:1em;
+    background-color:pink;
+}
+
+.semester_box{
+    width:1em;
+    background-color:#BFBBBC;
+}
+
+.status_box{
+    width:1em;
+    background-color:pink;
+}
+
+.days_box{
+    width:1em;
+    background-color:pink;
+}
+
+.times_box{
+    width:1em;
+    background-color:pink;
+}
+
+.year_box{
+    width:1em;
+    background-color:pink;
+}
+
+.professors_box{
+    width:1em;
+    background-color:pink;
+}
+
+.letter_grade_box{
+    width:1em;
+    background-color:#980101;
+    font-weight:900;
+    color:pink;
+}
+
+.grade_points_box{
+    width:1em;
+    background-color:#980101;
+    font-weight:900;
+    color:white;
+}
+
+.transfer_credits_box{
+    width:1em;
+    background-color:pink;
+}
+
+.hes_credits_box{
+    width:3em;
+    background-color:pink;
 }

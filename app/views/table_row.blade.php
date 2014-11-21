@@ -39,9 +39,9 @@
         </thead>
 
     <tr>
-    <td> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
+    <td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
     <td>
-        <select class="dropboxlabels" name="course_delivery" class="course_delivery">
+        <select class="dropboxlabels" name="course_delivery">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -54,15 +54,15 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('crn_number', '', array('class' => 'crn_number'))}}</td>
-    <td> {{Form::text('section', '', array('class' => 'section'))}}</td>
-    <td> {{Form::text('tuition', '', array('class' => 'tuition'))}}</td>
-    <td> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
+    <td class="crn_number_box"> {{Form::text('crn_number', '', array('class' => 'crn_number'))}}</td>
+    <td class="section_box"> {{Form::text('section', '', array('class' => 'section'))}}</td>
+    <td class="tuition_box"> {{Form::text('tuition', '', array('class' => 'tuition'))}}</td>
+    <td class="course_title_box"> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
 
     @include('course_attributes_columns')
 
-    <td>
-        <select class="dropboxlabels" name="semester" class="semester">
+    <td class="semester_box">
+        <select class="dropboxlabels" name="semester">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
                 <option>...</option>
@@ -75,11 +75,11 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('days', '', array('class' => 'days'))}}</td>
-    <td> {{Form::text('times', '', array('class' => 'times'))}}</td>
-    <td> {{Form::text('year', '', array('class' => 'year'))}}</td>
-    <td> {{Form::text('professors', '', array('class' => 'professors'))}}</td>
-    <td>
+    <td class="days_box"> {{Form::text('days', '', array('class' => 'days'))}}</td>
+    <td class="times_box"> {{Form::text('times', '', array('class' => 'times'))}}</td>
+    <td class="year_box"> {{Form::text('year', '', array('class' => 'year'))}}</td>
+    <td class="professors_box"> {{Form::text('professors', '', array('class' => 'professors'))}}</td>
+    <td class="status_box">
         <select class="dropboxlabels" name="status" class="status">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
@@ -93,7 +93,7 @@
             </optgroup>
         </select>
     </td>
-    <td>
+    <td class="letter_grade_box">
         <select class="dropboxlabels" name="letter_grade" class="letter_grade">
             <optgroup class="dropdowns">
                 <option>Select Here</option>
@@ -115,9 +115,9 @@
             </optgroup>
         </select>
     </td>
-    <td> {{Form::text('grade_points', '', array('class' => 'grade_points'))}}</td>
-    <td> {{Form::text('transfer_credits', '', array('class' => 'transfer_credits'))}}</td>
-    <td> {{Form::text('hes_credits', '', array('class' => 'hes_credits'))}}</td>
+    <td class="grade_points_box"> {{Form::text('grade_points', '', array('class' => 'grade_points'))}}</td>
+    <td class="transfer_credits_box"> {{Form::text('transfer_credits', '', array('class' => 'transfer_credits'))}}</td>
+    <td class="hes_credits_box"> {{Form::text('hes_credits', '', array('class' => 'hes_credits'))}}</td>
 </tr>
 </table>
 {{ Form::submit('Add Course')}}

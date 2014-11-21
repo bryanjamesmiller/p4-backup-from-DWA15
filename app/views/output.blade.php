@@ -29,27 +29,27 @@
     if($allCourses->isEmpty() != TRUE) {
         ?>
         @foreach($allCourses as $oneCourse)
-                <td class="course_number">{{{$oneCourse->course_number}}}</td>
-                       <td class="course_delivery" class="dropdowns">  {{{$oneCourse->course_delivery }}} </td>
-                       <td class="crn_number">  {{{$oneCourse->crn_number }}}</td>
-                       <td class="section">  {{{ $oneCourse->section  }}}</td>
-                       <td class="tuition">  {{{$oneCourse->tuition  }}}</td>
-                       <td class="course_title">  {{{$oneCourse->course_title  }}}</td>
-                       <td class="dropdowns">  {{{$oneCourse->course_attributes_1  }}} </td>
-                       <td class="dropdowns">  {{{$oneCourse->course_attributes_2  }}}</td>
-                       <td class="dropdowns">  {{{$oneCourse->course_attributes_3  }}}</td>
-                       <td class="dropdowns">  {{{$oneCourse->course_attributes_4  }}}</td>
-                       <td class="dropdowns">  {{{$oneCourse->course_attributes_5  }}}</td>
-                       <td class="dropdowns" class="semester">  {{{$oneCourse->semester  }}}</td>
-                       <td class="days">  {{{$oneCourse->days  }}}</td>
-                       <td class="times">  {{{$oneCourse->times  }}}</td>
-                       <td class="year">  {{{$oneCourse->year  }}}</td>
-                       <td class="professors">  {{{$oneCourse->professors  }}}</td>
-                       <td class="dropdowns" class="status">  {{{$oneCourse->status  }}}</td>
-                       <td class="dropdowns" class="letter_grade">  {{{$oneCourse->letter_grade  }}}</td>
-                       <td class="dropdowns" class="grade_points">  {{{$oneCourse->grade_points  }}}</td>
-                       <td class="transfer_credits">  {{{$oneCourse->transfer_credits  }}}</td>
-                       <td class="hes_credits">  {{{ $oneCourse->hes_credits  }}}</td>
+                       <td class="course_number_box">{{{$oneCourse->course_number}}}</td>
+                       <td class="course_delivery_box" class="dropdowns">  {{{$oneCourse->course_delivery }}} </td>
+                       <td class="crn_number_box">  {{{$oneCourse->crn_number }}}</td>
+                       <td class="section_box">  {{{ $oneCourse->section  }}}</td>
+                       <td class="tuition_box">  {{{$oneCourse->tuition  }}}</td>
+                       <td class="course_title_box">  {{{$oneCourse->course_title  }}}</td>
+                       <td class="dropdowns_box">  {{{$oneCourse->course_attributes_1  }}} </td>
+                       <td class="dropdowns_box">  {{{$oneCourse->course_attributes_2  }}}</td>
+                       <td class="dropdowns_box">  {{{$oneCourse->course_attributes_3  }}}</td>
+                       <td class="dropdowns_box">  {{{$oneCourse->course_attributes_4  }}}</td>
+                       <td class="dropdowns_box">  {{{$oneCourse->course_attributes_5  }}}</td>
+                       <td class="dropdowns_box">  {{{$oneCourse->semester  }}}</td>
+                       <td class="days_box">  {{{$oneCourse->days  }}}</td>
+                       <td class="times_box">  {{{$oneCourse->times  }}}</td>
+                       <td class="year_box">  {{{$oneCourse->year  }}}</td>
+                       <td class="professors_box">  {{{$oneCourse->professors  }}}</td>
+                       <td class="dropdowns_box" class="status">  {{{$oneCourse->status  }}}</td>
+                       <td class="dropdowns_box" class="letter_grade">  {{{$oneCourse->letter_grade  }}}</td>
+                       <td class="dropdowns_box" class="grade_points">  {{{$oneCourse->grade_points  }}}</td>
+                       <td class="transfer_credits_box">  {{{$oneCourse->transfer_credits  }}}</td>
+                       <td class="hes_credits_box">  {{{ $oneCourse->hes_credits  }}}</td>
                    </tr>
 
                    <tr>
