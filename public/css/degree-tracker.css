@@ -68,7 +68,7 @@ table,th,td
 
 .course_number{
     background-color:pink;
-    min-width:5em;
+    width:5em;
 }
 
 .course_delivery{
@@ -172,7 +172,7 @@ table,th,td
 .course_number_header{
     width:1em;
     background-color:#BFBBBC;
-    min-width:5em;
+    min-width:4em;
 }
 
 .course_delivery_header{
@@ -272,7 +272,7 @@ line-height: 15px;
 
 
 .course_number_box{
-    min-width:5em;
+    min-width:4em;
     background-color:pink;
 }
 
