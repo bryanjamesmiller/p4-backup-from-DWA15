@@ -295,6 +295,16 @@ padding:.5em;
     border-right-style: hidden;
 }
 
+.bottom_separator_row{
+    background-color: white;
+    height:1px;
+    border-style:hidden;
+}
+
+.data_row
+{
+}
+
 .course_number_box{
     min-width:5em;
     background-color:pink;

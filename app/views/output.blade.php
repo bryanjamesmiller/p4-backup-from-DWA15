@@ -1,9 +1,11 @@
-
-
 <table>
-    <thead>
+    <?php
+    if($allCourses->isEmpty() != TRUE) {
+        ?>
+        @foreach($allCourses as $oneCourse)
+
     <tr>
-                <th class="course_number_header">Course Number</th>
+              <th class="course_number_header">Course Number</th>
               <th class="course_delivery_header">Course Delivery</th>
               <th class="crn_number_header">CRN#</th>
               <th  class="section_header">Section</th>
@@ -20,15 +22,8 @@
               <th class="grade_points_header">Grade Points</th>
               <th class="transfer_credits_header">Transfer Credits</th>
               <th class="hes_credits_header">HES Credits</th>
-
     </tr>
-    </thead>
-    <tr>
-
-    <?php
-    if($allCourses->isEmpty() != TRUE) {
-        ?>
-        @foreach($allCourses as $oneCourse)
+    <tr">
 <td class="course_number_box">{{{$oneCourse->course_number}}}</td>
 <td class="course_delivery_box">  {{{$oneCourse->course_delivery }}} </td>
 <td class="crn_number_box">  {{{$oneCourse->crn_number }}}</td>
@@ -52,7 +47,7 @@
 <td class="hes_credits_box">  {{{ $oneCourse->hes_credits  }}}</td>
 </tr>
 
-<tr>
+<tr class="data_row">
     <td class = "edit_or_delete_rows" colspan="22">
              <span>
                     <a class="edit_or_delete_text" href="/edit/{{$oneCourse->id}}" > Edit course information</a>
@@ -62,11 +57,13 @@
              </span>
     </td>
 </tr>
-<tr>
-    <td class = "separator_row" colspan="22">
+<tr class = "separator_row">
+    <td  colspan="22">
 </tr>
               @endforeach
-
+<tr class = "bottom_separator_row">
+    <td  colspan="22">
+</tr>
         <?php
     }
     else {
