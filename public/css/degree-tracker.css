@@ -333,16 +333,16 @@ line-height: 15px;
 
 .letter_grade_box{
     min-width:5em;
-    background-color:#980101;
+    background-color:pink;
     font-weight:900;
-    color:pink;
+
 }
 
 .grade_points_box{
     min-width:5em;
     background-color:#980101;
     font-weight:900;
-    color:white;
+    color:pink;
 }
 
 .transfer_credits_box{
