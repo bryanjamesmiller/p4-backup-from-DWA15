@@ -12,7 +12,7 @@ Degree Tracker PET
 @stop
 
 @section('middle')
-    @include('table_row')
+    @include('forms_table_row')
 @stop
 
 @section('bottom')
