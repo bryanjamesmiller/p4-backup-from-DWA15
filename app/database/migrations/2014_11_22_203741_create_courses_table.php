@@ -22,11 +22,11 @@ class CreateCoursesTable extends Migration {
             # keep track of changes to a row
             $table->timestamps();
 
-            #This is the Foreign Key to keep connect this database to the user database
+            #This is the Foreign Key to keep connect this database to the accounts database
             #Must be an unsigned integer pointing to the auto-incrementing id field of
-            #the users database.
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            #the accounts database.  (The field account_id doesn't need to/isn't supposed to exist in the accounts database.  Just the "id" field does.).
+            $table->integer('account_id')->unsigned();
+            $table->foreign('account_id')->references('id')->on('accounts');
 
             # The rest of the fields...
             $table->string('course_number');

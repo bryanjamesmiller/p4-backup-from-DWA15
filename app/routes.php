@@ -31,7 +31,6 @@ Route::post('/signup',
         function() {
 
             $user = new User;
-            $user->student_name    = Input::get('student_name');
             $user->email    = Input::get('email');
             $user->password = Hash::make(Input::get('password'));
 
@@ -47,6 +46,12 @@ Route::post('/signup',
             # Log the user in
             Auth::login($user);
 
+
+            #Create an Account for the user
+            $account = new Account;
+            $account ->student_name    = Input::get('student_name');
+            $account ->email    = Input::get('email');
+     //       $account ->degree_program =
             return Redirect::to('/list')->with('flash_message', 'Welcome to Degree Tracker!');
 
         }
@@ -153,7 +158,7 @@ Route::post('/list', array('before' => 'csrf', function() {
     $student_user = new User;
     $student_user->student_name = Auth::user()->student_name;
     $student_user->save();
-    $course->user()->associate($student_user);
+    $course->student_user()->associate($student_user);
     $course->save();
 
     # The all() method will fetch all the rows from a Model/table
