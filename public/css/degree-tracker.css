@@ -83,24 +83,26 @@ table,th,td
 
 /*
 The below are for the INPUT FORMS (with no suffixes)
+They have pink backgrounds, except for the drop-down boxes, which are grey
 */
 .course_number{
-    background-color:#BFBBBC;
+    background-color:pink;
     width:5.9em;
 }
 
 .course_delivery{
     width:5.9em;
+    background-color:pink;
 }
 
 .crn_number{
     width:5.9em;
-    background-color:#BFBBBC;
+    background-color:pink;
 }
 
 .tuition{
     width:5.9em;
-    background-color:#BFBBBC;
+    background-color:pink;
 }
 
 .section{
@@ -115,12 +117,11 @@ The below are for the INPUT FORMS (with no suffixes)
 
 .course_attributes{
     width:5.9em;
-    background-color:pink;
-}
+    background-color:pink;}
 
 .semester{
     width:5.9em;
-    background-color:#BFBBBC;
+    background-color:pink;
 }
 
 .status{
@@ -180,23 +181,14 @@ The below are for the INPUT FORMS (with no suffixes)
     padding:5px;
 }
 
-.dropboxlabels{
-    /*This changes the outside of all of the dropboxes*/
-    font-family: 'Open Sans', sans-serif;   
-    font-weight:500;
-}
-
-.dropdowns{  
-    /*This changes the inside of all of the dropboxes*/
-    font-family: 'Open Sans', sans-serif;
-    font-weight:500;
-}
-
 .textboxes{
     font-family: 'Open Sans', sans-serif;
     font-weight:500;
 }
 
+/*
+These are for the grey headers on the tables with the _header suffixes
+*/
 .course_number_header{
     background-color:#BFBBBC;
     min-width:5em;
