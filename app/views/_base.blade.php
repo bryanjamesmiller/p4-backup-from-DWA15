@@ -23,12 +23,12 @@
 
 <div id="heading">
    <h1 id="wheatImage">
-     <img src="images/wheat logo.PNG" alt="wheat logo">
+     <img src="/images/wheat logo.PNG" alt="wheat logo">
 
    </h1>
    <caption>
         <h1>
-         Student Name:
+            <div id="studentName"> Student Name:</div>
         </h1>
    </caption>
 </div>
