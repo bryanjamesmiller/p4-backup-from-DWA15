@@ -152,6 +152,7 @@ Route::post('/list', array('before' => 'csrf', function() {
     #add in the student's database so we can pull up one student's courses at a time
     $student_user = new User;
     $student_user->student_name = Auth::user()->student_name;
+    $student_user->save();
     $course->user()->associate($student_user);
     $course->save();
 
