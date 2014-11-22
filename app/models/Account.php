@@ -6,10 +6,8 @@
  * Time: 3:11 PM
  */
 
-class Course extends Eloquent
+class Account extends Eloquent
 {
-    protected $guarded = array('id');
-
     public function course()
     {
         # User has many Courses

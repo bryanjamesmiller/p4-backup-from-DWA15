@@ -7,10 +7,9 @@
  */
 
 class Course extends Eloquent {
-    protected $guarded = array('id');
 
-    public function user(){
-        #Course belongs to User
+    public function account(){
+        #Course belongs to Account
         # Defines an inverse one-to-many relationship
         return $this->belongsTo('Account');
     }
