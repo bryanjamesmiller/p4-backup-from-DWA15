@@ -101,7 +101,7 @@ Route::get('/list', function(){
 
 Route::post('/list', array('before' => 'csrf', function() {
     // Output all current courses that are saved in the database
-    $student_name = Input::get('student_name');
+
     $course_number = Input::get('course_number');
     $course_delivery = Input::get('course_delivery');
     $crn_number = Input::get('crn_number');
@@ -124,9 +124,9 @@ Route::post('/list', array('before' => 'csrf', function() {
     $grade_points = Input::get('grade_points');
     $transfer_credits = Input::get('transfer_credits');
     $hes_credits = Input::get('hes_credits');
+
     $course = new Course();
 
-    $course->student_name = $student_name;
     $course->course_number = $course_number;
     $course->course_delivery = $course_delivery;
     $course->crn_number = $crn_number;
