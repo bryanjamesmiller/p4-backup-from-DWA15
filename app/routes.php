@@ -52,7 +52,7 @@ Route::post('/signup',
             $account ->student_name    = Input::get('student_name');
             $account ->email    = Input::get('email');
      //       $account ->degree_program =
-            return Redirect::to('/list')->with('flash_message', 'Welcome to Degree Tracker!');
+            return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
 
         }
     )
@@ -75,7 +75,7 @@ Route::post('/login',
             $credentials = Input::only('email', 'password');
 
             if (Auth::attempt($credentials, $remember = true)) {
-                return Redirect::intended('/')->with('flash_message', 'Welcome Back!');
+                return Redirect::intended('/list')->with('flash_message', 'Welcome Back!');
             }
             else {
                 return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
