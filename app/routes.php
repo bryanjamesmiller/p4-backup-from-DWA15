@@ -155,10 +155,10 @@ Route::post('/list', array('before' => 'csrf', function() {
     $course->hes_credits = $hes_credits;
 
     #add in the student's database so we can pull up one student's courses at a time
-    $student_user = new User;
-    $student_user->student_name = Auth::user()->student_name;
-    $student_user->save();
-    $course->student_user()->associate($student_user);
+ //   $student_user = new User;
+ //   $student_user->student_name = Auth::user()->student_name;
+ //   $student_user->save();
+ //   $course->student_user()->associate($student_user);
     $course->save();
 
     # The all() method will fetch all the rows from a Model/table
