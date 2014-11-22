@@ -16,10 +16,23 @@
     @endif
 
     @if(Auth::check())
-        <a href='/logout'>Log out {{ Auth::user()->email; }}</a>
+        <div class="login_logout_signup"><a href='/logout'>Log out {{ Auth::user()->email; }}</a></div>
     @else
-        <a href='/signup'>Sign up</a> or <a href='/login'>Log in</a>
+        <div class="login_logout_signup"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
     @endif
+
+<div id="heading">
+   <h1 id="wheatImage">
+     <img src="images/wheat logo.PNG" alt="wheat logo">
+
+   </h1>
+   <caption>
+        <h1>
+         Student Name:
+        </h1>
+   </caption>
+</div>
+
 
     @yield('top')
 

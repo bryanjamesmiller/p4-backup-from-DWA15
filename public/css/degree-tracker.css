@@ -72,6 +72,9 @@ table,th,td
     font-weight: 900;
 }
 
+.login_logout_signup{
+    padding-top:1.5em;
+}
 
 .name{
     width:17em;

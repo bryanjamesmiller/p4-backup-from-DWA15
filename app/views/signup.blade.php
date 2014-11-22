@@ -1,4 +1,18 @@
-<h1>Sign up</h1>
+@extends('_base')
+
+@section('head')
+
+@stop
+
+@section('title')
+Degree Tracker PET
+@stop
+
+@section('top')
+@stop
+
+@section('middle')
+<h2>Sign up<h2>
 
 {{ Form::open(array('url' => '/signup')) }}
 
@@ -11,3 +25,9 @@
     {{ Form::submit('Submit') }}
 
 {{ Form::close() }}
+@stop
+
+@section('bottom')
+
+@stop
+

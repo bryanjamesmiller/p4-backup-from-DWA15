@@ -1,19 +1,4 @@
-<div id="heading">
-   <h1 id="wheatImage">
-     <img src="images/wheat logo.PNG" alt="wheat logo">
 {{ Form::open(array('url' => '/list')) }}
-   </h1>
-       <caption>
-          <h1>
-            {{ Form::label('student_name','Student Name') }}
-		    {{ Form::text('student_name'); }}
-
-            {{ Form::label('student_password','Password') }}
-	    	{{ Form::text('student_password'); }}
-            </h1>
-        </caption>
-</div>
-
    <table>
         <thead>
         <tr>

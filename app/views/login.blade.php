@@ -1,4 +1,18 @@
-<h1>Log in</h1>
+@extends('_base')
+
+@section('head')
+
+@stop
+
+@section('title')
+Degree Tracker PET
+@stop
+
+@section('top')
+@stop
+
+@section('middle')
+<h2>Log in</h2>
 
 {{ Form::open(array('url' => '/login')) }}
 
@@ -11,3 +25,8 @@
     {{ Form::submit('Submit') }}
 
 {{ Form::close() }}
+@stop
+
+@section('bottom')
+
+@stop

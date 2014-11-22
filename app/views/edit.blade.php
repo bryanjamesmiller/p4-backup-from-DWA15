@@ -9,7 +9,6 @@ Edit Course Information
 @stop
 
 @section('top')
- <img src="/images/wheat logo.PNG" alt="wheat logo">
 @stop
 
 @section('middle')
@@ -36,27 +35,27 @@ Edit Course Information
     </tr>
     </thead>
     <tr>
-        <td class="course_number">{{{$course->course_number}}}</td>
-        <td class="course_delivery" class="dropdowns">  {{{$course->course_delivery }}} </td>
-        <td class="crn_number">  {{{$course->crn_number }}}</td>
-        <td class="section">  {{{ $course->section  }}}</td>
-        <td class="tuition">  {{{$course->tuition  }}}</td>
-        <td class="course_title">  {{{$course->course_title  }}}</td>
-        <td class="dropdowns">  {{{$course->course_attributes_1  }}} </td>
-        <td class="dropdowns">  {{{$course->course_attributes_2  }}}</td>
-        <td class="dropdowns">  {{{$course->course_attributes_3  }}}</td>
-        <td class="dropdowns">  {{{$course->course_attributes_4  }}}</td>
-        <td class="dropdowns">  {{{$course->course_attributes_5  }}}</td>
-        <td class="dropdowns" class="semester">  {{{$course->semester  }}}</td>
-        <td class="days">  {{{$course->days  }}}</td>
-        <td class="times">  {{{$course->times  }}}</td>
-        <td class="year">  {{{$course->year  }}}</td>
-        <td class="professors">  {{{$course->professors  }}}</td>
-        <td class="dropdowns" class="status">  {{{$course->status  }}}</td>
-        <td class="dropdowns" class="letter_grade">  {{{$course->letter_grade  }}}</td>
-        <td class="dropdowns" class="grade_points">  {{{$course->grade_points  }}}</td>
-        <td class="transfer_credits">  {{{$course->transfer_credits  }}}</td>
-        <td class="hes_credits">  {{{ $course->hes_credits  }}}</td>
+        <td class="course_number_box">{{{$course->course_number}}}</td>
+        <td class="course_delivery_box">  {{{$course->course_delivery }}} </td>
+        <td class="crn_number_box">  {{{$course->crn_number }}}</td>
+        <td class="section_box">  {{{ $course->section  }}}</td>
+        <td class="tuition_box">  {{{$course->tuition  }}}</td>
+        <td class="course_title_box">  {{{$course->course_title  }}}</td>
+        <td class="course_attributes_box">  {{{$course->course_attributes_1  }}} </td>
+        <td class="course_attributes_box">  {{{$course->course_attributes_2  }}}</td>
+        <td class="course_attributes_box">  {{{$course->course_attributes_3  }}}</td>
+        <td class="course_attributes_box">  {{{$course->course_attributes_4  }}}</td>
+        <td class="course_attributes_box">  {{{$course->course_attributes_5  }}}</td>
+        <td class="semester_box">  {{{$course->semester  }}}</td>
+        <td class="days_box">  {{{$course->days  }}}</td>
+        <td class="times_box">  {{{$course->times  }}}</td>
+        <td class="year_box">  {{{$course->year  }}}</td>
+        <td class="professors_box">  {{{$course->professors  }}}</td>
+        <td class="status_box">  {{{$course->status  }}}</td>
+        <td class="letter_grade_box">  {{{$course->letter_grade  }}}</td>
+        <td class="grade_points_box">  {{{$course->grade_points  }}}</td>
+        <td class="transfer_credits_box">  {{{$course->transfer_credits  }}}</td>
+        <td class="hes_credits_box">  {{{ $course->hes_credits  }}}</td>
     </tr>
 </table>
 
@@ -64,8 +63,8 @@ Edit Course Information
 <p>Select the item to edit:</p>
 
 {{ Form::open(array('url' => 'edit'))}}
-<select class="dropboxlabels" name="edit_options" id="edit_options">
-            <optgroup class="dropdowns">
+<select  name="edit_options">
+            <optgroup>
                 <option value="course_number">Course Number</option>
                 <option value="course_delivery">Course Delivery</option>
                 <option value="crn_number">CRN#</option>
