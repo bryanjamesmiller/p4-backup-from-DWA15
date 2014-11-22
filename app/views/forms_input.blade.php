@@ -1,20 +1,19 @@
 <div id="heading">
-        <h1 id="wheatImage">
-            <img src="images/wheat logo.PNG" alt="wheat logo">
+   <h1 id="wheatImage">
+     <img src="images/wheat logo.PNG" alt="wheat logo">
 {{ Form::open(array('url' => '/list')) }}
-        </h1>
-        <caption>
-            <h1>
-        {{ Form::label('student_name','Student Name') }}
-		{{ Form::text('student_name'); }}
+   </h1>
+       <caption>
+          <h1>
+            {{ Form::label('student_name','Student Name') }}
+		    {{ Form::text('student_name'); }}
 
-{{-- the password value is not in the database as it currently is pending either Susan's login code she's going to give us, or maybe I can include it in database #2 and have it talk to database #1, or I could just add another migration file with updating the original database with 1 new value just like in Susan's class notes in migrations in lecture 8 I think. --}}
-        {{ Form::label('student_password','Password') }}
-		{{ Form::text('student_password'); }}
-
+            {{ Form::label('student_password','Password') }}
+	    	{{ Form::text('student_password'); }}
             </h1>
         </caption>
 </div>
+
    <table>
         <thead>
         <tr>
