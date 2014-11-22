@@ -1,4 +1,4 @@
-@extends('_base')
+@extends('_base_nameless')
 
 @section('head')
 
@@ -15,6 +15,9 @@ Degree Tracker PET
 <h2>Sign up</h2>
 
 {{ Form::open(array('url' => '/signup')) }}
+
+    Student's Name<br>
+    {{ Form::text('student_name') }}<br><br>
 
     Email<br>
     {{ Form::text('email') }}<br><br>

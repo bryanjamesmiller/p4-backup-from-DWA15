@@ -31,6 +31,7 @@ Route::post('/signup',
         function() {
 
             $user = new User;
+            $user->student_name    = Input::get('student_name');
             $user->email    = Input::get('email');
             $user->password = Hash::make(Input::get('password'));
 

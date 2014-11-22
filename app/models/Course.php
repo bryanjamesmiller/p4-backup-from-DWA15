@@ -8,4 +8,10 @@
 
 class Course extends Eloquent {
     protected $guarded = array('id');
+
+    public function user(){
+        #Course belongs to User
+        # Defines an inverse one-to-many relationship
+        return $this->belongsTo('User');
+    }
 }

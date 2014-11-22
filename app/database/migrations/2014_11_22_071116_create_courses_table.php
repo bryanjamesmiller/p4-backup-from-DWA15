@@ -22,8 +22,13 @@ class CreateCoursesTable extends Migration {
             # keep track of changes to a row
             $table->timestamps();
 
+            #This is the Foreign Key to keep connect this database to the user database
+            #Must be an unsigned integer pointing to the auto-incrementing id field of
+            #the users database.
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+
             # The rest of the fields...
-            $table->string('student_name');
             $table->string('course_number');
             $table->string('course_delivery');
             $table->integer('crn_number');
