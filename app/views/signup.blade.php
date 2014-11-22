@@ -12,7 +12,7 @@ Degree Tracker PET
 @stop
 
 @section('middle')
-<h2>Sign up<h2>
+<h2>Sign up</h2>
 
 {{ Form::open(array('url' => '/signup')) }}
 
