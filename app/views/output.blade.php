@@ -3,8 +3,11 @@
     if($allCourses->isEmpty() != TRUE) {
         ?>
         @foreach($allCourses as $oneCourse)
-
-    <tr>
+<?php
+     $currentAccount = $oneCourse->account;
+     if($currentAccount->student_name == Auth::user()->student_name)
+{
+echo '<tr>
               <th class="course_number_header">Course Number</th>
               <th class="course_delivery_header">Course Delivery</th>
               <th class="crn_number_header">CRN#</th>
@@ -23,8 +26,8 @@
               <th class="transfer_credits_header">Transfer Credits</th>
               <th class="hes_credits_header">HES Credits</th>
     </tr>
-    <tr">
-<td class="course_number_box">{{{$oneCourse->course_number}}}</td>
+    <tr>
+<td class="course_number_box">' . $oneCourse->course_number . '</td>
 <td class="course_delivery_box">  {{{$oneCourse->course_delivery }}} </td>
 <td class="crn_number_box">  {{{$oneCourse->crn_number }}}</td>
 <td class="section_box">  {{{ $oneCourse->section  }}}</td>
@@ -60,6 +63,9 @@
 <tr class = "separator_row">
     <td  colspan="22">
 </tr>
+  '; }
+?>
+
               @endforeach
 <tr class = "bottom_separator_row">
     <td  colspan="22">
@@ -67,6 +73,6 @@
         <?php
     }
     else {
-        return 'No courses found';
+        echo '<p>No courses found<p>';
     }
    ?>
