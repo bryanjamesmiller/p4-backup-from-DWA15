@@ -31,6 +31,7 @@ Route::post('/signup',
         function() {
 
             $user = new User;
+            $user->student_name    = Input::get('student_name');
             $user->email    = Input::get('email');
             $user->password = Hash::make(Input::get('password'));
 
@@ -51,7 +52,9 @@ Route::post('/signup',
             $account = new Account;
             $account ->student_name    = Input::get('student_name');
             $account ->email    = Input::get('email');
-     //       $account ->degree_program =
+            //       $account ->degree_program =
+            $account->save();
+
             return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
 
         }
