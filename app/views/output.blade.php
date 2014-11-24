@@ -27,27 +27,27 @@ echo '<tr>
               <th class="hes_credits_header">HES Credits</th>
     </tr>
     <tr>
-<td class="course_number_box">' . $oneCourse->course_number . '</td>
-<td class="course_delivery_box">  {{{$oneCourse->course_delivery }}} </td>
-<td class="crn_number_box">  {{{$oneCourse->crn_number }}}</td>
-<td class="section_box">  {{{ $oneCourse->section  }}}</td>
-<td class="tuition_box">  {{{$oneCourse->tuition  }}}</td>
-<td class="course_title_box">  {{{$oneCourse->course_title  }}}</td>
-<td class="course_attributes_box">  {{{$oneCourse->course_attributes_1  }}} </td>
-<td class="course_attributes_box">  {{{$oneCourse->course_attributes_2  }}}</td>
-<td class="course_attributes_box">  {{{$oneCourse->course_attributes_3  }}}</td>
-<td class="course_attributes_box">  {{{$oneCourse->course_attributes_4  }}}</td>
-<td class="course_attributes_box">  {{{$oneCourse->course_attributes_5  }}}</td>
-<td class="semester_box">  {{{$oneCourse->semester  }}}</td>
-<td class="days_box">  {{{$oneCourse->days  }}}</td>
-<td class="times_box">  {{{$oneCourse->times  }}}</td>
-<td class="year_box">  {{{$oneCourse->year  }}}</td>
-<td class="professors_box">  {{{$oneCourse->professors  }}}</td>
-<td class=class="status_box">  {{{$oneCourse->status  }}}</td>
-<td class="letter_grade_box">  {{{$oneCourse->letter_grade  }}}</td>
-<td class="grade_points_box">  {{{$oneCourse->grade_points  }}}</td>
-<td class="transfer_credits_box">  {{{$oneCourse->transfer_credits  }}}</td>
-<td class="hes_credits_box">  {{{ $oneCourse->hes_credits  }}}</td>
+<td class="course_number_box">' ?> {{{$oneCourse->course_number}}} <?php echo '</td>
+<td class="course_delivery_box">' ?>  {{{$oneCourse->course_delivery }}} <?php echo '</td>
+<td class="crn_number_box">' ?>  {{{$oneCourse->crn_number }}}<?php echo '</td>
+<td class="section_box">' ?>  {{{ $oneCourse->section  }}}<?php echo '</td>
+<td class="tuition_box">' ?>  {{{$oneCourse->tuition  }}}<?php echo '</td>
+<td class="course_title_box">' ?>  {{{$oneCourse->course_title  }}}<?php echo '</td>
+<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_1  }}}<?php echo ' </td>
+<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_2  }}}<?php echo '</td>
+<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_3  }}}<?php echo '</td>
+<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_4  }}}<?php echo '</td>
+<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_5  }}}<?php echo '</td>
+<td class="semester_box">' ?>  {{{$oneCourse->semester  }}}<?php echo '</td>
+<td class="days_box">' ?>  {{{$oneCourse->days  }}}<?php echo '</td>
+<td class="times_box">' ?>  {{{$oneCourse->times  }}}<?php echo '</td>
+<td class="year_box">' ?>  {{{$oneCourse->year  }}}<?php echo '</td>
+<td class="professors_box">' ?>  {{{$oneCourse->professors  }}}<?php echo '</td>
+<td class=class="status_box">' ?>  {{{$oneCourse->status  }}}<?php echo '</td>
+<td class="letter_grade_box">' ?>  {{{$oneCourse->letter_grade  }}}<?php echo '</td>
+<td class="grade_points_box">' ?>  {{{$oneCourse->grade_points  }}}<?php echo '</td>
+<td class="transfer_credits_box">' ?>  {{{$oneCourse->transfer_credits  }}}<?php echo '</td>
+<td class="hes_credits_box">' ?>  {{{ $oneCourse->hes_credits  }}}<?php echo '</td>
 </tr>
 
 <tr class="data_row">
