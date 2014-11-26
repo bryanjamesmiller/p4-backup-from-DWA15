@@ -11,12 +11,33 @@
 |
 */
 
+/*
+Route::get('/course', 'CourseController@index');
+Route::get('/course/create', 'CourseController@create');
+Route::post('/course', 'CourseController@store');
+Route::get('/course/{course_id}', 'CourseController@show');
+Route::get('/course/{course_id}/edit', 'CourseController@edit');
+Route::put('/course/{course_id}', 'CourseController@update');
+Route::delete('/course/{course_id}', 'CourseController@destroy');
 
+Route::get('/account', 'AccountController@index');
+Route::get('/account/create', 'AccountController@create');
+Route::post('/account', 'AccountController@store');
+Route::get('/account/{account_id}', 'AccountController@show');
+Route::get('/account/{account_id}/edit', 'AccountController@edit');
+Route::put('/account/{account_id}', 'AccountController@update');
+Route::delete('/account/{account_id}', 'AccountController@destroy');
 
-Route::get('/', function()
-{
-    return View::make('index');
-});
+Route::get('/user', 'UserController@index');
+Route::get('/user/create', 'UserController@create');
+Route::post('/user', 'UserController@store');
+Route::get('/user/{user_id}', 'UserController@show');
+Route::get('/user/{user_id}/edit', 'UserController@edit');
+Route::put('/user/{user_id}', 'UserController@update');
+Route::delete('/user/{user_id}', 'UserController@destroy');
+*/
+
+Route::get('/', 'IndexController@getIndex');
 
 Route::get('/signup',
     array(
