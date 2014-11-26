@@ -2,6 +2,52 @@
 
 class UserController extends \BaseController {
 
+    public function __construct(){
+        # Make sure to call the parent construct from BaseController or else
+        # it won't get called if we define one here (unlike Java).  We need
+        # the parent to be called because we have csrf protection in it!
+        parent::__construct();
+
+        # Only allow guests access to the login or signup pages
+        $this->beforeFilter('guest',
+            array(
+                'only' => array('getLogin', 'getSignup')
+            ));
+    }
+
+    public function getSignup(){
+        return View::make('signup');
+    }
+
+    public function postSignup(){
+        $user = new User;
+        $user->student_name    = Input::get('student_name');
+        $user->email    = Input::get('email');
+        $user->password = Hash::make(Input::get('password'));
+
+        # Try to add the user
+        try {
+            $user->save();
+        }
+        # If signup attempt fails
+        catch (Exception $e) {
+            return Redirect::to('/signup')->with('flash_message', 'Sign up failed; please try again.')->withInput();
+        }
+
+        # Log the user in
+        Auth::login($user);
+
+        #Create an Account for the user
+        $account = new Account;
+        $account ->student_name = Input::get('student_name');
+        $account ->email = Input::get('email');
+        $account->degree_program = Input::get('degree_program');
+        $account->concentration = Input::get('concentration');
+        $account->save();
+
+        return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *

@@ -39,51 +39,8 @@ Route::delete('/user/{user_id}', 'UserController@destroy');
 
 Route::get('/', 'IndexController@getIndex');
 
-Route::get('/signup',
-    array(
-        'before' => 'guest',
-        function() {
-            return View::make('signup');
-        }
-    )
-);
-
-Route::post('/signup',
-    array(
-        'before' => 'csrf',
-        function() {
-
-            $user = new User;
-            $user->student_name    = Input::get('student_name');
-            $user->email    = Input::get('email');
-            $user->password = Hash::make(Input::get('password'));
-
-            # Try to add the user
-            try {
-                $user->save();
-            }
-                # Fail
-            catch (Exception $e) {
-                return Redirect::to('/signup')->with('flash_message', 'Sign up failed; please try again.')->withInput();
-            }
-
-            # Log the user in
-            Auth::login($user);
-
-
-            #Create an Account for the user
-            $account = new Account;
-            $account ->student_name = Input::get('student_name');
-            $account ->email = Input::get('email');
-            $account->degree_program = Input::get('degree_program');
-            $account->concentration = Input::get('concentration');
-            $account->save();
-
-            return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
-
-        }
-    )
-);
+Route::get('/signup', 'UserController@getSignup');
+Route::post('/signup', 'UserController@postSignup');
 
 Route::get('/login',
     array(
