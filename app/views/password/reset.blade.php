@@ -12,6 +12,7 @@ Degree Tracker PET password reset
 @stop
 
 @section('middle')
+<h2>To reset your password:</h2>
 <div class="font_wrapper_sign_in_log_in">
 <form action="{{ action('RemindersController@postReset') }}" method="POST">
     <input type="hidden" name="token" value="{{ $token }}">
