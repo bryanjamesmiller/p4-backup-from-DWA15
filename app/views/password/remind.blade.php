@@ -1,8 +1,27 @@
+@extends('_base_nameless')
+
+@section('head')
+
+@stop
+
+@section('title')
+Degree Tracker PET password reset
+@stop
+
+@section('top')
+@stop
+
+@section('middle')
 <div class="font_wrapper_sign_in_log_in">
-Would you like to reset your password?<br>
+<h2>Would you like to reset your password?</h2><br>
 Please enter your email address:
 <form action="{{ action('RemindersController@postRemind') }}" method="POST">
     <input type="email" name="email"><br>
-    <input type="submit" value="Email Link to Create New Password">
+    <input type="submit" value="Email me a link to create a new password">
 </form>
 </div>
+@stop
+
+@section('bottom')
+
+@stop
