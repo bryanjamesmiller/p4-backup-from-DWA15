@@ -1,3 +1,4 @@
+<div class="font_wrapper">
 {{ Form::open(array('url' => '/list')) }}
    <table>
         <thead>
@@ -106,3 +107,4 @@
 </table>
 {{ Form::submit('Add Course')}}
 {{ Form::close() }}
+</div>

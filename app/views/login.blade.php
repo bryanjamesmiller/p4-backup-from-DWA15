@@ -12,6 +12,7 @@ Degree Tracker PET
 @stop
 
 @section('middle')
+<div class="font_wrapper_sign_in_log_in">
 <h2>Log in</h2>
 
 {{ Form::open(array('url' => '/login')) }}
@@ -25,6 +26,7 @@ Degree Tracker PET
     {{ Form::submit('Submit') }}
 
 {{ Form::close() }}
+</div>
 @stop
 
 @section('bottom')

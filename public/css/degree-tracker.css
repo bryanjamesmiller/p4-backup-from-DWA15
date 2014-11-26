@@ -1,3 +1,14 @@
+/*
+This wraps most of the font on the whole website with whatever you choose!
+*/
+.font_wrapper{
+
+}
+
+.font_wrapper_sign_in_log_in{
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1{
     font-family: 'Open Sans', sans-serif;
     font-size:200%;
@@ -74,6 +85,7 @@ table,th,td
 
 .login_logout_signup{
     padding-top:1.5em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .name{
@@ -88,6 +100,27 @@ table,th,td
 The below are for the INPUT FORMS (with no suffixes)
 They have pink backgrounds, except for the drop-down boxes, which are grey
 */
+
+.student_email{
+    width:5.9em;
+    background-color:pink;
+}
+
+.student_name{
+    width:5.9em;
+    background-color:pink;
+}
+
+.concentration{
+    width:5.9em;
+    background-color:pink;
+}
+
+.degree_program{
+    width:5.9em;
+    background-color:pink;
+}
+
 .course_number{
     background-color:pink;
     width:5.9em;
@@ -182,6 +215,7 @@ They have pink backgrounds, except for the drop-down boxes, which are grey
     background-color:yellow;
     text-align:center;
     padding:5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .textboxes{
@@ -286,12 +320,11 @@ These are for the grey headers on the tables with the _header suffixes
     background-color:pink;
     vertical-align: top;
      padding:.4em;
-     padding-top:.1em;
-     height:1em;
+     height:.7em;
 }
  .edit_or_delete_text{
     vertical-align: top;
-padding:.4em;
+    padding:.4em;
 }
 
 .separator_row{

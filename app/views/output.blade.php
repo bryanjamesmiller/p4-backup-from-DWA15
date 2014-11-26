@@ -1,3 +1,4 @@
+<div class="font_wrapper">
 <table>
     <?php
     if($allCourses->isEmpty() != TRUE) {
@@ -76,3 +77,4 @@ echo '<tr>
         echo '<p>No courses found<p>';
     }
    ?>
+</table>

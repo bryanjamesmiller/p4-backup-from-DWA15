@@ -11,6 +11,8 @@
 |
 */
 
+
+
 Route::get('/', function()
 {
     return View::make('index');
@@ -50,9 +52,10 @@ Route::post('/signup',
 
             #Create an Account for the user
             $account = new Account;
-            $account ->student_name    = Input::get('student_name');
-            $account ->email    = Input::get('email');
-            //       $account ->degree_program =
+            $account ->student_name = Input::get('student_name');
+            $account ->email = Input::get('email');
+            $account->degree_program = Input::get('degree_program');
+            $account->concentration = Input::get('concentration');
             $account->save();
 
             return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
