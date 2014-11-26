@@ -46,6 +46,10 @@ Route::post('/login', 'UserController@postLogin');
 Route::get('/logout', 'UserController@getLogout');
 
 Route::get('/password/remind', 'RemindersController@getRemind');
+Route::post('/password/remind', 'RemindersController@postRemind');
+
+Route::get('/password/reset', 'RemindersController@getReset');
+Route::post('/password/reset', 'RemindersController@postReset');
 
 Route::get('/list', function(){
     $allCourses = Course::all();
