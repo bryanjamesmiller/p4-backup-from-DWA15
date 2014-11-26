@@ -18,7 +18,7 @@ Degree Tracker PET password reset
     Please enter your email:<br>
     <input type="email" name="email"><br><br>
     Enter a password:<br>
-    <input type="password" name="password"><br>
+    <input type="password" name="password"><br><br>
     Confirm password again:<br>
     <input type="password" name="password_confirmation"><br>
     <input type="submit" value="Reset Password">
