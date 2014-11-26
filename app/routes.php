@@ -48,7 +48,7 @@ Route::get('/logout', 'UserController@getLogout');
 Route::get('/password/remind', 'RemindersController@getRemind');
 Route::post('/password/remind', 'RemindersController@postRemind');
 
-Route::get('/password/reset', 'RemindersController@getReset');
+Route::get('/password/reset/{$token}', 'RemindersController@getReset');
 Route::post('/password/reset', 'RemindersController@postReset');
 
 Route::get('/list', function(){
