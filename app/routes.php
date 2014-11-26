@@ -41,44 +41,10 @@ Route::get('/', 'IndexController@getIndex');
 
 Route::get('/signup', 'UserController@getSignup');
 Route::post('/signup', 'UserController@postSignup');
+Route::get('/login', 'UserController@getLogin');
+Route::post('/login', 'UserController@postLogin');
+Route::get('/logout', 'UserController@getLogout');
 
-Route::get('/login',
-    array(
-        'before' => 'guest',
-        function() {
-            return View::make('login');
-        }
-    )
-);
-
-Route::post('/login',
-    array(
-        'before' => 'csrf',
-        function() {
-
-            $credentials = Input::only('email', 'password');
-
-            if (Auth::attempt($credentials, $remember = true)) {
-                return Redirect::intended('/list')->with('flash_message', 'Welcome Back!');
-            }
-            else {
-                return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
-            }
-
-            return Redirect::to('login');
-        }
-    )
-);
-
-Route::get('/logout', function() {
-
-    # Log out
-    Auth::logout();
-
-    # Send them to the homepage
-    return Redirect::to('/login');
-
-});
 
 Route::get('/list', function(){
     $allCourses = Course::all();

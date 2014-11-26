@@ -48,6 +48,31 @@ class UserController extends \BaseController {
         return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
     }
 
+    public function getLogin(){
+        return View::make('login');
+    }
+
+    public function postLogin(){
+        $credentials = Input::only('email', 'password');
+
+        if (Auth::attempt($credentials, $remember = true)) {
+            return Redirect::intended('/list')->with('flash_message', 'Welcome Back!');
+        }
+        else {
+            return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
+        }
+
+        return Redirect::to('login');
+    }
+
+    public function getLogout(){
+        # Log out
+        Auth::logout();
+
+        # Send them to the homepage
+        return Redirect::to('/login');
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
