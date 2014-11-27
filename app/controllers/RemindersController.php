@@ -2,6 +2,12 @@
 
 class RemindersController extends Controller {
 
+    public function __construct(){
+        # Make sure to call the parent construct from BaseController or else
+        # it won't get called if we define one here (unlike Java).  We need
+        # the parent to be called because we have csrf protection in it!
+        parent::__construct();
+    }
 	/**
 	 * Display the password reminder view.
 	 *

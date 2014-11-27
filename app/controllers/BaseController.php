@@ -16,7 +16,7 @@ class BaseController extends Controller {
         // remind and reset pages for guest (unauthenticated) users.  Auth users
         // will have access to every page. Take out login and signup email or put
         // in an if auth statement.
-        $this->beforeFilter('auth', array('except' => 'getIndex', 'getSignup', 'getLogin'));
+        $this->beforeFilter('auth', array('except' => 'getRemind', 'getReset', 'getIndex', 'getSignup', 'getLogin'));
     }
 	/**
 	 * Setup the layout used by the controller.
