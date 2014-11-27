@@ -51,6 +51,11 @@ Route::post('/password/remind', 'RemindersController@postRemind');
 Route::get('/password/reset/{token}', 'RemindersController@getReset');
 Route::post('/password/reset', 'RemindersController@postReset');
 
+Route::get('/welcome', function(){
+
+   return View::make('welcome');
+});
+
 Route::get('/list', function(){
     $allCourses = Course::all();
 
