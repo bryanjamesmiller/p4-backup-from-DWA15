@@ -22,13 +22,13 @@
     @endif
 
 <div id="heading">
-   <h1 id="wheatImage" class="hes_header" >
+   <h1 class="hes_header" >
      <img src="/images/wheat logo.PNG" alt="wheat logo">
 
    </h1>
    <caption>
         <h1>
-            <div id="studentName"> Student Name:  {{--{{{Auth::user()->student_name}}}--}}</div>
+            <div id="studentNameHeader"> Student Name:  {{--{{{Auth::user()->student_name}}}--}}</div>
         </h1>
    </caption>
 </div>

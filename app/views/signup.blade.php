@@ -25,6 +25,7 @@ School<br>
             <optgroup >
                 <option>Harvard Extension School (HES)</option>
             </optgroup>
+</select>
 
 Degree Program<br>
 <select name="degree_program">
@@ -33,6 +34,7 @@ Degree Program<br>
                 <option>Master's of Liberal Arts (ALM)</option>
 </optgroup>
 </select>
+
     <br><br>Concentration<br>
     {{ Form::text('concentration') }}<br><br>
 

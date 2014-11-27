@@ -14,7 +14,13 @@ The below is mostly for the Degree Tracker Welcome/generic pages
     width:15em;
 }
 
+.new{
+    font-family: 'Open Sans', sans-serif;
+}
 
+.old{
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 
@@ -47,6 +53,13 @@ This wraps most of the font on the whole website with whatever you choose!
     width:30em;
 }
 
+#heading{
+    color:white;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    margin:.3em;
+}
+
 nav ul li {
     display:inline;
     margin-right:7px;
@@ -75,16 +88,8 @@ a:active {
       color:yellow;
  }
 
-#wheatImage{
-    width:55em;   
-}
 
-#heading{
-    color:white;
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-    margin:.3em;   
-}
+
 
 table{
     background-color:pink;
@@ -99,7 +104,16 @@ table,th,td
     border:1px solid black;
 }
 
-#studentName{
+#studentNameHeader{
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    padding:.9em;
+    background-color:#980101;
+    border: solid white 1px;
+    border-radius: .4em;
+    font-weight: 900;
+    margin:0em;
+    width:30em;
     font-size:100%;
 }
 
