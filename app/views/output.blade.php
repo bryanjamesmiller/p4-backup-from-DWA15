@@ -6,7 +6,7 @@
         @foreach($allCourses as $oneCourse)
 <?php
      $currentAccount = $oneCourse->account;
-     if($currentAccount->student_name == Auth::user()->student_name)
+     if($currentAccount->email == Auth::user()->email)
 {
 echo '<tr>
               <th class="course_number_header">Course Number</th>
