@@ -1,7 +1,18 @@
 /*
 The below is mostly for the Degree Tracker Welcome/generic pages
 */
-
+.welcome_header{
+    font-family: 'Open Sans', sans-serif;
+    font-size:200%;
+    color:white;
+    padding:.9em;
+    background-color:#980101;
+    border: solid white 1px;
+    border-radius: .4em;
+    font-weight: 900;
+    margin:0em;
+    width:30em;
+}
 
 
 
@@ -23,7 +34,7 @@ This wraps most of the font on the whole website with whatever you choose!
     font-family: 'Open Sans', sans-serif;
 }
 
-h1{
+.hes_header{
     font-family: 'Open Sans', sans-serif;
     font-size:200%;
     color:white;
