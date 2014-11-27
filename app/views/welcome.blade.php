@@ -13,12 +13,13 @@ Welcome to Degree Tracker PET
 
 @section('middle')
 <div class="new">
-Need to create a new account?<br>
+<h2>Need to create a new account?</h2>
 <a href="/signup">Click here to Sign Up</a>
 </div>
+<br><br>
 
 <div class="old">
-If you already have an account<br>
+<h2>If you already have an account</h2>
 <a href="/login">Click here to Log In</a>
 </div>
 </div>

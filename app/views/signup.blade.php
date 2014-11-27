@@ -25,7 +25,7 @@ School<br>
             <optgroup >
                 <option>Harvard Extension School (HES)</option>
             </optgroup>
-</select><br>
+</select><br><br>
 
 Degree Program<br>
 <select name="degree_program">
