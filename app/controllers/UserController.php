@@ -7,12 +7,6 @@ class UserController extends \BaseController {
         # it won't get called if we define one here (unlike Java).  We need
         # the parent to be called because we have csrf protection in it!
         parent::__construct();
-
-        # Only allow guests access to the login or signup pages
-        $this->beforeFilter('guest',
-            array(
-                'only' => array('getLogin', 'getSignup')
-            ));
     }
 
     public function getSignup(){
