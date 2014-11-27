@@ -21,13 +21,14 @@ Degree Tracker PET
     {{ Form::text('email') }}<br><br>
 
     Password:<br>
-    {{ Form::password('password') }}<br><br>
+    {{ Form::password('password') }}<br>
 
-    {{ Form::submit('Submit') }}
+    {{ Form::submit('Submit') }}<br>
 
 {{ Form::close() }}
 
-Forgot your password?  <a href="password/remind">Click here to reset it.</a>
+Forgot your password?<br>
+<a href="password/remind">Click here to reset it.</a>
 </div>
 @stop
 
