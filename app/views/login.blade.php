@@ -23,11 +23,11 @@ Degree Tracker PET
     Password:<br>
     {{ Form::password('password') }}<br>
 
-    {{ Form::submit('Submit') }}<br>
+    {{ Form::submit('Submit') }}<br><br>
 
 {{ Form::close() }}
 
-Forgot your password?<br>
+<h2>Forgot your password?</h2><br>
 <a href="password/remind">Click here to reset it.</a>
 </div>
 @stop
