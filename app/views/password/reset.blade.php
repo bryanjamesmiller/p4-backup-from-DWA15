@@ -18,9 +18,9 @@ Degree Tracker PET password reset
     <input type="hidden" name="token" value="{{ $token }}">
     Please enter your email:<br>
     <input type="email" name="email"><br><br>
-    Enter a password:<br>
+    Enter a password (must be at least 6 characters):<br>
     <input type="password" name="password"><br><br>
-    Confirm password again:<br>
+    Re-type password to confirm:<br>
     <input type="password" name="password_confirmation"><br>
     <input type="submit" value="Reset Password">
 </form>

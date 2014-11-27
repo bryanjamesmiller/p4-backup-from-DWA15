@@ -41,7 +41,7 @@ Degree Program<br>
     Email<br>
     {{ Form::text('email') }}<br><br>
 
-    Password:<br>
+    Password (must be at least 6 characters):<br>
     {{ Form::password('password') }}<br><br>
 
     {{ Form::submit('Submit') }}
