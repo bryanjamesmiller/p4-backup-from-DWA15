@@ -49,7 +49,7 @@ class UserController extends \BaseController {
     public function postLogin(){
         $credentials = Input::only('email', 'password');
 
-        if (Auth::attempt($credentials, $remember = true)) {
+        if (Auth::attempt($credentials, $remember = false)) {
             return Redirect::intended('/course')->with('flash_message', 'Welcome Back!');
         }
         else {
