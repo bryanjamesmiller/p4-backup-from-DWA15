@@ -12,8 +12,7 @@
 */
 
 /*
-Route::get('/course', 'CourseController@index');
-Route::get('/course/create', 'CourseController@create');
+
 Route::post('/course', 'CourseController@store');
 Route::get('/course/{course_id}', 'CourseController@show');
 Route::get('/course/{course_id}/edit', 'CourseController@edit');
@@ -56,82 +55,9 @@ Route::get('/welcome', function(){
    return View::make('welcome');
 });
 
-Route::get('/list', function(){
-    $allCourses = Course::all();
+Route::get('/course', 'CourseController@index');
+Route::get('/course/create', 'CourseController@create');
 
-    // Output all current courses that are saved in the database
-    return View::make('list')
-        ->with('allCourses', $allCourses);
-});
-
-Route::post('/list', array('before' => 'csrf', function() {
-    // Output all current courses that are saved in the database
-
-    $course_number = Input::get('course_number');
-    $course_delivery = Input::get('course_delivery');
-    $crn_number = Input::get('crn_number');
-    $section= Input::get('section');
-    $tuition= Input::get('tuition');
-    $course_title= Input::get('course_title');
-    $course_attributes_1 = Input::get('course_attributes_1');
-    $course_attributes_2 = Input::get('course_attributes_2');
-    $course_attributes_3 = Input::get('course_attributes_3');
-    $course_attributes_4 = Input::get('course_attributes_4');
-    $course_attributes_5 = Input::get('course_attributes_5');
-
-    $semester = Input::get('semester');
-    $days = Input::get('days');
-    $times = Input::get('times');
-    $year = Input::get('year');
-    $professors = Input::get('professors');
-    $status= Input::get('status');
-    $letter_grade = Input::get('letter_grade');
-    $grade_points = Input::get('grade_points');
-    $transfer_credits = Input::get('transfer_credits');
-    $hes_credits = Input::get('hes_credits');
-
-    $course = new Course();
-
-    $course->course_number = $course_number;
-    $course->course_delivery = $course_delivery;
-    $course->crn_number = $crn_number;
-    $course->section = $section;
-    $course->tuition = $tuition;
-    $course->course_title = $course_title;
-    $course->course_attributes_1 = $course_attributes_1;
-    $course->course_attributes_2 = $course_attributes_2;
-    $course->course_attributes_3 = $course_attributes_3;
-    $course->course_attributes_4 = $course_attributes_4;
-    $course->course_attributes_5 = $course_attributes_5;
-    $course->semester = $semester;
-    $course->days = $days;
-    $course->times = $times;
-    $course->year = $year;
-    $course->professors = $professors;
-    $course->status = $status;
-    $course->letter_grade = $letter_grade;
-    $course->grade_points = $grade_points;
-    $course->transfer_credits = $transfer_credits;
-    $course->hes_credits = $hes_credits;
-
-    #add in the student's database so we can pull up one student's courses at a time
-    $all_the_accounts =Account::all();
-    if($all_the_accounts->isEmpty() != TRUE) {
-        foreach ($all_the_accounts as $possible_account) {
-            if ($possible_account->email == Auth::user()->email) {
-                $course->account()->associate($possible_account);
-            }
-        }
-    }
-    $course->save();
-
-    # The all() method will fetch all the rows from a Model/table
-    $allCourses = Course::all();
-
-    return Redirect::to('/list')
-        ->with('allCourses', $allCourses)
-        ->with('flash_message', 'New course added!');
-}));
 
 Route::get('/delete/{format?}', function($format = 'null') {
     $all_the_courses = Course::all();

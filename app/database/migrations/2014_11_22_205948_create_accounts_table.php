@@ -19,6 +19,7 @@ class CreateAccountsTable extends Migration {
 
             $table->string('student_name');
             $table->string('email');
+            $table->string('school_name');
             $table->string('degree_program');
             $table->string('concentration');
         });
