@@ -26,6 +26,8 @@ Degree Tracker PET
     {{ Form::submit('Submit') }}
 
 {{ Form::close() }}
+
+Forgot your password?  <a href="password/remind">Click here to reset it.</a>
 </div>
 @stop
 
