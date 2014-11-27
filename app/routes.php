@@ -100,7 +100,7 @@ Route::post('/edit', function() {
         $course = Course::findOrFail(Input::get('id'));
     }
     catch(exception $e) {
-        return Redirect::to('/list')->with('flash_message', 'Course not found!');
+        return Redirect::to('/course')->with('flash_message', 'Course not found!');
     }
 
     $edit_option = Input::get('edit_options');
