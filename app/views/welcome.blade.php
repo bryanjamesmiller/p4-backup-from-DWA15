@@ -12,7 +12,7 @@ Welcome to Degree Tracker PET
 @stop
 
 @section('middle')
-<div class=".font_wrapper_sign_in_log_in">
+<div class="font_wrapper_sign_in_log_in">
 <div class="new">
 Need to create a new account?<br>
 <a href="/signup">Click here to Sign Up</a>

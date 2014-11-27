@@ -1,4 +1,4 @@
-@extends('_base_nameless')
+@extends('_base_welcome')
 
 @section('head')
 

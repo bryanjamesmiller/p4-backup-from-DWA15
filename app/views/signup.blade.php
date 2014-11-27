@@ -20,6 +20,12 @@ Degree Tracker PET
     Student's Name<br>
     {{ Form::text('student_name') }}<br><br>
 
+School<br>
+<select name="school_name">
+            <optgroup >
+                <option>Harvard Extension School (HES)</option>
+            </optgroup>
+
 Degree Program<br>
 <select name="degree_program">
             <optgroup >
