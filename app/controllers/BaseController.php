@@ -12,17 +12,11 @@ class BaseController extends Controller {
          */
         $this->beforeFilter('csrf', array('on' => 'post'));
 
-        # Only allow guests access to the login or signup pages
-        $this->beforeFilter('guest',
-            array(
-                'only' => array('getLogin', 'getSignup', 'getIndex'
-            )));
-
-        # Only allow logged in auth users access to any other pages
-        #$this->beforeFilter('auth',
-        #    array(
-        #        'only' => array('getLogin', 'getSignup'
-        #        ));
+        // Deny guest access to every page except the index, login, signup,
+        // remind and reset pages for guest (unauthenticated) users.  Auth users
+        // will have access to every page. Take out login and signup email or put
+        // in an if auth statement.
+        $this->beforeFilter('auth', array('except' => 'getIndex', 'getSignup', 'getLogin'));
     }
 	/**
 	 * Setup the layout used by the controller.
