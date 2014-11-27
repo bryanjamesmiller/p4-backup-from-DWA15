@@ -11,7 +11,7 @@ The below is mostly for the Degree Tracker Welcome/generic pages
     border-radius: .4em;
     font-weight: 900;
     margin:0em;
-    width:15em;
+    width:30em;
 }
 
 .new{
@@ -50,7 +50,7 @@ This wraps most of the font on the whole website with whatever you choose!
     border-radius: .4em;
     font-weight: 900;   
     margin:0em;
-    width:30em;
+    width:45em;
 }
 
 #heading{
@@ -113,7 +113,7 @@ table,th,td
     border-radius: .4em;
     font-weight: 900;
     margin:0em;
-    width:30em;
+    width:45em;
     font-size:100%;
 }
 
