@@ -18,5 +18,5 @@ Degree Tracker PET
 @stop
 
 @section('bottom')
-    @include('...output')
+    @include('output')
 @stop

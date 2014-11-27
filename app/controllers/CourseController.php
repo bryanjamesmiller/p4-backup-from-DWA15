@@ -16,10 +16,9 @@ class CourseController extends \BaseController {
 	 */
 	public function index()
 	{
-        $allCourses = Course::all();
-
         // Output all current courses that are saved in the database
-        return View::make('course')
+        $allCourses = Course::all();
+        return View::make('course_index')
             ->with('allCourses', $allCourses);
 	}
 
@@ -31,8 +30,9 @@ class CourseController extends \BaseController {
 	 */
 	public function create()
 	{
-        return View::make('create');
-
+        $allCourses = Course::all();
+        return View::make('course_create')
+            ->with('allCourses', $allCourses);
     }
 
 

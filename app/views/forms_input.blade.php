@@ -1,5 +1,5 @@
 <div class="font_wrapper">
-{{ Form::open(array('url' => '/list')) }}
+{{ Form::open(array('action' => 'CourseController@store')) }}
    <table>
         <thead>
         <tr>

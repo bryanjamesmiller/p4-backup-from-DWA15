@@ -12,13 +12,19 @@
 */
 
 /*
-
+ * RESTful Routes for the "Course" thing
+*/
+Route::get('/course', 'CourseController@index');
+Route::get('/course/create', 'CourseController@create');
 Route::post('/course', 'CourseController@store');
 Route::get('/course/{course_id}', 'CourseController@show');
 Route::get('/course/{course_id}/edit', 'CourseController@edit');
 Route::put('/course/{course_id}', 'CourseController@update');
 Route::delete('/course/{course_id}', 'CourseController@destroy');
 
+/*
+* RESTful Routes for the "Account" thing
+*
 Route::get('/account', 'AccountController@index');
 Route::get('/account/create', 'AccountController@create');
 Route::post('/account', 'AccountController@store');
@@ -27,6 +33,9 @@ Route::get('/account/{account_id}/edit', 'AccountController@edit');
 Route::put('/account/{account_id}', 'AccountController@update');
 Route::delete('/account/{account_id}', 'AccountController@destroy');
 
+/*
+ * RESTful Routes for the "User" thing - not sure if I want this one though!
+*
 Route::get('/user', 'UserController@index');
 Route::get('/user/create', 'UserController@create');
 Route::post('/user', 'UserController@store');
@@ -55,8 +64,7 @@ Route::get('/welcome', function(){
    return View::make('welcome');
 });
 
-Route::get('/course', 'CourseController@index');
-Route::get('/course/create', 'CourseController@create');
+
 
 
 Route::get('/delete/{format?}', function($format = 'null') {
