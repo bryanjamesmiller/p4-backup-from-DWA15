@@ -20,7 +20,9 @@
     @else
         <div class="login_logout_signup"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
     @endif
-
+<div class="font_wrapper_sign_in_log_in">
+    <h1 class="welcome_header">Welcome to Degree Tracker</h1>
+</div>
 
     @yield('top')
 
