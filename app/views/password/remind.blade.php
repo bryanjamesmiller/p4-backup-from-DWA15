@@ -14,10 +14,11 @@ Degree Tracker PET password reset
 @section('middle')
 <div class="font_wrapper_sign_in_log_in">
 <h2>Would you like to reset your password?</h2>
-Please enter your email address:
+Please enter your email address, and we will send<br>
+you a link to reset your password:<br>
 <form action="{{ action('RemindersController@postRemind') }}" method="POST">
     <input type="email" name="email"><br>
-    <input type="submit" value="Email me a link to create a new password">
+    <input type="submit" value="Send Email">
 </form>
 </div>
 @stop
