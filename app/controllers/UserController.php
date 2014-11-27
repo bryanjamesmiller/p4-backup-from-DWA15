@@ -39,7 +39,7 @@ class UserController extends \BaseController {
         $account->concentration = Input::get('concentration');
         $account->save();
 
-        return Redirect::to('/')->with('flash_message', 'Welcome to Degree Tracker!');
+        return Redirect::to('/course')->with('flash_message', 'Sign-up Successful.  Welcome to Degree Tracker!');
     }
 
     public function getLogin(){
@@ -50,7 +50,7 @@ class UserController extends \BaseController {
         $credentials = Input::only('email', 'password');
 
         if (Auth::attempt($credentials, $remember = true)) {
-            return Redirect::intended('/list')->with('flash_message', 'Welcome Back!');
+            return Redirect::intended('/course')->with('flash_message', 'Welcome Back!');
         }
         else {
             return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');

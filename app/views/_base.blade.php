@@ -16,7 +16,7 @@
     @endif
 
     @if(Auth::check())
-        <div class="login_logout_signup"><a href='/logout'>Log out:  {{--{{ Auth::user()->email; }}--}}</a></div>
+        <div class="login_logout_signup"><a href='/logout'>Log out:  {{ Auth::user()->email; }}</a></div>
     @else
         <div class="login_logout_signup"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
     @endif
@@ -28,7 +28,7 @@
    </h1>
    <caption>
         <h1>
-            <div id="studentNameHeader"> Student Name:  {{--{{{Auth::user()->student_name}}}--}}</div>
+            <div id="studentNameHeader"> Student Name:  {{{Auth::user()->student_name}}}</div>
         </h1>
    </caption>
 </div>
