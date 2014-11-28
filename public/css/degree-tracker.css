@@ -14,6 +14,10 @@ The below is mostly for the Degree Tracker Welcome/generic pages
     width:20em;
 }
 
+.welcome_header_subtitle{
+    font-size:50%;
+}
+
 .new{
     font-family: 'Open Sans', sans-serif;
 }

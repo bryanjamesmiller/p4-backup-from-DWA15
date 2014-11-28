@@ -21,7 +21,8 @@
         <div class="login_logout_signup"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
     @endif
 <div class="font_wrapper_sign_in_log_in">
-    <h1 class="welcome_header">Welcome to Degree Tracker</h1>
+    <h1 class="welcome_header">Welcome to Degree Tracker<br>
+    <div class="welcome_header_subtitle">A fun and easy tool to help keep track of your required courses</div> </h1>
 </div>
 
     @yield('top')
