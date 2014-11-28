@@ -1,8 +1,11 @@
 <div class="font_wrapper">
 <table>
     <?php
+
     $total_hes_credits=0;
     $total_transfer_credits=0;
+    $gradePoints_times_credits_all_added_together=0;
+
     if($allCourses->isEmpty() != TRUE) {
         ?>
         @foreach($allCourses as $oneCourse)
@@ -70,7 +73,7 @@ echo '<tr>
   }
    $total_hes_credits += $oneCourse->hes_credits;
    $total_transfer_credits = $total_transfer_credits + $oneCourse->transfer_credits;
-   $GPA_math = $oneCourse->grade_points * ($oneCourse->hes_credits + $oneCourse->transfer_credits);
+   $gradePoints_times_credits_all_added_together += $oneCourse->grade_points * ($oneCourse->hes_credits + $oneCourse->transfer_credits);
 
 ?>
               @endforeach
@@ -92,7 +95,7 @@ echo '<tr>
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
-<div>Your grade point average (GPA) is {{{ $GPA_math / $total_credits }}}</div>
+<div>Your grade point average (GPA) is {{{ $gradePoints_times_credits_all_added_together / $total_credits }}}</div>
 <?php
 }?>
 </div>
