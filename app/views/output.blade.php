@@ -70,10 +70,10 @@ echo '<tr>
     <td  colspan="22">
 </tr>
   ';
+     $total_hes_credits += $oneCourse->hes_credits;
+     $total_transfer_credits = $total_transfer_credits + $oneCourse->transfer_credits;
+     $gradePoints_times_credits_all_added_together += $oneCourse->grade_points * ($oneCourse->hes_credits + $oneCourse->transfer_credits);
   }
-   $total_hes_credits += $oneCourse->hes_credits;
-   $total_transfer_credits = $total_transfer_credits + $oneCourse->transfer_credits;
-   $gradePoints_times_credits_all_added_together += $oneCourse->grade_points * ($oneCourse->hes_credits + $oneCourse->transfer_credits);
 
 ?>
               @endforeach
@@ -97,7 +97,9 @@ if($total_hes_credits != 0 || $total_transfer_credits != 0)
 <div class="fine_print">*Please note that Degree Tracker truncates your Grade Points to 2 decimal places (a A- is calculated as a 3.66 Grade Point).<br>
   If your school rounds off differently or uses more decimal places, please have your registrar email mydegreetracker@gmail.com</div><br>
 
-Graduation
+Graduation Eligible:
+-You need 120 credits.  You have ___ credits left.
+-You need at least a 2.0 GPA.  You have a ___ GPA.
 <?php
 }?>
 </div>
