@@ -94,12 +94,12 @@ if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
 <div>Your grade point average (GPA) is {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*</div>
-<div class="fine_print">*Please note that Degree Tracker truncates your Grade Points to 2 decimal places (a A- is calculated as a 3.66 Grade Point).<br>
-  If your school rounds off differently or uses more decimal places, please have your registrar email mydegreetracker@gmail.com</div><br>
+<div class="fine_print">*Please note that Degree Tracker truncates your Grade Points to 2 decimal places (an A- is calculated as a 3.66 Grade Point).<br>
+  If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div><br>
 
-Graduation Eligible:
--You need 120 credits.  You have ___ credits left.
--You need at least a 2.0 GPA.  You have a ___ GPA.
+Graduation Eligible:<br>
+-You need 120 credits.  You have ___ credits left.<br>
+-You need at least a 2.0 GPA.  You have a ___ GPA.<br>
 <?php
 }?>
 </div>
