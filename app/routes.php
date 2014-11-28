@@ -25,7 +25,7 @@ Route::get('/delete/{format?}', 'CourseController@delete');
 
 
 /*
-* RESTful Routes for the "Account" thing
+* Potential RESTful Routes for the "Account" thing
 *
 Route::get('/account', 'AccountController@index');
 Route::get('/account/create', 'AccountController@create');
@@ -36,7 +36,7 @@ Route::put('/account/{account_id}', 'AccountController@update');
 Route::delete('/account/{account_id}', 'AccountController@destroy');
 
 /*
- * RESTful Routes for the "User" thing - not sure if I want this one though!
+* Potential RESTful Routes for the "User" thing - not sure if I want this one though!
 *
 Route::get('/user', 'UserController@index');
 Route::get('/user/create', 'UserController@create');
@@ -48,11 +48,14 @@ Route::delete('/user/{user_id}', 'UserController@destroy');
 */
 
 Route::get('/', 'IndexController@getIndex');
+Route::get('/welcome', 'IndexController@getIndex');
 
 Route::get('/signup', 'UserController@getSignup');
 Route::post('/signup', 'UserController@postSignup');
+
 Route::get('/login', 'UserController@getLogin');
 Route::post('/login', 'UserController@postLogin');
+
 Route::get('/logout', 'UserController@getLogout');
 
 Route::get('/password/remind', 'RemindersController@getRemind');
@@ -61,16 +64,17 @@ Route::post('/password/remind', 'RemindersController@postRemind');
 Route::get('/password/reset/{token}', 'RemindersController@getReset');
 Route::post('/password/reset', 'RemindersController@postReset');
 
-Route::get('/welcome', function(){
-
-   return View::make('welcome');
-});
 
 
 
 
+/**
+ * The below routes should remain commented out unless being immediately used,
+ * and then commented out again, because they pose security risks if left
+ * open on an ongoing basis.
+ */
 
-
+/*
 Route::get('mysql-test', function() {
 
     # Print environment
@@ -143,3 +147,4 @@ Route::get('/debug', function() {
     echo '</pre>';
 
 });
+*/
