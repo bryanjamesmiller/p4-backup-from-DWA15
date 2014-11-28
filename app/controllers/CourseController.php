@@ -132,9 +132,16 @@ class CourseController extends \BaseController
      */
     public function edit($id)
     {
-        //
-    }
+        try{
+            $course = Course::findOrFail($id);
+        }
+        catch(exception $e){
+            return Redirect::to('/course')->with('flash_message', 'Course not found!');
+        }
 
+        return View::make('edit')
+            ->with('course', $course);
+    }
 
     /**
      * Update the specified resource in storage.
@@ -142,11 +149,22 @@ class CourseController extends \BaseController
      * @param  int $id
      * @return Response
      */
-    public function update($id)
+    public function update()
     {
-        //
-    }
+        try {
+            $course = Course::findOrFail(Input::get('id'));
+        }
+        catch(exception $e) {
+            return Redirect::to('/course')->with('flash_message', 'Course not found!');
+        }
 
+        $edit_option = Input::get('edit_options');
+        $course->$edit_option = Input::get('new_value');
+        $course->save();
+
+        $link = Input::get('id');
+        return Redirect::to('/edit/' . $link)->with('flash_message','Your changes have been saved!');
+    }
 
     /**
      * Remove the specified resource from storage.

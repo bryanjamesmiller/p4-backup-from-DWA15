@@ -12,15 +12,15 @@
 */
 
 /*
- * RESTful Routes for the "Course" thing EXCEPT the delete function I don't think
- * is quite right because I invented it...
+ * RESTful Routes for the "Course" thing EXCEPT the edit and delete functions
+ * because they have really weird put/delete methods
 */
 Route::get('/course', 'CourseController@index');
 Route::get('/course/create', 'CourseController@create');
 Route::post('/course', 'CourseController@store');
 Route::get('/course/{course_id}', 'CourseController@show');
-Route::get('/course/{course_id}/edit', 'CourseController@edit');
-Route::put('/course/{course_id}', 'CourseController@update');
+Route::get('/edit/{id?}', 'CourseController@edit');
+Route::post('/edit', 'CourseController@update');
 Route::get('/delete/{format?}', 'CourseController@delete');
 
 
@@ -69,36 +69,7 @@ Route::get('/welcome', function(){
 
 
 
-Route::get('/edit/{id?}', function($id = 'null') {
 
-    try{
-        $course = Course::findOrFail($id);
-    }
-    catch(exception $e){
-        return Redirect::to('/course')->with('flash_message', 'Course not found!');
-    }
-
-    return View::make('edit')
-        ->with('course', $course);
-});
-
-
-Route::post('/edit', function() {
-    try {
-        $course = Course::findOrFail(Input::get('id'));
-    }
-    catch(exception $e) {
-        return Redirect::to('/course')->with('flash_message', 'Course not found!');
-    }
-
-    $edit_option = Input::get('edit_options');
-    $course->$edit_option = Input::get('new_value');
-    $course->save();
-
-    $link = Input::get('id');
-    return Redirect::to('/edit/' . $link)->with('flash_message','Your changes have been saved!');
-
-});
 
 Route::get('mysql-test', function() {
 
