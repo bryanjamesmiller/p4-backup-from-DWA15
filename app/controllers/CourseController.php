@@ -45,18 +45,6 @@ class CourseController extends \BaseController
      */
     public function store()
     {
-        $course_number = Input::get('course_number');
-        $course_delivery = Input::get('course_delivery');
-        $crn_number = Input::get('crn_number');
-        $section = Input::get('section');
-        $tuition = Input::get('tuition');
-        $course_title = Input::get('course_title');
-        $course_attributes_1 = Input::get('course_attributes_1');
-        $course_attributes_2 = Input::get('course_attributes_2');
-        $course_attributes_3 = Input::get('course_attributes_3');
-        $course_attributes_4 = Input::get('course_attributes_4');
-        $course_attributes_5 = Input::get('course_attributes_5');
-
         $semester = Input::get('semester');
         $days = Input::get('days');
         $times = Input::get('times');
@@ -70,17 +58,17 @@ class CourseController extends \BaseController
 
         $course = new Course();
 
-        $course->course_number = $course_number;
-        $course->course_delivery = $course_delivery;
-        $course->crn_number = $crn_number;
-        $course->section = $section;
-        $course->tuition = $tuition;
-        $course->course_title = $course_title;
-        $course->course_attributes_1 = $course_attributes_1;
-        $course->course_attributes_2 = $course_attributes_2;
-        $course->course_attributes_3 = $course_attributes_3;
-        $course->course_attributes_4 = $course_attributes_4;
-        $course->course_attributes_5 = $course_attributes_5;
+        $course->course_number = Input::get('course_number');
+        $course->course_delivery = Input::get('course_delivery');
+        $course->crn_number = Input::get('crn_number');
+        $course->section = Input::get('section');
+        $course->tuition = Input::get('tuition');
+        $course->course_title = Input::get('course_title');
+        $course->course_attributes_1 = Input::get('course_attributes_1');
+        $course->course_attributes_2 = Input::get('course_attributes_2');
+        $course->course_attributes_3 = Input::get('course_attributes_3');
+        $course->course_attributes_4 = Input::get('course_attributes_4');
+        $course->course_attributes_5 = Input::get('course_attributes_5');
         $course->semester = $semester;
         $course->days = $days;
         $course->times = $times;
