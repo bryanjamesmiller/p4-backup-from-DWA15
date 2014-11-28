@@ -95,7 +95,7 @@ echo '<tr>
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
-<div>Your grade point average (GPA) is {{{ $gradePoints_times_credits_all_added_together / $total_credits }}}</div>
+<div>Your grade point average (GPA) is {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}</div>
 <?php
 }?>
 </div>
