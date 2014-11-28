@@ -63,7 +63,7 @@ Edit Course Information
 
 <p>Select the item to edit:</p>
 
-{{ Form::open(array('url' => 'edit'))}}
+{{ Form::open(array('url' => 'course_edit'))}}
 <select  name="edit_options">
             <optgroup>
                 <option value="course_number">Course Number</option>
