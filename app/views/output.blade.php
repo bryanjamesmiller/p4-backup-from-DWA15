@@ -28,7 +28,7 @@ echo '<tr>
               <th class="professors_header">Professor(s)</th>
               <th class="status_header">Status</th>
               <th class="letter_grade_header">Grade</th>
-              <th class="grade_points_header">Grade Points</th>
+              <th class="grade_points_header">Grade Points*</th>
               <th class="transfer_credits_header">Transfer Credits</th>
               <th class="hes_credits_header">HES Credits</th>
     </tr>
@@ -77,7 +77,6 @@ echo '<tr>
 
 ?>
               @endforeach
-
 <tr class = "bottom_separator_row">
     <td  colspan="22">
 </tr>
@@ -89,13 +88,16 @@ echo '<tr>
     $total_credits = $total_hes_credits + $total_transfer_credits;
    ?>
 </table><br>
-<div>You have {{{$total_hes_credits}}} total HES credits and {{{$total_transfer_credits}}} total transfer credits.</div><br>
-<div>Your total credits are: {{{$total_credits}}} credits</div><br>
+<div>You have {{{$total_hes_credits}}} total HES credits and {{{$total_transfer_credits}}} total transfer credits.  Total credits: {{{$total_credits}}} credits</div><br>
 <?php
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
-<div>Your grade point average (GPA) is {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}</div>
+<div>Your grade point average (GPA) is {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*</div>
+<div class="fine_print">*Please note that Degree Tracker truncates your Grade Points to 2 decimal places (a A- is calculated as a 3.66 Grade Point).<br>
+  If your school rounds off differently or uses more decimal places, please have your registrar email mydegreetracker@gmail.com</div><br>
+
+Graduation
 <?php
 }?>
 </div>

@@ -24,13 +24,15 @@ class RemindersController extends Controller {
 	 */
 	public function postRemind()
 	{
+        $email = Input::get('email');
 		switch ($response = Password::remind(Input::only('email')))
 		{
 			case Password::INVALID_USER:
 				return Redirect::back()->with('error', Lang::get($response));
 
 			case Password::REMINDER_SENT:
-				return Redirect::back()->with('status', Lang::get($response));
+				return Redirect::back()->with('status', Lang::get($response))
+                    ->with('flash_message','A password reset email has been sent to you at ' . $email);
 		}
 	}
 

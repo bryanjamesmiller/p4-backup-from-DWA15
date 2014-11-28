@@ -47,6 +47,10 @@ This wraps most of the font on the whole website with whatever you choose!
 
 }
 
+.fine_print{
+    font-size:75%;
+}
+
 .font_wrapper_sign_in_log_in{
     font-family: 'Open Sans', sans-serif;
 }
