@@ -19,7 +19,7 @@ Welcome to Degree Tracker PET
 <br><br>
 
 <div class="old">
-<h2>If you already have an account</h2>
+<h2>If you already have an account,</h2>
 <a href="/login">Click here to Log In</a>
 </div>
 </div>

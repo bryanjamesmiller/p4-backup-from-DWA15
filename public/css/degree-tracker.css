@@ -15,8 +15,14 @@ The below is mostly for the Degree Tracker Welcome/generic pages
 }
 
 .welcome_header_subtitle{
-    font-size:44%;
+    font-size:50%;
     padding-top:.5em;
+}
+
+.login_logout_signup_welcome{
+    padding-top:1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size:80%;
 }
 
 .new{

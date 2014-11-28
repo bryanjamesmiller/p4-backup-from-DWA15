@@ -16,9 +16,9 @@
     @endif
 
     @if(Auth::check())
-        <div class="login_logout_signup"><a href='/logout'>Log out {{ Auth::user()->email; }}</a></div>
+        <div class="login_logout_signup_welcome"><a href='/logout'>Log out {{ Auth::user()->email; }}</a></div>
     @else
-        <div class="login_logout_signup"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
+        <div class="login_logout_signup_welcome"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
     @endif
 <div class="font_wrapper_sign_in_log_in">
     <h1 class="welcome_header">Welcome to Degree Tracker<br>
