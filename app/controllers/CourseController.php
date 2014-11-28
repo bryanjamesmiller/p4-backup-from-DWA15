@@ -154,7 +154,7 @@ class CourseController extends \BaseController
      * @param  int $id
      * @return Response
      */
-    public function destroy($format)
+    public function delete($format)
     {
         $all_the_courses = Course::all();
         if ($all_the_courses->isEmpty() != TRUE) {
