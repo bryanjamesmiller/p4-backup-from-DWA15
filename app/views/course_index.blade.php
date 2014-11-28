@@ -12,8 +12,8 @@ Degree Tracker PET
 @stop
 
 @section('middle')
-    <div>
-    <p><a href="/course/create">Click here to add a new course</a></p>
+    <div class="font_wrapper">
+    <a href="/course/create">Click here to add a new course</a>
     </div>
 @stop
 
