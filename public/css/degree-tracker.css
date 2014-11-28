@@ -44,11 +44,12 @@ The below is mostly for the HES specific pages
 This wraps most of the font on the whole website with whatever you choose!
 */
 .font_wrapper{
-
+    font-family: 'Open Sans', sans-serif;
+    font-size:90%;
 }
 
 .fine_print{
-    font-size:75%;
+    font-size:70%;
 }
 
 .font_wrapper_sign_in_log_in{
