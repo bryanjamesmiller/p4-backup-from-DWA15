@@ -88,18 +88,23 @@ echo '<tr>
     $total_credits = $total_hes_credits + $total_transfer_credits;
    ?>
 </table><br>
-<div>You have {{{$total_hes_credits}}} total HES credits and {{{$total_transfer_credits}}} total transfer credits.  Total credits: {{{$total_credits}}} credits</div><br>
+<div>You have {{{$total_hes_credits}}} HES credits and {{{$total_transfer_credits}}} transfer credits.<br>
+  Total credits: {{{$total_credits}}} credits</div><br>
+<div>Your grade point average (GPA) is
 <?php
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
-<div>Your grade point average (GPA) is {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*</div>
-<div class="fine_print">*Please note that Degree Tracker truncates your Grade Points to 2 decimal places (an A- is calculated as a 3.66 Grade Point).<br>
+{{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*</div>
+<?php
+}
+?>
+<div class="fine_print">*Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>
   If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div><br>
+  *Note that courses worth more credit hours have a bigger impact on your GPA.
 
 Graduation Eligible:<br>
 -You need 120 credits.  You have ___ credits left.<br>
 -You need at least a 2.0 GPA.  You have a ___ GPA.<br>
-<?php
-}?>
+
 </div>

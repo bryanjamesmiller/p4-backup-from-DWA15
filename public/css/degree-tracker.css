@@ -11,7 +11,7 @@ The below is mostly for the Degree Tracker Welcome/generic pages
     border-radius: .4em;
     font-weight: 900;
     margin:0em;
-    width:20em;
+    width:100%;
 }
 
 .welcome_header_subtitle{
