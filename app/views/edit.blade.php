@@ -12,6 +12,7 @@ Edit Course Information
 @stop
 
 @section('middle')
+<div class="font_wrapper">
 <table class="myTable">
     <thead>
     <tr class="tableHeaders">
@@ -93,7 +94,7 @@ Edit Course Information
 {{ Form::hidden('id', $course['id']); }}
 {{ Form::submit('Click to Update Changes!')}}
 {{ Form::close() }}
-
+</div>
 @stop
 
 @section('bottom')

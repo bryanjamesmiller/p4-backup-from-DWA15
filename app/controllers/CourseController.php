@@ -127,7 +127,7 @@ class CourseController extends \BaseController
             return Redirect::to('/course')->with('flash_message', 'Course not found!');
         }
 
-        return View::make('edit')
+        return View::make('course_edit')
             ->with('course', $course);
     }
 
@@ -151,7 +151,7 @@ class CourseController extends \BaseController
         $course->save();
 
         $link = Input::get('id');
-        return Redirect::to('/edit/' . $link)->with('flash_message','Your changes have been saved!');
+        return Redirect::to('/course_edit/' . $link)->with('flash_message','Your changes have been saved!');
     }
 
     /**

@@ -19,8 +19,8 @@ Route::get('/course', 'CourseController@index');
 Route::get('/course/create', 'CourseController@create');
 Route::post('/course', 'CourseController@store');
 Route::get('/course/{course_id}', 'CourseController@show');
-Route::get('/edit/{id?}', 'CourseController@edit');
-Route::post('/edit', 'CourseController@update');
+Route::get('/course_edit/{id?}', 'CourseController@edit');
+Route::post('/course_edit', 'CourseController@update');
 Route::get('/delete/{format?}', 'CourseController@delete');
 
 
