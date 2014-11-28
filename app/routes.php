@@ -12,7 +12,8 @@
 */
 
 /*
- * RESTful Routes for the "Course" thing
+ * RESTful Routes for the "Course" thing EXCEPT the delete function I don't think
+ * is quite right because I invented it...
 */
 Route::get('/course', 'CourseController@index');
 Route::get('/course/create', 'CourseController@create');
@@ -20,7 +21,19 @@ Route::post('/course', 'CourseController@store');
 Route::get('/course/{course_id}', 'CourseController@show');
 Route::get('/course/{course_id}/edit', 'CourseController@edit');
 Route::put('/course/{course_id}', 'CourseController@update');
-Route::delete('/course/{course_id}', 'CourseController@destroy');
+Route::get('/delete/{format?}', 'CourseController@delete');
+Route::get('/delete/{format?}', function($format = 'null') {
+    $all_the_courses = Course::all();
+    if($all_the_courses->isEmpty() != TRUE) {
+        foreach ($all_the_courses as $possible_course_to_delete) {
+            if ($possible_course_to_delete->id == $format) {
+                $possible_course_to_delete->delete();
+            }
+        }
+    }
+    return Redirect::to('/course')
+        ->with('flash_message', 'Course deleted!');
+});
 
 /*
 * RESTful Routes for the "Account" thing
@@ -66,20 +79,6 @@ Route::get('/welcome', function(){
 
 
 
-
-Route::get('/delete/{format?}', function($format = 'null') {
-    $all_the_courses = Course::all();
-    if($all_the_courses->isEmpty() != TRUE) {
-
-        foreach ($all_the_courses as $possible_course_to_delete) {
-            if ($possible_course_to_delete->id == $format) {
-                $possible_course_to_delete->delete();
-            }
-        }
-    }
-    return Redirect::to('/course')
-        ->with('flash_message', 'Course deleted!');
-});
 
 Route::get('/edit/{id?}', function($id = 'null') {
 

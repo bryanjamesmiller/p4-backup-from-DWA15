@@ -54,7 +54,7 @@ echo '<tr>
 <tr class="data_row">
     <td class = "edit_or_delete_rows" colspan="22">
              <span>
-                    <a class="edit_or_delete_text" href="/edit/' ?> {{$oneCourse->id}}<?php echo '" > Edit course information</a>
+                    <a class="edit_or_delete_text" href="/course/edit/' ?> {{$oneCourse->id}}<?php echo '" > Edit course information</a>
              </span>
              <span>
                     <a class="edit_or_delete_text" href="/delete/' ?> {{$oneCourse->id}}<?php echo '" > Delete course entry </a>
