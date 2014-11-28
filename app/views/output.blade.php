@@ -1,6 +1,8 @@
 <div class="font_wrapper">
 <table>
     <?php
+    $total_hes_credits=0;
+    $total_transfer_credits=0;
     if($allCourses->isEmpty() != TRUE) {
         ?>
         @foreach($allCourses as $oneCourse)
@@ -64,10 +66,15 @@ echo '<tr>
 <tr class = "separator_row">
     <td  colspan="22">
 </tr>
-  '; }
-?>
+  ';
+  }
+   $total_hes_credits += $oneCourse->hes_credits;
+   $total_transfer_credits = $total_transfer_credits + $oneCourse->transfer_credits;
+   $GPA_math = $oneCourse->grade_points * ($oneCourse->hes_credits + $oneCourse->transfer_credits);
 
+?>
               @endforeach
+
 <tr class = "bottom_separator_row">
     <td  colspan="22">
 </tr>
@@ -76,5 +83,16 @@ echo '<tr>
     else {
         echo '<p>No courses found<p>';
     }
+    $total_credits = $total_hes_credits + $total_transfer_credits;
    ?>
-</table>
+</table><br>
+<div>You have {{{$total_hes_credits}}} total HES credits and {{{$total_transfer_credits}}} total transfer credits.</div><br>
+<div>Your total credits are: {{{$total_credits}}} credits</div><br>
+<?php
+if($total_hes_credits != 0 || $total_transfer_credits != 0)
+{
+?>
+<div>Your grade point average (GPA) is {{{ $GPA_math / $total_credits }}}</div>
+<?php
+}?>
+</div>
