@@ -105,16 +105,17 @@ if($total_hes_credits != 0 || $total_transfer_credits != 0)
 <?php
 }
 else{
-echo " (Add the letter grade achieved and number of credits earned above)</div> ";
+echo " 0.00</div> ";
 }
 ?>
 <div class="fine_print">**Enter Credits earned to calculate GPA.  Courses worth more credit hours have a bigger impact on your GPA.</div>
-<div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>
+<div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places.  An A- is set as a 3.66 Grade Point.<br>
   If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div><br>
 
 Graduation Eligibility:  Keep up the good work!<br>
 <div class="fine_print">You need ___ credits.  You have ___ credits left.</div>
 <div class="fine_print">You need at least a ___ GPA.  You have a ___ GPA.</div><br>
 
+</div>
 </div>
 </div>
