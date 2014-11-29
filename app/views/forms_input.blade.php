@@ -28,8 +28,8 @@
     <td class="course_delivery_box">
         <select name="course_delivery" class="course_delivery">
             <optgroup>
-                <option>On Campus</option>
                 <option>Online</option>
+                <option>On Campus</option>
                 <option>Web Conference</option>
                 <option>Simulation</option>
                 <option>Hybrid</option>
@@ -63,11 +63,10 @@
     <td class="status_box">
         <select name="status" class="status">
             <optgroup>
-                <option>Incomplete</option>
-                <option>Scheduled</option>
-                <option>In Progress</option>
                 <option>Complete</option>
-                <option>Transfer</option>
+                <option>In Progress</option>
+                <option>Scheduled</option>
+                <option>Incomplete</option>
                 <option>Other</option>
             </optgroup>
         </select>
@@ -75,6 +74,7 @@
     <td class="letter_grade_box">
         <select name="letter_grade" class="letter_grade">
             <optgroup>
+                <option></option>
                 <option>A</option>
                 <option>A-</option>
                 <option>B+</option>

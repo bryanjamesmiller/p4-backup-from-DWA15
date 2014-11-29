@@ -70,8 +70,7 @@
 <td class="course_attributes_box">
     <select class="course_attributes" name="course_attributes_4">
         <optgroup class="dropdowns">
-            <option>Select Here</option>
-            <option></option
+            <option></option>
             <option>A</option>
             <option>B</option>
             <option>C</option>
