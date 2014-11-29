@@ -17,7 +17,7 @@ echo '
 <tr>
     <th class="course_title_header" colspan="2">Course Title</th>
     <th class="course_attributes_header" colspan="5">Course Attributes</th>
-              <th class="semester_header">Semester</th>
+
               <th class="days_header">Day(s)</th>
               <th class="times_header">Time(s)</th>
               <th class="year_header">Year</th>
@@ -25,13 +25,13 @@ echo '
 </tr>
 
 <tr>
-<td class="course_title_box">' ?>  {{{$oneCourse->course_title  }}}<?php echo '</td>
+<td class="course_title_box" colspan="2">' ?>  {{{$oneCourse->course_title  }}}<?php echo '</td>
     <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_1  }}}<?php echo ' </td>
     <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_2  }}}<?php echo '</td>
     <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_3  }}}<?php echo '</td>
     <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_4  }}}<?php echo '</td>
     <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_5  }}}<?php echo '</td>
-<td class="semester_box">' ?>  {{{$oneCourse->semester  }}}<?php echo '</td>
+
 <td class="days_box">' ?>  {{{$oneCourse->days  }}}<?php echo '</td>
 <td class="times_box">' ?>  {{{$oneCourse->times  }}}<?php echo '</td>
 <td class="year_box">' ?>  {{{$oneCourse->year  }}}<?php echo '</td>
@@ -41,6 +41,7 @@ echo '
 
 
 <tr>
+<th class="semester_header">Semester</th>
               <th class="course_number_header">Course Number</th>
               <th class="course_delivery_header">Course Delivery</th>
               <th class="crn_number_header">CRN#</th>
@@ -53,6 +54,7 @@ echo '
               <th class="hes_credits_header">HES Credits**</th>
     </tr>
     <tr>
+<td class="semester_box">' ?>  {{{$oneCourse->semester  }}}<?php echo '</td>
 <td class="course_number_box">' ?> {{{$oneCourse->course_number}}} <?php echo '</td>
 <td class="course_delivery_box">' ?>  {{{$oneCourse->course_delivery }}} <?php echo '</td>
 <td class="crn_number_box">' ?>  {{{$oneCourse->crn_number }}}<?php echo '</td>
