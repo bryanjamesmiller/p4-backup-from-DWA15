@@ -45,7 +45,7 @@
 <?php
 $account = Account::search(Auth::user()->email);
 
-if($account->email == Auth::user()->email)
+if($account->degree_program === "Bachelor's of Liberal Arts (ALB)")
 {
 ?>
     @include('course_attributes_columns_alb')

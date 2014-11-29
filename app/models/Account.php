@@ -15,9 +15,9 @@ class Account extends Eloquent
         return $this->hasMany('Course');
     }
 
-    public static function search($query) {
-     $account = Account::where('email', 'LIKE', '%$query%')->get();
-
-    return $account;
+    public static function search($query)
+    {
+        $account = Account::where('email', 'LIKE', "%$query%")->first();
+        return $account;
     }
 }
