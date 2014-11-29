@@ -105,7 +105,7 @@ if($total_hes_credits != 0 || $total_transfer_credits != 0)
 <?php
 }
 else{
-echo " (Insufficient data entered)</div> "
+echo " (Insufficient data entered)</div> ";
 }
 ?>
 <div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>
