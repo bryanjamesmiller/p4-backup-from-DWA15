@@ -14,4 +14,10 @@ class Account extends Eloquent
         # Defines a one-to-many relationship
         return $this->hasMany('Course');
     }
+
+    public static function search($query) {
+     $account = Account::where('email', 'LIKE', '%$query%')->get();
+
+    return $account;
+    }
 }

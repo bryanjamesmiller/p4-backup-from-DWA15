@@ -43,7 +43,9 @@
     <td class="course_title_box"> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
 
 <?php
-if($account->degree === "Bachelor's of Liberal Arts (ALB)")
+$account = Account::search(Auth::user()->email);
+
+if($account->email == Auth::user()->email)
 {
 ?>
     @include('course_attributes_columns_alb')
