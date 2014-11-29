@@ -45,17 +45,6 @@ class CourseController extends \BaseController
      */
     public function store()
     {
-        $semester = Input::get('semester');
-        $days = Input::get('days');
-        $times = Input::get('times');
-        $year = Input::get('year');
-        $professors = Input::get('professors');
-        $status = Input::get('status');
-        $letter_grade = Input::get('letter_grade');
-        $grade_points = Input::get('grade_points');
-        $transfer_credits = Input::get('transfer_credits');
-        $hes_credits = Input::get('hes_credits');
-
         $course = new Course();
 
         $course->course_number = Input::get('course_number');
@@ -69,16 +58,16 @@ class CourseController extends \BaseController
         $course->course_attributes_3 = Input::get('course_attributes_3');
         $course->course_attributes_4 = Input::get('course_attributes_4');
         $course->course_attributes_5 = Input::get('course_attributes_5');
-        $course->semester = $semester;
-        $course->days = $days;
-        $course->times = $times;
-        $course->year = $year;
-        $course->professors = $professors;
-        $course->status = $status;
-        $course->letter_grade = $letter_grade;
-        $course->grade_points = $grade_points;
-        $course->transfer_credits = $transfer_credits;
-        $course->hes_credits = $hes_credits;
+        $course->semester = Input::get('semester');
+        $course->days = Input::get('days');
+        $course->times = Input::get('times');
+        $course->year = Input::get('year');
+        $course->professors = Input::get('professors');
+        $course->status = Input::get('status');
+        $course->letter_grade = Input::get('letter_grade');
+        //$course->grade_points =
+        $course->transfer_credits = Input::get('transfer_credits');
+        $course->hes_credits = Input::get('hes_credits');
 
         #add in the student's database so we can pull up one student's courses at a time
         $all_the_accounts = Account::all();

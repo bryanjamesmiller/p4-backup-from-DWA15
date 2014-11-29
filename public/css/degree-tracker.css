@@ -43,6 +43,11 @@ The below is mostly for the HES specific pages
 /*
 This wraps most of the font on the whole website with whatever you choose!
 */
+.font_wrapper_new_course{
+    font-family: 'Open Sans', sans-serif;
+    font-size:120%;
+}
+
 .font_wrapper{
     font-family: 'Open Sans', sans-serif;
     font-size:90%;
