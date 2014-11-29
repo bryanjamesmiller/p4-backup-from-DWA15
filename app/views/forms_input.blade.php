@@ -28,8 +28,6 @@
     <td class="course_delivery_box">
         <select name="course_delivery" class="course_delivery">
             <optgroup>
-                <option>Select Here</option>
-                <option>...</option>
                 <option>On Campus</option>
                 <option>Online</option>
                 <option>Web Conference</option>
@@ -49,8 +47,6 @@
     <td class="semester_box">
         <select name="semester" class="semester">
             <optgroup>
-                <option>Select Here</option>
-                <option>...</option>
                 <option>Fall</option>
                 <option>January</option>
                 <option>Spring</option>
@@ -67,8 +63,6 @@
     <td class="status_box">
         <select name="status" class="status">
             <optgroup>
-                <option>Select Here</option>
-                <option>...</option>
                 <option>Incomplete</option>
                 <option>Scheduled</option>
                 <option>In Progress</option>
@@ -81,8 +75,6 @@
     <td class="letter_grade_box">
         <select name="letter_grade" class="letter_grade">
             <optgroup>
-                <option>Select Here</option>
-                <option>...</option>
                 <option>A</option>
                 <option>A-</option>
                 <option>B+</option>

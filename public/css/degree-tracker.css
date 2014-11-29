@@ -475,7 +475,7 @@ These control the pink table rows
     min-width:5em;
     background-color:pink;
     font-weight:900;
-
+    text-align:center;
 }
 
 .grade_points_box{
