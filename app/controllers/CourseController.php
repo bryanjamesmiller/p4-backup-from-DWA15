@@ -162,7 +162,7 @@ class CourseController extends \BaseController
 
         $edit_option = Input::get('edit_options');
         $course->$edit_option = Input::get('new_value');
-        if('edit_options' === 'letter_grade') {
+        if($edit_option === 'letter_grade') {
             $lg = Input::get('new_value');
             $course->letter_grade = $lg;
             if ($lg === 'A')
