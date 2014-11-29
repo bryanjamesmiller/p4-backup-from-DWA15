@@ -64,8 +64,33 @@ class CourseController extends \BaseController
         $course->year = Input::get('year');
         $course->professors = Input::get('professors');
         $course->status = Input::get('status');
-        $course->letter_grade = Input::get('letter_grade');
-        //$course->grade_points =
+        $lg = Input::get('letter_grade');
+        $course->letter_grade = $lg;
+            if($lg === 'A')
+                $course->grade_points = 4;
+        else if($lg === 'A-')
+            $course->grade_points = 3.66;
+        else if($lg === 'B+')
+            $course->grade_points = 3.33;
+        else if($lg === 'B')
+            $course->grade_points = 3;
+        else if($lg === 'B-')
+            $course->grade_points = 2.66;
+        else if($lg === 'C+')
+            $course->grade_points = 2.33;
+        else if($lg === 'C')
+            $course->grade_points = 2;
+        else if($lg === 'C-')
+            $course->grade_points = 1.66;
+        else if($lg === 'D+')
+            $course->grade_points = 1.33;
+        else if($lg === 'D')
+            $course->grade_points = 1;
+        else if($lg === 'D-')
+            $course->grade_points = .66;
+        else
+            $course->grade_points = 0;
+
         $course->transfer_credits = Input::get('transfer_credits');
         $course->hes_credits = Input::get('hes_credits');
 

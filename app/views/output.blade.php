@@ -26,9 +26,9 @@ echo '<tr>
               <th class="times_header">Time(s)</th>
               <th class="year_header">Year</th>
               <th class="professors_header">Professor(s)</th>
-              <th class="status_header">Status</th>
+              <th class="status_header">Status*</th>
               <th class="letter_grade_header">Grade</th>
-              <th class="grade_points_header">Grade Points*</th>
+              <th class="grade_points_header">Grade Points**</th>
               <th class="transfer_credits_header">Transfer Credits</th>
               <th class="hes_credits_header">HES Credits</th>
     </tr>
@@ -70,10 +70,15 @@ echo '<tr>
     <td  colspan="22">
 </tr>
   ';
+
+  // strcasecmp ignores case
+  if(strcasecmp($oneCourse->status, 'Complete') == 0)
+  {
      $total_hes_credits += $oneCourse->hes_credits;
      $total_transfer_credits = $total_transfer_credits + $oneCourse->transfer_credits;
      $gradePoints_times_credits_all_added_together += $oneCourse->grade_points * ($oneCourse->hes_credits + $oneCourse->transfer_credits);
   }
+ }
 
 ?>
               @endforeach
@@ -89,8 +94,9 @@ echo '<tr>
    ?>
 </table><br>
 <div class="font_wrapper">
-<div>You have {{{$total_hes_credits}}} HES credits and {{{$total_transfer_credits}}} transfer credits.<br>
-  Total credits: {{{$total_credits}}} credits</div><br>
+<div>You have {{{$total_hes_credits}}} HES credits and {{{$total_transfer_credits}}} transfer credits.</div>
+  <div class="fine_print">Total credits: {{{$total_credits}}} credits</div>
+  <div class="fine_print">**Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
 <div>Your grade point average (GPA) is
 <?php
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
@@ -100,13 +106,13 @@ if($total_hes_credits != 0 || $total_transfer_credits != 0)
 <?php
 }
 ?>
-<div class="fine_print">*Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>
+<div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>
   If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div>
-<div class="fine_print">*Courses worth more credit hours have a bigger impact on your GPA.</div><br>
+<div class="fine_print">**Courses worth more credit hours have a bigger impact on your GPA.</div><br>
 
 Graduation Eligible:<br>
--You need 120 credits.  You have ___ credits left.<br>
--You need at least a 2.0 GPA.  You have a ___ GPA.<br>
+<div class="fine_print">You need 120 credits.  You have ___ credits left.</div>
+<div class="fine_print">You need at least a 2.0 GPA.  You have a ___ GPA.</div><br>
 
 </div>
 </div>
