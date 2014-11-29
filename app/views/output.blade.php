@@ -13,14 +13,27 @@
      $currentAccount = $oneCourse->account;
      if($currentAccount->email == Auth::user()->email)
 {
-echo '<tr>
+echo '
+<tr>
+    <th class="course_attributes_header" colspan="5">Course Attributes</th>
+</tr>
+
+<tr>
+    <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_1  }}}<?php echo ' </td>
+    <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_2  }}}<?php echo '</td>
+    <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_3  }}}<?php echo '</td>
+    <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_4  }}}<?php echo '</td>
+    <td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_5  }}}<?php echo '</td>
+</tr>
+
+
+<tr>
               <th class="course_number_header">Course Number</th>
               <th class="course_delivery_header">Course Delivery</th>
               <th class="crn_number_header">CRN#</th>
               <th  class="section_header">Section</th>
               <th class="tuition_header">Tuition</th>
               <th class="course_title_header">Course Title</th>
-              <th class="course_attributes_header" colspan="5">Course Attributes</th>
               <th class="semester_header">Semester</th>
               <th class="days_header">Day(s)</th>
               <th class="times_header">Time(s)</th>
@@ -39,11 +52,6 @@ echo '<tr>
 <td class="section_box">' ?>  {{{ $oneCourse->section  }}}<?php echo '</td>
 <td class="tuition_box">' ?>  {{{$oneCourse->tuition  }}}<?php echo '</td>
 <td class="course_title_box">' ?>  {{{$oneCourse->course_title  }}}<?php echo '</td>
-<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_1  }}}<?php echo ' </td>
-<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_2  }}}<?php echo '</td>
-<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_3  }}}<?php echo '</td>
-<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_4  }}}<?php echo '</td>
-<td class="course_attributes_box">' ?>  {{{$oneCourse->course_attributes_5  }}}<?php echo '</td>
 <td class="semester_box">' ?>  {{{$oneCourse->semester  }}}<?php echo '</td>
 <td class="days_box">' ?>  {{{$oneCourse->days  }}}<?php echo '</td>
 <td class="times_box">' ?>  {{{$oneCourse->times  }}}<?php echo '</td>
