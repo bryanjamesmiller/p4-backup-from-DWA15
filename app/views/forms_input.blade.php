@@ -48,13 +48,13 @@ $account = Account::search(Auth::user()->email);
 if($account->degree_program === "Bachelor's of Liberal Arts (ALB)")
 {
 ?>
-    @include('course_attributes_columns_alb')
+    @include('course_attributes_checkbox_alb')
 <?php
 }
 else
 {
 ?>
-    @include('course_attributes_columns_alm')
+    @include('course_attributes_checkbox_alm')
 <?php
 }
 ?>
