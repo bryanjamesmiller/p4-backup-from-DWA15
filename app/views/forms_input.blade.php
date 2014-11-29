@@ -111,6 +111,6 @@ else
     <td class="hes_credits_box"> {{Form::text('hes_credits', '', array('class' => 'hes_credits'))}}</td>
 </tr>
 </table>
-{{ Form::submit('Add Course')}}
+<div class="buttons">{{ Form::submit('Add Course')}}</div>
 {{ Form::close() }}
 </div>

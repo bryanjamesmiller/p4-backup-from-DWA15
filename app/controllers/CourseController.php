@@ -53,11 +53,21 @@ class CourseController extends \BaseController
         $course->section = Input::get('section');
         $course->tuition = Input::get('tuition');
         $course->course_title = Input::get('course_title');
-        $course->course_attributes_1 = Input::get('course_attributes_1');
-        $course->course_attributes_2 = Input::get('course_attributes_2');
-        $course->course_attributes_3 = Input::get('course_attributes_3');
-        $course->course_attributes_4 = Input::get('course_attributes_4');
-        $course->course_attributes_5 = Input::get('course_attributes_5');
+        if (Input::get('thesis') === 'y') {
+            $course->course_attributes_1 = "Thesis";} else {
+            $course->course_attributes_1 = "";  }
+        if (Input::get('capstone') === 'y') {
+            $course->course_attributes_2 = "Capstone";} else {
+            $course->course_attributes_2 = "";  }
+        if (Input::get('residency') === 'y') {
+            $course->course_attributes_3 = "Residency";} else {
+            $course->course_attributes_3 = "";  }
+        if (Input::get('proseminar') === 'y') {
+            $course->course_attributes_4 = "Proseminar";} else {
+            $course->course_attributes_4 = "";  }
+        if (Input::get('elective') === 'y') {
+            $course->course_attributes_5 = "Elective";} else {
+            $course->course_attributes_5 = "";  }
         $course->semester = Input::get('semester');
         $course->days = Input::get('days');
         $course->times = Input::get('times');
