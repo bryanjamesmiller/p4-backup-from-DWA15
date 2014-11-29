@@ -66,7 +66,7 @@ class CourseController extends \BaseController
         $course->status = Input::get('status');
         $lg = Input::get('letter_grade');
         $course->letter_grade = $lg;
-            if($lg === 'A')
+        if($lg === 'A')
                 $course->grade_points = 4;
         else if($lg === 'A-')
             $course->grade_points = 3.66;

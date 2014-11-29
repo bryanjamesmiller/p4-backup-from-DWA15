@@ -17,7 +17,7 @@
             <th class="professors_header">Professor(s)</th>
             <th class="status_header">Status</th>
             <th class="letter_grade_header">Grade</th>
-            <th class="grade_points_header">Grade Points</th>
+            <!--<th class="grade_points_header">Grade Points</th> -->
             <th class="transfer_credits_header">Transfer Credits</th>
             <th class="hes_credits_header">HES Credits</th>
         </tr>
@@ -100,7 +100,7 @@
             </optgroup>
         </select>
     </td>
-    <td class="grade_points_box"> {{Form::text('grade_points', '', array('class' => 'grade_points'))}}</td>
+    <!--<td class="grade_points_box"> {{--{{Form::text('grade_points', '', array('class' => 'grade_points'))}}--}}</td>-->
     <td class="transfer_credits_box"> {{Form::text('transfer_credits', '', array('class' => 'transfer_credits'))}}</td>
     <td class="hes_credits_box"> {{Form::text('hes_credits', '', array('class' => 'hes_credits'))}}</td>
 </tr>

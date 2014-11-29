@@ -95,14 +95,17 @@ echo '<tr>
 </table><br>
 <div class="font_wrapper">
 <div>Total credits: {{{$total_credits}}} credits.  You have {{{$total_hes_credits}}} HES and {{{$total_transfer_credits}}} transfer credits.</div>
-  <div class="fine_print">**Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
+  <div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
 <div>Your grade point average (GPA) is
 <?php
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
-{{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*</div>
+{{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*
 <?php
+}
+else{
+echo " (Insufficient data entered)</div> "
 }
 ?>
 <div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>

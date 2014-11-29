@@ -28,9 +28,9 @@ Edit Course Information
                     <th class="time_header">Time(s)</th>
                     <th class="year_header">Year</th>
                     <th class="professors_header">Professor(s)</th>
-                    <th class="status_header">Status</th>
-                    <th class="letter_grade_header">Grade</th>
-                    <th class="grade_points_header">Grade Points</th>
+                    <th class="status_header">Status*</th>
+                    <th class="letter_grade_header">Grade*</th>
+                    <th class="grade_points_header">Grade Points*</th>
                     <th class="transfer_credits_header">Transfer Credits</th>
                     <th class="hes_credits_header">HES Credits</th>
     </tr>
@@ -54,7 +54,7 @@ Edit Course Information
         <td class="professors_box">  {{{$course->professors  }}}</td>
         <td class="status_box">  {{{$course->status  }}}</td>
         <td class="letter_grade_box">  {{{$course->letter_grade  }}}</td>
-        <td class="grade_points_box">  {{{$course->grade_points  }}}</td>
+       <!-- <td class="grade_points_box">  {{{$course->grade_points  }}}</td>-->
         <td class="transfer_credits_box">  {{{$course->transfer_credits  }}}</td>
         <td class="hes_credits_box">  {{{ $course->hes_credits  }}}</td>
     </tr>
@@ -83,8 +83,8 @@ Edit Course Information
                 <option value="year">Year</option>
                 <option value="professors">Professor(s)</option>
                 <option value="status">Status</option>
-                <option value="letter_grade">Grade</option>
-                <option value="grade_points">Grade Points</option>
+                <option value="letter_grade">Letter Grade*</option>
+                <!--<option value="grade_points">Grade Points</option>-->
                 <option value="transfer_credits">Transfer Credits</option>
                 <option value="hes_credits">HES Credits</option>
      </optgroup>
@@ -100,7 +100,9 @@ Edit Course Information
 @section('bottom')
 
 <div>
-<p><a href="/course">Click here</a> to view a list of your courses.</p>
+<div class="fine_print">*If you would like to edit the Grade Points, change the Letter Grade.  Degree Tracker will update the Grade Points automatically.</div>
+<div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
+<p><a href="/course">Click here to view a list of your courses.</a></p>
 </div>
 @stop
 
