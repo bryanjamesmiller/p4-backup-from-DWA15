@@ -162,6 +162,34 @@ class CourseController extends \BaseController
 
         $edit_option = Input::get('edit_options');
         $course->$edit_option = Input::get('new_value');
+        if('edit_options' === 'letter_grade') {
+            $lg = Input::get('new_value');
+            $course->letter_grade = $lg;
+            if ($lg === 'A')
+                $course->grade_points = 4;
+            else if ($lg === 'A-')
+                $course->grade_points = 3.66;
+            else if ($lg === 'B+')
+                $course->grade_points = 3.33;
+            else if ($lg === 'B')
+                $course->grade_points = 3;
+            else if ($lg === 'B-')
+                $course->grade_points = 2.66;
+            else if ($lg === 'C+')
+                $course->grade_points = 2.33;
+            else if ($lg === 'C')
+                $course->grade_points = 2;
+            else if ($lg === 'C-')
+                $course->grade_points = 1.66;
+            else if ($lg === 'D+')
+                $course->grade_points = 1.33;
+            else if ($lg === 'D')
+                $course->grade_points = 1;
+            else if ($lg === 'D-')
+                $course->grade_points = .66;
+            else
+                $course->grade_points = 0;
+        }
         $course->save();
 
         $link = Input::get('id');

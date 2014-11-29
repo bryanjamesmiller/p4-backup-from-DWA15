@@ -94,8 +94,7 @@ echo '<tr>
    ?>
 </table><br>
 <div class="font_wrapper">
-<div>You have {{{$total_hes_credits}}} HES credits and {{{$total_transfer_credits}}} transfer credits.</div>
-  <div class="fine_print">Total credits: {{{$total_credits}}} credits</div>
+<div>Total credits: {{{$total_credits}}} credits.  You have {{{$total_hes_credits}}} HES and {{{$total_transfer_credits}}} transfer credits.</div>
   <div class="fine_print">**Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
 <div>Your grade point average (GPA) is
 <?php
