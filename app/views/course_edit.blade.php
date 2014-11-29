@@ -29,8 +29,8 @@ Edit Course Information
                     <th class="year_header">Year</th>
                     <th class="professors_header">Professor(s)</th>
                     <th class="status_header">Status*</th>
-                    <th class="letter_grade_header">Grade*</th>
-                    <th class="grade_points_header">Grade Points*</th>
+                    <th class="letter_grade_header">Grade**</th>
+                    <th class="grade_points_header">Grade Points**</th>
                     <th class="transfer_credits_header">Transfer Credits</th>
                     <th class="hes_credits_header">HES Credits</th>
     </tr>
@@ -89,21 +89,22 @@ Edit Course Information
                 <option value="hes_credits">HES Credits</option>
      </optgroup>
 </select>
+
+<br><br>
 <p>Enter new value:</p>
 {{ Form::text('new_value', '', array('id' => 'new_value'))}}
-{{ Form::hidden('id', $course['id']); }}
-{{ Form::submit('Click to Update Changes!')}}
+{{ Form::hidden('id', $course['id']); }}<br>
+<p>{{ Form::submit('Click to Update Changes!')}}</p>
 {{ Form::close() }}
+
+<div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div>
+<div class="fine_print">**If you would like to edit the Grade Points, change the Letter Grade.  Degree Tracker will update the Grade Points automatically.</div><br>
 </div>
 @stop
 
 @section('bottom')
+<div class="font_wrapper_new_course"><a href="/course">Click here to view a list of your courses.</a></div>
 
-<div>
-<div class="fine_print">*If you would like to edit the Grade Points, change the Letter Grade.  Degree Tracker will update the Grade Points automatically.</div>
-<div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
-<p><a href="/course">Click here to view a list of your courses.</a></p>
-</div>
 @stop
 
 

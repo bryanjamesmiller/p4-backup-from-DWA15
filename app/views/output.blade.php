@@ -49,7 +49,7 @@ echo '<tr>
 <td class="times_box">' ?>  {{{$oneCourse->times  }}}<?php echo '</td>
 <td class="year_box">' ?>  {{{$oneCourse->year  }}}<?php echo '</td>
 <td class="professors_box">' ?>  {{{$oneCourse->professors  }}}<?php echo '</td>
-<td class=class="status_box">' ?>  {{{$oneCourse->status  }}}<?php echo '</td>
+<td class="status_box">' ?>  {{{$oneCourse->status  }}}<?php echo '</td>
 <td class="letter_grade_box">' ?>  {{{$oneCourse->letter_grade  }}}<?php echo '</td>
 <td class="grade_points_box">' ?>  {{{$oneCourse->grade_points  }}}<?php echo '</td>
 <td class="transfer_credits_box">' ?>  {{{$oneCourse->transfer_credits  }}}<?php echo '</td>
