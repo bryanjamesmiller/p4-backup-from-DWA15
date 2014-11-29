@@ -9,7 +9,7 @@
             <th  class="section_header">Section</th>
             <th class="tuition_header">Tuition</th>
             <th class="course_title_header">Course Title</th>
-            <th class="course_attributes_header" colspan="5">Course Attributes</th>
+            <!-- <th class="course_attributes_header" colspan="5">Course Attributes</th> -->
             <th class="semester_header">Semester</th>
             <th class="days_header">Day(s)</th>
             <th class="times_header">Time(s)</th>
