@@ -41,7 +41,7 @@
     <td class="section_box"> {{Form::text('section', '', array('class' => 'section'))}}</td>
     <td class="tuition_box"> {{Form::text('tuition', '', array('class' => 'tuition'))}}</td>
     <td class="course_title_box"> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
-
+Check the relevant course attributes:<br>
 <?php
 $account = Account::search(Auth::user()->email);
 
