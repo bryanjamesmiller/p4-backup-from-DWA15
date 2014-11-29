@@ -29,8 +29,8 @@ echo '<tr>
               <th class="status_header">Status*</th>
               <th class="letter_grade_header">Grade</th>
               <th class="grade_points_header">Grade Points**</th>
-              <th class="transfer_credits_header">Transfer Credits</th>
-              <th class="hes_credits_header">HES Credits</th>
+              <th class="transfer_credits_header">Transfer Credits**</th>
+              <th class="hes_credits_header">HES Credits**</th>
     </tr>
     <tr>
 <td class="course_number_box">' ?> {{{$oneCourse->course_number}}} <?php echo '</td>
@@ -101,20 +101,20 @@ echo '<tr>
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
 ?>
-{{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}*
+{{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}
 <?php
 }
 else{
-echo " (Insufficient data entered)</div> ";
+echo " (Add the letter grade achieved and number of credits earned above)</div> ";
 }
 ?>
+<div class="fine_print">**Enter Credits earned to calculate GPA.  Courses worth more credit hours have a bigger impact on your GPA.</div>
 <div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places (an A- is treated as a 3.66 Grade Point).<br>
-  If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div>
-<div class="fine_print">**Courses worth more credit hours have a bigger impact on your GPA.</div><br>
+  If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div><br>
 
-Graduation Eligible:<br>
-<div class="fine_print">You need 120 credits.  You have ___ credits left.</div>
-<div class="fine_print">You need at least a 2.0 GPA.  You have a ___ GPA.</div><br>
+Graduation Eligibility:  Keep up the good work!<br>
+<div class="fine_print">You need ___ credits.  You have ___ credits left.</div>
+<div class="fine_print">You need at least a ___ GPA.  You have a ___ GPA.</div><br>
 
 </div>
 </div>

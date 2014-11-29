@@ -19,7 +19,7 @@ Edit Course Information
         <th class="course_number_header">Course Number</th>
                     <th class="course_delivery_header">Course Delivery</th>
                     <th class="crn_number_header">CRN#</th>
-                    <th  class="section_header">Section</th>
+                    <th class="section_header">Section</th>
                     <th class="tuition_header">Tuition</th>
                     <th class="course_title_header">Course Title</th>
                     <th class="course_attributes_header" colspan="5">Course Attributes</th>
