@@ -1,16 +1,27 @@
 <div class="font_wrapper">
+Check the relevant course attributes:<br>
+<?php
+$account = Account::search(Auth::user()->email);
+
+if($account->degree_program === "Bachelor's of Liberal Arts (ALB)")
+{
+?>
+    @include('course_attributes_checkbox_alm')
+<?php
+}
+else
+{
+?>
+    @include('course_attributes_checkbox_alm')
+<?php
+}
+?>
+
 {{ Form::open(array('action' => 'CourseController@store')) }}
    <table>
         <thead>
         <tr>
             <th class="course_title_header">Course Title</th>
-            <th class="course_number_header">Course Number</th>
-            <th class="course_delivery_header">Course Delivery</th>
-            <th class="crn_number_header">CRN#</th>
-            <th  class="section_header">Section</th>
-            <th class="tuition_header">Tuition</th>
-            <!-- <th class="course_attributes_header" colspan="5">Course Attributes</th> -->
-            <th class="semester_header">Semester</th>
             <th class="days_header">Day(s)</th>
             <th class="times_header">Time(s)</th>
             <th class="year_header">Year</th>
@@ -20,7 +31,32 @@
 
     <tr>
     <td class="course_title_box"> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
-    <td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
+
+    <td class="days_box"> {{Form::text('days', '', array('class' => 'days'))}}</td>
+    <td class="times_box"> {{Form::text('times', '', array('class' => 'times'))}}</td>
+    <td class="year_box"> {{Form::text('year', '', array('class' => 'year'))}}</td>
+    <td class="professors_box"> {{Form::text('professors', '', array('class' => 'professors'))}}</td>
+
+</tr>
+<tr>
+ <th class="course_number_header">Course Number</th>
+  <th class="semester_header">Semester</th>
+            <th class="course_delivery_header">Course Delivery</th>
+            <th class="crn_number_header">CRN#</th>
+            <th  class="section_header">Section</th>
+            <th class="tuition_header">Tuition</th>
+            <!-- <th class="course_attributes_header" colspan="5">Course Attributes</th> -->
+
+
+            <th class="status_header">Status</th>
+            <th class="letter_grade_header">Grade</th>
+            <!--<th class="grade_points_header">Grade Points</th> -->
+            <th class="transfer_credits_header">Transfer Credits</th>
+            <th class="hes_credits_header">HES Credits</th>
+
+</tr>
+<tr>
+<td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
     <td class="course_delivery_box">
         <select name="course_delivery" class="course_delivery">
             <optgroup>
@@ -36,24 +72,6 @@
     <td class="crn_number_box"> {{Form::text('crn_number', '', array('class' => 'crn_number'))}}</td>
     <td class="section_box"> {{Form::text('section', '', array('class' => 'section'))}}</td>
     <td class="tuition_box"> {{Form::text('tuition', '', array('class' => 'tuition'))}}</td>
-
-Check the relevant course attributes:<br>
-<?php
-$account = Account::search(Auth::user()->email);
-
-if($account->degree_program === "Bachelor's of Liberal Arts (ALB)")
-{
-?>
-    @include('course_attributes_checkbox_alb')
-<?php
-}
-else
-{
-?>
-    @include('course_attributes_checkbox_alm')
-<?php
-}
-?>
     <td class="semester_box">
         <select name="semester" class="semester">
             <optgroup>
@@ -66,21 +84,6 @@ else
             </optgroup>
         </select>
     </td>
-    <td class="days_box"> {{Form::text('days', '', array('class' => 'days'))}}</td>
-    <td class="times_box"> {{Form::text('times', '', array('class' => 'times'))}}</td>
-    <td class="year_box"> {{Form::text('year', '', array('class' => 'year'))}}</td>
-    <td class="professors_box"> {{Form::text('professors', '', array('class' => 'professors'))}}</td>
-
-</tr>
-<tr>
-            <th class="status_header">Status</th>
-            <th class="letter_grade_header">Grade</th>
-            <!--<th class="grade_points_header">Grade Points</th> -->
-            <th class="transfer_credits_header">Transfer Credits</th>
-            <th class="hes_credits_header">HES Credits</th>
-
-</tr>
-<tr>
     <td class="status_box">
         <select name="status" class="status">
             <optgroup>
