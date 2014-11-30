@@ -1,7 +1,8 @@
 /*
-The below is mostly for the Degree Tracker Welcome/generic pages
+The below controls buttons and links
 */
-input[type="submit"]{
+
+.font_wrapper_new_course{
     font-family: 'Open Sans', sans-serif;
     font-size:125%;
     border-radius:.4em;
@@ -9,11 +10,59 @@ input[type="submit"]{
     width:20em;
     text-align:center;
     margin-bottom:1em;
+    background-color: white;
+}
+
+.font_wrapper_new_course:hover{
+    background-color:yellow;
+}
+
+nav ul li {
+    display:inline;
+    margin-right:7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+    color:#980101;
+    font-size:75%;
+}
+
+a:link{
+    text-decoration:none;
+    color:black;
+}
+
+a:visited{
+    text-decoration:underline;
+    color:black;
+}
+
+a:hover {
+    text-decoration:underline;
+    color:#980101;
+}
+a:active {
+    text-decoration:underline;
+    color:yellow;
+}
+
+input[type="submit"]{
+    font-family: 'Open Sans', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:10em;
+    text-align:center;
+    margin-bottom:1em;
+    background-color: white;
 }
 
 input[type="submit"]:hover{
     background-color:yellow;
 }
+/*
+The below is mostly for the Degree Tracker Welcome/generic pages
+*/
+
 
 .welcome_header{
     font-family: 'Open Sans', sans-serif;
@@ -62,21 +111,6 @@ This wraps most of the font on the whole website with whatever you choose!
     padding-right:.3em;
 }
 
-.font_wrapper_new_course{
-    font-family: 'Open Sans', sans-serif;
-    font-size:125%;
-    border-radius:.4em;
-    border: solid #980101 1px;
-    width:10em;
-    text-align:center;
-    margin-bottom:1em;
-    background-color: white;
-}
-
-.font_wrapper_new_course:hover{
-    background-color:yellow;
-}
-
 .font_wrapper{
     font-family: 'Open Sans', sans-serif;
     font-size:90%;
@@ -109,35 +143,6 @@ This wraps most of the font on the whole website with whatever you choose!
     font-family: 'Open Sans', sans-serif;
     margin:.3em;
 }
-
-nav ul li {
-    display:inline;
-    margin-right:7px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:500;
-    color:#980101;
-    font-size:75%;
-}
-
-a:link{
-    text-decoration:none;
-    color:black;
-}
-
-a:visited{
-    text-decoration:underline;
-    color:black;
-}
-
-a:hover {
-    text-decoration:underline;
-    color:#980101;
-}
-a:active {
-      text-decoration:underline;
-      color:yellow;
- }
-
 
 
 
