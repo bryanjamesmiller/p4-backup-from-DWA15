@@ -1,6 +1,20 @@
 /*
 The below is mostly for the Degree Tracker Welcome/generic pages
 */
+input[type="submit"]{
+    font-family: 'Open Sans', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:20em;
+    text-align:center;
+    margin-bottom:1em;
+}
+
+input[type="submit"]:hover{
+    background-color:yellow;
+}
+
 .welcome_header{
     font-family: 'Open Sans', sans-serif;
     font-size:200%;
@@ -56,6 +70,10 @@ This wraps most of the font on the whole website with whatever you choose!
     width:20em;
     text-align:center;
     margin-bottom:1em;
+}
+
+.font_wrapper_new_course:hover{
+    background-color:yellow;
 }
 
 .font_wrapper{
