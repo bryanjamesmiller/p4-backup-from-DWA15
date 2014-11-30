@@ -28,7 +28,7 @@ else
             <th class="professors_header">Professor(s)</th>
               <th class="semester_header">Semester</th>
                       <th class="course_delivery_header">Course Delivery</th>
-                          <th class="crn_number_header">CRN#</th>
+
 
         </tr>
         </thead>
@@ -52,7 +52,7 @@ else
             </optgroup>
         </select>
     </td>
-<td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
+
     <td class="course_delivery_box">
         <select name="course_delivery" class="course_delivery">
             <optgroup>
@@ -65,24 +65,22 @@ else
             </optgroup>
         </select>
     </td>
-    <td class="crn_number_box"> {{Form::text('crn_number', '', array('class' => 'crn_number'))}}</td>
 </tr>
 <tr>
- <th class="course_number_header">Course Number</th>
-
+            <th class="crn_number_header">CRN#</th>
+            <th class="course_number_header">Course Number</th>
             <th  class="section_header">Section</th>
             <th class="tuition_header">Tuition</th>
             <!-- <th class="course_attributes_header" colspan="5">Course Attributes</th> -->
-
-
             <th class="status_header">Status</th>
             <th class="letter_grade_header">Grade</th>
             <!--<th class="grade_points_header">Grade Points</th> -->
             <th class="transfer_credits_header">Transfer Credits</th>
             <th class="hes_credits_header">HES Credits</th>
-
 </tr>
 <tr>
+    <td class="crn_number_box"> {{Form::text('crn_number', '', array('class' => 'crn_number'))}}</td>
+    <td class="course_number_box"> {{Form::text('course_number', '', array('class' => 'course_number'))}}</td>
     <td class="section_box"> {{Form::text('section', '', array('class' => 'section'))}}</td>
     <td class="tuition_box"> {{Form::text('tuition', '', array('class' => 'tuition'))}}</td>
     <td class="status_box">
