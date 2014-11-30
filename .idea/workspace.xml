@@ -58,8 +58,8 @@
       <file leaf-file-name="degree-tracker.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/degree-tracker.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4870801" vertical-offset="8174" max-vertical-offset="9265">
-              <caret line="503" column="18" selection-start-line="503" selection-start-column="18" selection-end-line="503" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.35367373" vertical-offset="4476" max-vertical-offset="9265">
+              <caret line="280" column="13" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -523,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/degree-tracker.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4870801" vertical-offset="8174" max-vertical-offset="9265">
-          <caret line="503" column="18" selection-start-line="503" selection-start-column="18" selection-end-line="503" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.35367373" vertical-offset="4476" max-vertical-offset="9265">
+          <caret line="280" column="13" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="13" />
           <folding />
         </state>
       </provider>
