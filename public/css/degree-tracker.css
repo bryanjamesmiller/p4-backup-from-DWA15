@@ -418,83 +418,97 @@ These are for the grey headers on the tables with the _header suffixes
 These control the pink table rows
 **/
 .course_number_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .course_delivery_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .crn_number_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .tuition_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .section_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .course_title_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 .course_attributes_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .semester_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .status_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .days_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .times_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .year_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .professors_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .letter_grade_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     font-weight:900;
@@ -502,6 +516,7 @@ These control the pink table rows
 }
 
 .grade_points_box{
+    height: 1.5em;
     min-width:5em;
     background-color:#980101;
     font-weight:900;
@@ -510,12 +525,14 @@ These control the pink table rows
 }
 
 .transfer_credits_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
 }
 
 .hes_credits_box{
+    height: 1.5em;
     min-width:5em;
     background-color:pink;
     text-align:center;
