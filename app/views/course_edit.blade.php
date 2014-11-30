@@ -102,7 +102,7 @@ Edit Course Information
 <p>Enter new value:</p>
 {{ Form::text('new_value', '', array('id' => 'new_value'))}}
 {{ Form::hidden('id', $course['id']); }}<br>
-<p>{{ Form::submit('Click to Update Changes!')}}</p>
+<p class="longer_button">{{ Form::submit('Click to Update Changes!')}}</p>
 {{ Form::close() }}
 
 <div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div>

@@ -2,6 +2,33 @@
 The below controls buttons and links
 */
 
+input[type="submit"]{
+    font-family: 'Open Sans', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:10em;
+    text-align:center;
+    margin-top:1em;
+    margin-bottom:1em;
+    background-color: white;
+}
+
+input[type="submit"]:hover{
+    background-color:yellow;
+}
+
+.longer_button{
+    font-family: 'Open Sans', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:20em;
+    text-align:center;
+    margin-bottom:1em;
+    background-color: white;
+}
+
 .font_wrapper_new_course{
     font-family: 'Open Sans', sans-serif;
     font-size:125%;
@@ -45,20 +72,7 @@ a:active {
     color:yellow;
 }
 
-input[type="submit"]{
-    font-family: 'Open Sans', sans-serif;
-    font-size:125%;
-    border-radius:.4em;
-    border: solid #980101 1px;
-    width:10em;
-    text-align:center;
-    margin-bottom:1em;
-    background-color: white;
-}
 
-input[type="submit"]:hover{
-    background-color:yellow;
-}
 /*
 The below is mostly for the Degree Tracker Welcome/generic pages
 */
@@ -135,6 +149,7 @@ This wraps most of the font on the whole website with whatever you choose!
     font-weight: 900;   
     margin:0em;
     width:115%;
+    padding-right:0em;
 }
 
 #heading{
@@ -170,6 +185,7 @@ table,th,td
     margin:0em;
     width:115%;
     font-size:100%;
+    padding-right:0em;
 }
 
 .tableHeaders{
