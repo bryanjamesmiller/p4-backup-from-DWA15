@@ -1,4 +1,7 @@
 <div class="font_wrapper">
+
+{{ Form::open(array('action' => 'CourseController@store')) }}
+
 Check the relevant course attributes:<br>
 <?php
 $account = Account::search(Auth::user()->email);
@@ -17,7 +20,6 @@ else
 }
 ?>
 
-{{ Form::open(array('action' => 'CourseController@store')) }}
    <table>
         <thead>
         <tr>
