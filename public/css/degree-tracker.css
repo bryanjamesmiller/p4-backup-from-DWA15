@@ -67,9 +67,10 @@ This wraps most of the font on the whole website with whatever you choose!
     font-size:125%;
     border-radius:.4em;
     border: solid #980101 1px;
-    width:20em;
+    width:10em;
     text-align:center;
     margin-bottom:1em;
+    background-color: white;
 }
 
 .font_wrapper_new_course:hover{
@@ -125,7 +126,7 @@ a:link{
 
 a:visited{
     text-decoration:underline;
-    color:dimgray;
+    color:black;
 }
 
 a:hover {
