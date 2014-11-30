@@ -81,7 +81,7 @@ This wraps most of the font on the whole website with whatever you choose!
     border-radius: .4em;
     font-weight: 900;   
     margin:0em;
-    width:100%;
+    width:115%;
 }
 
 #heading{
@@ -144,7 +144,7 @@ table,th,td
     border-radius: .4em;
     font-weight: 900;
     margin:0em;
-    width:55%;
+    width:115%;
     font-size:100%;
 }
 
@@ -399,7 +399,7 @@ These are for the grey headers on the tables with the _header suffixes
 
 .separator_row{
     background-color: white;
-    height:1em;
+    height:2em;
     border-left-style:hidden;
     border-right-style: hidden;
 }
