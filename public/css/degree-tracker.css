@@ -81,7 +81,7 @@ This wraps most of the font on the whole website with whatever you choose!
     border-radius: .4em;
     font-weight: 900;   
     margin:0em;
-    width:45em;
+    width:100%;
 }
 
 #heading{
@@ -144,7 +144,7 @@ table,th,td
     border-radius: .4em;
     font-weight: 900;
     margin:0em;
-    width:45em;
+    width:55%;
     font-size:100%;
 }
 
