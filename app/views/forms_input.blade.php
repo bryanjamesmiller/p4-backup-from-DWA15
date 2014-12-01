@@ -2,7 +2,7 @@
 
 {{ Form::open(array('action' => 'CourseController@store')) }}
 
-Check the relevant course attributes:<br>
+<h2>Check the relevant course attributes (max 5):</h2><br>
 <?php
 $account = Account::search(Auth::user()->email);
 
@@ -19,7 +19,7 @@ else
 <?php
 }
 ?>
-
+<h2>Enter course information below:</h2><br>
    <table>
         <thead>
         <tr>
