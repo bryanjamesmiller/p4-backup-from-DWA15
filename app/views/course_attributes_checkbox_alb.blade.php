@@ -8,6 +8,6 @@
  <span class="checkboxes_alb"> {{ Form::label('foreign_language', 'Foreign Language') }}{{ Form::checkbox('foreign_language', 'y') }}</span></div>
   <div><span class="checkboxes_alb">{{ Form::label('harvard_instructor', 'Harvard Instructor') }}{{ Form::checkbox('harvard_instructor', 'y') }}</span>
   <span class="checkboxes_alb">{{ Form::label('upper_level_course', 'Upper Level Course') }}{{ Form::checkbox('upper_level_course', 'y') }}</span>
-  <span class="checkboxes_alb">{{ Form::label('residency', 'Residency') }}{{ Form::checkbox('residency', 'y') }}</span>
+ <div> <span class="checkboxes_alb">{{ Form::label('residency', 'Residency') }}{{ Form::checkbox('residency', 'y') }}</span>
  <span class="checkboxes_alb"> {{ Form::label('field_of_study', 'Field Of Study') }}{{ Form::checkbox('field_of_study', 'y') }}</span></div>
- <div><span class="checkboxes_alb"> {{ Form::label('minor', 'Minor') }}{{ Form::checkbox('minor', 'y') }}</span></div>
+ <span class="checkboxes_alb"> {{ Form::label('minor', 'Minor') }}{{ Form::checkbox('minor', 'y') }}</span></div>
