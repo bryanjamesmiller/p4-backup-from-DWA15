@@ -38,8 +38,8 @@
       <file leaf-file-name="course_attributes_checkbox_alb.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/course_attributes_checkbox_alb.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25442177" vertical-offset="0" max-vertical-offset="735">
-              <caret line="11" column="134" selection-start-line="11" selection-start-column="134" selection-end-line="11" selection-end-column="134" />
+            <state vertical-scroll-proportion="0.021464646" vertical-offset="0" max-vertical-offset="792">
+              <caret line="1" column="143" selection-start-line="1" selection-start-column="143" selection-end-line="1" selection-end-column="143" />
               <folding />
             </state>
           </provider>
@@ -550,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/course_attributes_checkbox_alb.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25442177" vertical-offset="0" max-vertical-offset="735">
-          <caret line="11" column="134" selection-start-line="11" selection-start-column="134" selection-end-line="11" selection-end-column="134" />
+        <state vertical-scroll-proportion="0.021464646" vertical-offset="0" max-vertical-offset="792">
+          <caret line="1" column="143" selection-start-line="1" selection-start-column="143" selection-end-line="1" selection-end-column="143" />
           <folding />
         </state>
       </provider>
