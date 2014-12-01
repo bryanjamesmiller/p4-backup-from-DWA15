@@ -38,8 +38,8 @@
       <file leaf-file-name="course_attributes_checkbox_alb.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/course_attributes_checkbox_alb.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23129252" vertical-offset="0" max-vertical-offset="735">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.25442177" vertical-offset="0" max-vertical-offset="735">
+              <caret line="11" column="134" selection-start-line="11" selection-start-column="134" selection-end-line="11" selection-end-column="134" />
               <folding />
             </state>
           </provider>
@@ -157,8 +157,8 @@
         <option value="$PROJECT_DIR$/app/views/output.blade.php" />
         <option value="$PROJECT_DIR$/app/views/course_edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/forms_input.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/course_attributes_checkbox_alb.blade.php" />
         <option value="$PROJECT_DIR$/public/css/degree-tracker.css" />
+        <option value="$PROJECT_DIR$/app/views/course_attributes_checkbox_alb.blade.php" />
       </list>
     </option>
   </component>
@@ -550,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/course_attributes_checkbox_alb.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23129252" vertical-offset="0" max-vertical-offset="735">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.25442177" vertical-offset="0" max-vertical-offset="735">
+          <caret line="11" column="134" selection-start-line="11" selection-start-column="134" selection-end-line="11" selection-end-column="134" />
           <folding />
         </state>
       </provider>
