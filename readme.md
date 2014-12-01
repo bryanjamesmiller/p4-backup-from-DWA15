@@ -10,8 +10,8 @@ http://p4.bryanmiller.me/
 This is a degree tracker that lets you know your course plans and GPA.  It has three
 databases, the user database, and also stores an account in a database, and it also has
 a database for the course information.  Please keep this project secret
-as it is currently being marketed to HES by my internship provider.
-My CSS3 and HTML5 code validated as such.
+as it is currently being marketed to HES by my internship provider.  I will try to 
+keep my CSS3 and HTML5 code validated as such, but I am continually updating my code.
 
 ###Demo information:  
 Link to my Jing screencast:  http://screencast.com/t/ZoUilSJQYMW
