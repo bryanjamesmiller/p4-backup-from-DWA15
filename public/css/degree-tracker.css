@@ -115,6 +115,10 @@ This wraps most of the font on the whole website with whatever you choose!
     padding-right:.3em;
 }
 
+.checkboxes_alm{
+    padding-right:.3em;
+}
+
 .font_wrapper{
     font-family: 'Open Sans', sans-serif;
     font-size:90%;
