@@ -7,13 +7,14 @@ Problem Set 4 for CSCI E-15
 http://p4.bryanmiller.me/
 
 ###Description of the project:  
-This is a degree tracker that lets you know if you're ready to graduate.  It also 
-stores the user's information in a database.  Please keep this project secret
+This is a degree tracker that lets you know your course plans and GPA.  It has three
+databases, the user database, and also stores an account in a database, and it also has
+a database for the course information.  Please keep this project secret
 as it is currently being marketed to HES by my internship provider.
 My CSS3 and HTML5 code validated as such.
 
 ###Demo information:  
-Link to my Jing screencast:  
+Link to my Jing screencast:  http://screencast.com/t/ZoUilSJQYMW
 
 ###A list of any plugins, libraries, packages or outside code used in the project:  
 I used some Google Fonts, as well as a concept from my internship provider, but
