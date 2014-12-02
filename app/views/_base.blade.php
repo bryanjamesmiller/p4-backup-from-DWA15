@@ -23,7 +23,7 @@
 
 <div id="heading">
    <h1 class="hes_header" >
-     <img src="/images/wheat logo.PNG" alt="wheat logo">
+     <img src="/images/rsz_wheat_logo_90.png" alt="wheat logo">
 
    </h1>
    <caption>
