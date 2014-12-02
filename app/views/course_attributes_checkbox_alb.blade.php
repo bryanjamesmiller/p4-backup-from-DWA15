@@ -6,7 +6,7 @@
   <span class="checkboxes_alb">{{ Form::label('writing_intensive', 'Writing Intensive') }}{{ Form::checkbox('writing_intensive', 'y') }}</span>
    <span class="checkboxes_alb"> {{ Form::label('foreign_language', 'Foreign Language') }}{{ Form::checkbox('foreign_language', 'y') }}</span></div>
 
-<div>   Pick one:  <span class="checkboxes_alb"> {{ Form::label('quantitative_reasoning', 'Quantitative Reasoning') }}{{ Form::checkbox('quantitative_reasoning', 'y') }}</span>
+<div>   <span class="checkboxes_alb"> {{ Form::label('quantitative_reasoning', 'Quantitative Reasoning') }}{{ Form::checkbox('quantitative_reasoning', 'y') }}</span>
   <span class="checkboxes_alb">{{ Form::label('moral_reasoning', 'Moral Reasoning') }}{{ Form::checkbox('moral_reasoning', 'y') }}</span>
   <span class="checkboxes_alb"> {{ Form::label('minor', 'Minor') }}{{ Form::checkbox('minor', 'y') }}</span></div>
 
