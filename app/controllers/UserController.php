@@ -14,6 +14,22 @@ class UserController extends \BaseController {
     }
 
     public function postSignup(){
+
+        # Step 1) Define the rules
+        $rules = array(
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:6'
+        );
+        # Step 2)
+        $validator = Validator::make(Input::all(), $rules);
+        # Step 3
+        if($validator->fails()) {
+            return Redirect::to('/signup')
+                ->with('flash_message', 'Sign up failed; please check your email format and password length.')
+                ->withInput()
+                ->withErrors($validator);
+        }
+
         $user = new User;
         $user->student_name    = Input::get('student_name');
         $user->email    = Input::get('email');
