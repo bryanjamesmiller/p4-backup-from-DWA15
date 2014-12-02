@@ -101,7 +101,7 @@ class CourseController extends \BaseController
                 $course->course_attributes_3 = "Upper Level Course";}
             if (Input::get('residency') === 'y'){
                 $course->course_attributes_4 = "Residency";}
-            if (Input::get('j') === 'field_of_study'){
+            if (Input::get('field_of_study') === 'y'){
                 $course->course_attributes_5 = "Field of Study";}
 
         }
