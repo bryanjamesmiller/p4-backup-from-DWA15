@@ -1,4 +1,4 @@
-@extends('_base_welcome')
+@extends('_base_welcome_gap')
 
 @section('head')
 
