@@ -55,7 +55,7 @@ class CourseController extends \BaseController
         $course->course_title = Input::get('course_title');
 
         $account = Account::search(Auth::user()->email);
-        if($account->degree_program === "Master's of Liberal Arts (ALB)") {
+        if($account->degree_program === "Master's of Liberal Arts (ALM)") {
             if (Input::get('thesis') === 'y') {
                 $course->course_attributes_1 = "Thesis";
             } else {
