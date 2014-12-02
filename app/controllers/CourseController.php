@@ -84,6 +84,25 @@ class CourseController extends \BaseController
         }
         else
         {
+            if (Input::get('sciences') === 'y') {
+                $course->course_attributes_1 = "Sciences";} else if (Input::get('social_sciences') === 'y'){
+                $course->course_attributes_1 = "Social Sciences";} else if (Input::get('humanities') === 'y'){
+                $course->course_attributes_1 = "Humanities";} else if (Input::get('expository_writing') === 'y'){
+                $course->course_attributes_1 = "Expository Writing";} else if (Input::get('writing_intensive') === 'y'){
+                $course->course_attributes_1 = "Writing Intensive";} else if (Input::get('foreign_language') === 'y'){
+                $course->course_attributes_1 = "Foreign Language";} else if (Input::get('moral_reasoning') === 'y'){
+                $course->course_attributes_1 = "Moral Reasoning";} else if (Input::get('quantitative_reasoning') === 'y'){
+                $course->course_attributes_1 = "Quantitative Reasoning";} else if (Input::get('foreign_language') === 'y'){
+                $course->course_attributes_1 = "Foreign Language";} else if (Input::get('minor') === 'y'){
+                $course->course_attributes_1 = "Minor";}
+            if (Input::get('harvard_instructor') === 'y'){
+                $course->course_attributes_2 = "Harvard Instructor";}
+            if (Input::get('upper_level_course') === 'y'){
+                $course->course_attributes_3 = "Upper Level Course";}
+            if (Input::get('residency') === 'y'){
+                $course->course_attributes_4 = "Residency";}
+            if (Input::get('j') === 'field_of_study'){
+                $course->course_attributes_5 = "Field of Study";}
 
         }
         $course->semester = Input::get('semester');
