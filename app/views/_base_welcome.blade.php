@@ -22,7 +22,7 @@
     @endif
 <div class="font_wrapper_sign_in_log_in">
     <h1 class="welcome_header">Welcome to Degree Tracker<br>
-    <div class="welcome_header_subtitle">A simple and fun tool for you and your school to organize your planned and completed courses</div> </h1>
+    <div class="welcome_header_subtitle">A simple and fun tool for you and your school to organize your planned, current and completed courses</div> </h1>
 </div>
 
     @yield('top')

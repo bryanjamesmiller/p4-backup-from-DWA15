@@ -78,7 +78,7 @@ The below is mostly for the Degree Tracker Welcome/generic pages
     border-radius: .4em;
     font-weight: 900;
     margin:0em;
-    width:95%;
+    width:79%;
 }
 
 .welcome_header_subtitle{
@@ -137,6 +137,7 @@ This wraps most of the font on the whole website with whatever you choose!
     font-size:200%;
     color:white;
     padding:.9em;
+    padding-left:.7em;
     background-color:#980101;
     border: solid white 1px;
     border-radius: .4em;
@@ -172,6 +173,7 @@ table,th,td
     font-family: 'Open Sans', sans-serif;
     color:white;
     padding:.9em;
+    padding-left:.7em;
     background-color:#980101;
     border: solid white 1px;
     border-radius: .4em;

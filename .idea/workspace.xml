@@ -25,101 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="degree-tracker.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="degree-tracker.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/degree-tracker.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29508197" vertical-offset="1108" max-vertical-offset="9843">
-              <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2655" max-vertical-offset="9877">
+              <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/environment.php">
+      <file leaf-file-name="remind.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/password/remind.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="561">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/signup.blade.php">
+      <file leaf-file-name="reset.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/password/reset.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1054">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Course.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Course.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.307693" vertical-offset="845" max-vertical-offset="2941">
-              <caret line="67" column="49" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/session.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847" vertical-offset="102" max-vertical-offset="2482">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base_welcome.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/_base_welcome.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="680">
-              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base_welcome_gap.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/_base_welcome_gap.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="680">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/_base.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.269231" vertical-offset="28" max-vertical-offset="833">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base_nameless.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/_base_nameless.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="748">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.33960047" vertical-offset="0" max-vertical-offset="851">
+              <caret line="17" column="59" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -154,13 +84,16 @@
         <option value="$PROJECT_DIR$/environment.php" />
         <option value="$PROJECT_DIR$/app/views/signup.blade.php" />
         <option value="$PROJECT_DIR$/public/css/degree-tracker.css" />
+        <option value="$PROJECT_DIR$/../nancysp4/app/views/password/reset.blade.php" />
+        <option value="$PROJECT_DIR$/../nancysp4/app/routes.php" />
+        <option value="$PROJECT_DIR$/../nancysp4/app/views/password/remind.blade.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="547" />
-    <option name="y" value="309" />
+    <option name="x" value="185" />
+    <option name="y" value="330" />
     <option name="width" value="1199" />
     <option name="height" value="1014" />
   </component>
@@ -190,6 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,6 +260,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="password" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="p4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -368,7 +324,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,15 +355,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -427,8 +382,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="547" y="309" width="1199" height="1014" extended-state="0" />
-    <editor active="true" />
+    <frame x="185" y="330" width="1199" height="1014" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -442,13 +397,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -472,11 +427,90 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/css/degree-tracker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9877">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1054">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="845" max-vertical-offset="2941">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2482">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_base_welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="680">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_base_welcome_gap.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="680">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="833">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_base_nameless.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="748">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/forms_input.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2261">
           <caret line="9" column="1" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,7 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="408">
           <caret line="11" column="118" selection-start-line="11" selection-start-column="118" selection-end-line="11" selection-end-column="118" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -492,7 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="112" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -500,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="2159">
           <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -540,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="4607">
           <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -551,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="459">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="2159">
           <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="112" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="459">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2261">
           <caret line="9" column="1" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="408">
           <caret line="11" column="118" selection-start-line="11" selection-start-column="118" selection-end-line="11" selection-end-column="118" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="4607">
           <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/_base_nameless.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="748">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="748">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding />
         </state>
@@ -651,7 +672,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/_base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.269231" vertical-offset="28" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="833">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="44" />
           <folding />
         </state>
@@ -659,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/_base_welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="680">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="680">
           <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
           <folding />
         </state>
@@ -667,7 +688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/_base_welcome_gap.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="680">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="680">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
         </state>
@@ -675,7 +696,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/environment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
         </state>
@@ -683,7 +704,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/signup.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1054">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1054">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
@@ -691,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.307693" vertical-offset="845" max-vertical-offset="2941">
+        <state vertical-scroll-proportion="0.0" vertical-offset="845" max-vertical-offset="2941">
           <caret line="67" column="49" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="49" />
           <folding />
         </state>
@@ -699,7 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="102" max-vertical-offset="2482">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2482">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding />
         </state>
@@ -707,8 +728,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/degree-tracker.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29508197" vertical-offset="1108" max-vertical-offset="9843">
-          <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2655" max-vertical-offset="9877">
+          <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/password/remind.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nancysp4/app/views/password/remind.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2596945" vertical-offset="0" max-vertical-offset="851">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nancysp4/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32458234" vertical-offset="3655" max-vertical-offset="18870">
+          <caret line="240" column="64" selection-start-line="240" selection-start-column="64" selection-end-line="240" selection-end-column="64" />
+          <folding>
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417897726426" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../nancysp4/app/views/password/reset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37955347" vertical-offset="0" max-vertical-offset="851">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/password/reset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33960047" vertical-offset="0" max-vertical-offset="851">
+          <caret line="17" column="59" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="59" />
           <folding />
         </state>
       </provider>
