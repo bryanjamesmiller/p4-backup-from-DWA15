@@ -109,7 +109,8 @@ echo '
 </table><br>
 <div class="font_wrapper">
 <div>Total credits: {{{$total_credits}}} credits.  You have {{{$total_hes_credits}}} HES and {{{$total_transfer_credits}}} transfer credits.</div>
-  <div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA</div><br>
+  <div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA.</div><br>
+   <div class="fine_print">*Undergraduates can transfer in a total of 64 credits maximum.</div><br>
 <div>Your grade point average (GPA) is
 <?php
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
@@ -123,20 +124,22 @@ echo " 0.00</div> ";
 }
 ?>
 <div class="fine_print">**Enter Credits earned to calculate GPA.  Courses worth more credit hours have a bigger impact on your GPA.</div>
-<div class="fine_print">**Degree Tracker rounds your Grade Points to 2 decimal places( an A- is set as a 3.67 Grade Point).<br>
+<div class="fine_print">**Degree Tracker rounds your Grade Points to 2 decimal places (an A- is set as a 3.67 Grade Point).<br>
   If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div><br>
 
 Graduation Eligibility:
 <?php
 
- if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
+ if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)" && $total_credits >= 128)
  {
 echo "Congratulations!  You are eligible to graduate.";
 }
-else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
+else if ($alm_or_alb === "Master's of Liberal Arts (ALM)" && $total_credits >= 50)
 {
-echo "Keep up the good work!";
+echo "Congratulations!  You are eligible to graduate.";
 }
+else
+    echo "Keep up the good work!";
 
 ?>
 <br>
@@ -165,7 +168,35 @@ echo "Keep up the good work!";
 
    ?>
   credits left.</div>
-<div class="fine_print">You need at least a 2.0 GPA.  You have a {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}} GPA.</div><br>
+<div class="fine_print">You need at least a
+
+<?php
+
+ if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
+ {
+echo "2.0 GPA.";
+
+}
+else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
+{
+echo "3.0 GPA.";
+}
+?>
+ You have a
+ <?php
+ if($total_hes_credits != 0 || $total_transfer_credits != 0)
+ {
+ ?>
+ {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}
+ <?php
+ }
+ else{
+ echo " 0.00</div> ";
+ }
+ ?>
+
+
+ GPA.</div><br>
 
 </div>
 </div>
