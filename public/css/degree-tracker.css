@@ -180,7 +180,7 @@ This just gives a left margin to the create course headers and checkboxes
 }
 
 table{
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     border-collapse:collapse;
     border:3px solid black;
     width:100%;
@@ -207,96 +207,96 @@ table,th,td
 
 /*
 The below are for the INPUT FORMS (with no suffixes)
-They have #F5EEF5 backgrounds, except for the drop-down boxes, which are grey
+They have #ffe4ee backgrounds, except for the drop-down boxes, which are grey
 */
 
 .student_email{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .student_name{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .concentration{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .degree_program{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .course_number{
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     width:7.7em;
 }
 
 .course_delivery{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .crn_number{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .tuition{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .section{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .course_title{
     width:21em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .course_attributes{
     width:7.7em;
-    background-color:#F5EEF5;}
+    background-color:#ffe4ee;}
 
 .semester{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .status{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .letter_grade{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .days{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .times{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .year{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .professors{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .grade_points{
@@ -308,12 +308,12 @@ They have #F5EEF5 backgrounds, except for the drop-down boxes, which are grey
 
 .transfer_credits{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .hes_credits{
     width:7.7em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
 }
 
 .flash-message {
@@ -426,7 +426,7 @@ These are for the grey headers on the tables with the _header suffixes
 }
 
  .edit_or_delete_rows{
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     vertical-align: top;
      padding:.4em;
      height:.7em;
@@ -454,102 +454,102 @@ These are for the grey headers on the tables with the _header suffixes
 }
 
 /**
-These control the #F5EEF5 table rows
+These control the #ffe4ee table rows
 **/
 .course_number_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .course_delivery_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .crn_number_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .tuition_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .section_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .course_title_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 .course_attributes_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .semester_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .status_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .days_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .times_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .year_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .professors_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .letter_grade_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     font-weight:900;
     text-align:center;
 }
@@ -559,20 +559,20 @@ These control the #F5EEF5 table rows
     min-width:5em;
     background-color:#980101;
     font-weight:900;
-    color:#F5EEF5;
+    color:#ffe4ee;
     text-align:center;
 }
 
 .transfer_credits_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
 
 .hes_credits_box{
     height: 1.5em;
     min-width:5em;
-    background-color:#F5EEF5;
+    background-color:#ffe4ee;
     text-align:center;
 }
