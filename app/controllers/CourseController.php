@@ -116,25 +116,25 @@ class CourseController extends \BaseController
         if($lg === 'A')
                 $course->grade_points = 4;
         else if($lg === 'A-')
-            $course->grade_points = 3.66;
+            $course->grade_points = 3.67;
         else if($lg === 'B+')
             $course->grade_points = 3.33;
         else if($lg === 'B')
             $course->grade_points = 3;
         else if($lg === 'B-')
-            $course->grade_points = 2.66;
+            $course->grade_points = 2.67;
         else if($lg === 'C+')
             $course->grade_points = 2.33;
         else if($lg === 'C')
             $course->grade_points = 2;
         else if($lg === 'C-')
-            $course->grade_points = 1.66;
+            $course->grade_points = 1.67;
         else if($lg === 'D+')
             $course->grade_points = 1.33;
         else if($lg === 'D')
             $course->grade_points = 1;
         else if($lg === 'D-')
-            $course->grade_points = .66;
+            $course->grade_points = .67;
         else
             $course->grade_points = 0;
 

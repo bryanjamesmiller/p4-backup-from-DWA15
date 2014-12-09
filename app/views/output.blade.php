@@ -5,6 +5,7 @@
     $total_hes_credits=0;
     $total_transfer_credits=0;
     $gradePoints_times_credits_all_added_together=0;
+    $alm_or_alb='';
 
     if($allCourses->isEmpty() != TRUE) {
         ?>
@@ -13,6 +14,8 @@
      $currentAccount = $oneCourse->account;
      if($currentAccount->email == Auth::user()->email)
 {
+$alm_or_alb=$currentAccount->degree_program;
+
 echo '
 <tr>
     <th class="course_title_header" colspan="2">Course Title</th>
@@ -120,12 +123,49 @@ echo " 0.00</div> ";
 }
 ?>
 <div class="fine_print">**Enter Credits earned to calculate GPA.  Courses worth more credit hours have a bigger impact on your GPA.</div>
-<div class="fine_print">**Degree Tracker truncates your Grade Points to 2 decimal places.  An A- is set as a 3.66 Grade Point.<br>
+<div class="fine_print">**Degree Tracker rounds your Grade Points to 2 decimal places( an A- is set as a 3.67 Grade Point).<br>
   If your school calculates GPA differently, please have your registrar email mydegreetracker@gmail.com</div><br>
 
-Graduation Eligibility:  Keep up the good work!<br>
-<div class="fine_print">You need ___ credits.  You have ___ credits left.</div>
-<div class="fine_print">You need at least a ___ GPA.  You have a ___ GPA.</div><br>
+Graduation Eligibility:
+<?php
+
+ if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
+ {
+echo "Congratulations!  You are eligible to graduate.";
+}
+else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
+{
+echo "Keep up the good work!";
+}
+
+?>
+<br>
+<div class="fine_print">You need
+ <?php
+ if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
+ {
+    $credits_left = 128 - $total_credits;
+    echo ' ' + 128 + ' ';
+ }
+ else
+ {
+    $credits_left = 50 - $total_credits;
+    echo ' ' + 50 + ' ';
+ }
+
+ if($credits_left <0 )
+     $credits_left = 0;
+
+
+ ?>
+ credits.  You have
+  <?php
+
+   echo  ' ' + $credits_left + ' ';
+
+   ?>
+  credits left.</div>
+<div class="fine_print">You need at least a 2.0 GPA.  You have a {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}} GPA.</div><br>
 
 </div>
 </div>
