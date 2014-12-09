@@ -88,9 +88,15 @@ The below is mostly for the Degree Tracker Welcome/generic pages
 }
 
 .login_logout_signup_welcome{
-    padding-top:1em;
+    padding-top:1.5em;
     font-family: 'Open Sans', sans-serif;
-    font-size:80%;
+    margin-left:1em;
+}
+
+.login_logout_signup{
+    padding-top:1.5em;
+    font-family: 'Open Sans', sans-serif;
+    margin-left:1em;
 }
 
 .new{
@@ -189,11 +195,6 @@ table,th,td
 .tableHeaders{
     background-color:#BFBBBC;   
     font-weight: 900;
-}
-
-.login_logout_signup{
-    padding-top:1.5em;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .name{

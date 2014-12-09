@@ -15,14 +15,17 @@
  * RESTful Routes for the "Course" thing EXCEPT the edit and delete functions
  * because they have really weird put/delete methods
 */
-Route::get('/course', 'CourseController@index');
-Route::get('/course/create', 'CourseController@create');
-Route::post('/course', 'CourseController@store');
-Route::get('/course/{course_id}', 'CourseController@show');
-Route::get('/course_edit/{id?}', 'CourseController@edit');
-Route::post('/course_edit', 'CourseController@update');
-Route::get('/delete/{format?}', 'CourseController@delete');
 
+Route::group(array('before' => 'auth'), function()
+{
+    Route::get('/course', 'CourseController@index');
+    Route::get('/course/create', 'CourseController@create');
+    Route::post('/course', 'CourseController@store');
+    Route::get('/course/{course_id}', 'CourseController@show');
+    Route::get('/course_edit/{id?}', 'CourseController@edit');
+    Route::post('/course_edit', 'CourseController@update');
+    Route::get('/delete/{format?}', 'CourseController@delete');
+});
 
 /*
 * Potential RESTful Routes for the "Account" thing
