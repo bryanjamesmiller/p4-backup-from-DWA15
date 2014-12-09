@@ -189,24 +189,24 @@ echo "3.0 GPA.";
 
  if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
  {
-     echo '<div>You need at least 64 HES credits.  You have ' + $total_hes_credits + '.</div>';
-     echo '<div>You need 40 credits in your Concentration, 32 must be HES credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need at least 64 HES credits.  You have .</div>';
+     echo '<div class="fine_print">You need 40 credits in your Concentration, 32 must be HES credits.  You have ' + '.</div>';
 
-     echo '<div>You need 8 Sciences credits.  You have ' + '.</div>';
-     echo '<div>You need 8 Social Sciences credits.  You have ' + '.</div>';
-     echo '<div>You need 8 Humanities credits.  You have ' + '.</div>';
-     echo '<div>You need 8 credits outside the areas of concentration.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 8 Sciences credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 8 Social Sciences credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 8 Humanities credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 8 credits outside the areas of concentration.  You have ' + '.</div>';
 
-     echo '<div>You need 8 Expository Writing credits.  You have ' + '.</div>';
-     echo '<div>You need 12 Writing Intensive credits.  You have ' + '.</div>';
-     echo '<div>You need either 8 lower-level Foreign Language credits or 4 upper-level.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 8 Expository Writing credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 12 Writing Intensive credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need either 8 lower-level Foreign Language credits or 4 upper-level.  You have ' + '.</div>';
 
-     echo '<div>You need 4 Quantitative Reasoning credits.  You have ' + '.</div>';
-     echo '<div>You need 4 Moral Reasoning credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 4 Quantitative Reasoning credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 4 Moral Reasoning credits.  You have ' + '.</div>';
 
-     echo '<div>You need 52 credits taught by Harvard Instructors.  You have ' + '.</div>';
-     echo '<div>You need 16 credits for the residency requirement.  You have ' + '.</div>';
-    echo '<div>You need 60 upper-level credits.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 52 credits taught by Harvard Instructors.  You have ' + '.</div>';
+     echo '<div class="fine_print">You need 16 credits for the residency requirement.  You have ' + '.</div>';
+    echo '<div class="fine_print">You need 60 upper-level credits.  You have ' + '.</div>';
  }
 ?>
 
