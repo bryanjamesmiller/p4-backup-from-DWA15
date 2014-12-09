@@ -21,16 +21,15 @@
         <div class="login_logout_signup"><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></div>
     @endif
 
-<div id="heading">
-   <h1 class="hes_header" >
+<div>
+   <div class="hes_header" >
      <img src="/images/rsz_wheat_logo_90.png" alt="wheat logo">
 
-   </h1>
-   <caption>
-        <h1>
+   </div>
+
             <div id="studentNameHeader"> Student Name:  {{{Auth::user()->student_name}}}</div>
-        </h1>
-   </caption>
+
+
 </div>
 
 
