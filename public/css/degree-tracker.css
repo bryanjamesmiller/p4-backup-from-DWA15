@@ -20,6 +20,7 @@ input[type="submit"]:hover{
 
 
 .font_wrapper_new_course{
+    margin-left:.3em;
     font-family: 'Open Sans', sans-serif;
     font-size:125%;
     border-radius:.4em;
@@ -180,8 +181,9 @@ table,th,td
     border: solid white 1px;
     border-radius: .4em;
     font-weight: 900;
-    margin:.3em;
+    margin-left:.3em;
     margin-top:0em;
+    margin-bottom:.7em;
     width:98%;
     font-size:150%;
     padding-right:0em;
