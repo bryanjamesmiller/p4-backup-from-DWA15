@@ -2,6 +2,7 @@
 <table>
     <?php
 
+    $gpa=0;
     $total_hes_credits=0;
     $total_transfer_credits=0;
     $gradePoints_times_credits_all_added_together=0;
@@ -109,12 +110,13 @@ echo '
 </table><br>
 <div class="font_wrapper">
 <div>Total credits: {{{$total_credits}}} credits.  You have {{{$total_hes_credits}}} HES and {{{$total_transfer_credits}}} transfer credits.</div>
-  <div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA.</div><br>
+  <div class="fine_print">*Status must be marked as "Complete" for that course to count towards Total Credits and GPA.</div>
    <div class="fine_print">*Undergraduates can transfer in a total of 64 credits maximum.</div><br>
 <div>Your grade point average (GPA) is
 <?php
 if($total_hes_credits != 0 || $total_transfer_credits != 0)
 {
+$gpa = number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2);
 ?>
 {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}
 <?php
@@ -182,21 +184,7 @@ else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
 echo "3.0 GPA.";
 }
 ?>
- You have a
- <?php
- if($total_hes_credits != 0 || $total_transfer_credits != 0)
- {
- ?>
- {{{ number_format(($gradePoints_times_credits_all_added_together / $total_credits), 2) }}}
- <?php
- }
- else{
- echo " 0.00</div> ";
- }
- ?>
-
-
- GPA.</div><br>
+ You have a <?php $gpa ?> GPA.</div><br>
 
 </div>
 </div>
