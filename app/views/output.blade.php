@@ -2,7 +2,7 @@
 <table>
     <?php
 
-    $gpa=0;
+    $gpa=0.00;
     $total_hes_credits=0;
     $total_transfer_credits=0;
     $gradePoints_times_credits_all_added_together=0;
@@ -132,11 +132,11 @@ echo " 0.00</div> ";
 Graduation Eligibility:
 <?php
 
- if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)" && $total_credits >= 128)
+ if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)" && $total_credits >= 128 && $gpa >= 2.0)
  {
 echo "Congratulations!  You are eligible to graduate.";
 }
-else if ($alm_or_alb === "Master's of Liberal Arts (ALM)" && $total_credits >= 50)
+else if ($alm_or_alb === "Master's of Liberal Arts (ALM)" && $total_credits >= 50 && $gpa >= 3.0)
 {
 echo "Congratulations!  You are eligible to graduate.";
 }
@@ -184,7 +184,7 @@ else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
 echo "3.0 GPA.";
 }
 ?>
- You have a <?php $gpa ?> GPA.</div><br>
+ You have a {{{ $gpa }}} GPA.</div><br>
 
 </div>
 </div>
