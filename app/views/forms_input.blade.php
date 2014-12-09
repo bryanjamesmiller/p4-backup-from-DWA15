@@ -1,8 +1,8 @@
 <div class="font_wrapper">
-
+<div class="indent_over_from_left_margin">
 {{ Form::open(array('action' => 'CourseController@store')) }}
 
-<h2>Check the relevant course attributes (max 5):</h2><br>
+<h2>Check the relevant course attributes (max 5):</h2>
 <?php
 $account = Account::search(Auth::user()->email);
 
@@ -19,7 +19,9 @@ else
 <?php
 }
 ?>
-<h2>Enter course information below:</h2><br>
+<br>
+<h2>Enter course information below:</h2>
+</div>
    <table>
         <thead>
         <tr>
@@ -28,16 +30,12 @@ else
             <th class="times_header">Time(s)</th>
             <th class="year_header">Year</th>
             <th class="professors_header">Professor(s)</th>
-              <th class="semester_header">Semester</th>
-                      <th class="course_delivery_header">Course Delivery</th>
-
-
+            <th class="semester_header">Semester</th>
+            <th class="course_delivery_header">Course Delivery</th>
         </tr>
         </thead>
-
     <tr>
     <td class="course_title_box" colspan="2"> {{Form::text('course_title', '', array('class' => 'course_title'))}}</td>
-
     <td class="days_box"> {{Form::text('days', '', array('class' => 'days'))}}</td>
     <td class="times_box"> {{Form::text('times', '', array('class' => 'times'))}}</td>
     <td class="year_box"> {{Form::text('year', '', array('class' => 'year'))}}</td>
@@ -125,4 +123,4 @@ else
 </table>
 <div class="buttons">{{ Form::submit('Add Course')}}</div>
 {{ Form::close() }}
-</div>
+</div><br><br>
