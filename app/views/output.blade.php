@@ -2,11 +2,24 @@
 <table>
     <?php
 
-    $gpa=0.00;
-    $total_hes_credits=0;
-    $total_transfer_credits=0;
-    $gradePoints_times_credits_all_added_together=0;
-    $alm_or_alb='';
+    $gpa = 0.00;
+    $total_hes_credits = 0;
+    $total_transfer_credits = 0;
+    $gradePoints_times_credits_all_added_together = 0;
+    $alm_or_alb = '';
+    $sciences_credits = 0;
+    $social_sciences_credits = 0;
+    $humanities_credits = 0;
+    $expo_writing_credits = 0;
+    $writing_intens_credits = 0;
+    $foreign_lang_credits = 0;
+    $quant_reasoning_credits = 0;
+    $moral_reasoning_credits = 0;
+    $minor_credits = 0;
+    $harv_instr_credits = 0;
+    $upper_level_credits = 0;
+    $residency_credits = 0;
+    $field_study_credits = 0;
 
     if($allCourses->isEmpty() != TRUE) {
         ?>
@@ -141,7 +154,7 @@ else if ($alm_or_alb === "Master's of Liberal Arts (ALM)" && $total_credits >= 5
 echo "Congratulations!  You are eligible to graduate.";
 }
 else
-    echo "Keep up the good work!";
+    echo "Keep studying!";
 
 ?>
 <br>
@@ -184,29 +197,29 @@ else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
 echo "3.0 GPA.";
 }
 ?>
- You have a {{{ $gpa }}} GPA.</div><br>
+ You have a {{{ $gpa }}} GPA.</div>
 <?php
 
  if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
  {
-     echo '<div class="fine_print">You need at least 64 HES credits.  You have </div>';
-     echo '<div class="fine_print">You need 40 credits in your Concentration, 32 must be HES credits.  You have </div>';
+     echo '<div class="fine_print">You have 0/64 HES credits.</div>';
+     echo '<div class="fine_print">You have 0/40 concentration credits (32 must be HES credits).</div>';
 
-     echo '<div class="fine_print">You need 8 Sciences credits.  You have </div>';
-     echo '<div class="fine_print">You need 8 Social Sciences credits.  You have </div>';
-     echo '<div class="fine_print">You need 8 Humanities credits.  You have </div>';
-     echo '<div class="fine_print">You need 8 credits outside the areas of concentration.  You have </div>';
+     echo '<div class="fine_print">You have 0/8 sciences credits.</div>';
+     echo '<div class="fine_print">You have 0/8 social sciences credits.  </div>';
+     echo '<div class="fine_print">You have 0/8 humanities credits.  </div>';
+     echo '<div class="fine_print">You have 0/8 credits outside the areas of concentration.  </div>';
 
-     echo '<div class="fine_print">You need 8 Expository Writing credits.  You have </div>';
-     echo '<div class="fine_print">You need 12 Writing Intensive credits.  You have </div>';
-     echo '<div class="fine_print">You need either 8 lower-level Foreign Language credits or 4 upper-level.  You have </div>';
+     echo '<div class="fine_print">You have 0/8 expository writing credits.  </div>';
+     echo '<div class="fine_print">You have 0/12 writing intensive credits.  </div>';
+     echo '<div class="fine_print">You need either 8 lower-level or 4 upper-level foreign language credits.  You have 0.</div>';
 
-     echo '<div class="fine_print">You need 4 Quantitative Reasoning credits.  You have </div>';
-     echo '<div class="fine_print">You need 4 Moral Reasoning credits.  You have </div>';
+     echo '<div class="fine_print">You have 0/4 quantitative reasoning credits.  </div>';
+     echo '<div class="fine_print">You have 0/4 moral reasoning credits.  </div>';
 
-     echo '<div class="fine_print">You need 52 credits taught by Harvard Instructors.  You have </div>';
-     echo '<div class="fine_print">You need 16 credits for the residency requirement.  You have </div>';
-    echo '<div class="fine_print">You need 60 upper-level credits.  You have </div>';
+     echo '<div class="fine_print">You have 0/52 credits taught by Harvard instructors.  </div>';
+     echo '<div class="fine_print">You have 0/16 credits for the residency requirement.  </div>';
+    echo '<div class="fine_print">You have 0/60 upper-level credits. </div>';
  }
 ?>
 
