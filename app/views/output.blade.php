@@ -158,6 +158,21 @@ else
 
 ?>
 <br>
+<div class="fine_print">You need at least a
+
+<?php
+
+ if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
+ {
+echo "2.0 GPA.";
+
+}
+else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
+{
+echo "3.0 GPA.";
+}
+?>
+ You have a {{{ $gpa }}} GPA.</div>
 <div class="fine_print">You need
  <?php
  if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
@@ -183,21 +198,6 @@ else
 
    ?>
   credits left.</div>
-<div class="fine_print">You need at least a
-
-<?php
-
- if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
- {
-echo "2.0 GPA.";
-
-}
-else if ($alm_or_alb === "Master's of Liberal Arts (ALM)")
-{
-echo "3.0 GPA.";
-}
-?>
- You have a {{{ $gpa }}} GPA.</div>
 <?php
 
  if($alm_or_alb === "Bachelor's of Liberal Arts (ALB)")
@@ -212,7 +212,7 @@ echo "3.0 GPA.";
 
      echo '<div class="fine_print">You have 0/8 expository writing credits.  </div>';
      echo '<div class="fine_print">You have 0/12 writing intensive credits.  </div>';
-     echo '<div class="fine_print">You need either 8 lower-level or 4 upper-level foreign language credits.  You have 0.</div>';
+     echo '<div class="fine_print">You have 0/8 lower-level (or 0/4 upper-level) foreign language credits.</div>';
 
      echo '<div class="fine_print">You have 0/4 quantitative reasoning credits.  </div>';
      echo '<div class="fine_print">You have 0/4 moral reasoning credits.  </div>';
