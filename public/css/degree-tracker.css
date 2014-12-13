@@ -67,19 +67,22 @@ a:active {
 /*
 The below is mostly for the Degree Tracker Welcome/generic pages
 */
-
+.padding_welcome{
+    padding-left:.7em;
+}
 
 .welcome_header{
     font-family: 'Lora ', serif;
     font-size:259%;
     color:white;
-    padding:.9em;
+    padding:.7em;
     background-color:#980101;
     border: solid white 1px;
     border-radius: .4em;
     font-weight: 500;
     margin:0em;
     width:79%;
+    margin-top:.3em;
 }
 
 .welcome_header_subtitle{
@@ -147,7 +150,7 @@ This wraps most of the font on the whole website with whatever you choose!
     padding-left:.7em;
     background-color:#980101;
     border: solid white 1px;
-    border-radius: .4em;
+    border-radius: .5em;
     font-weight: 900;   
     margin:.3em;
     width:98%;
@@ -156,14 +159,14 @@ This wraps most of the font on the whole website with whatever you choose!
 }
 
 #studentNameHeader{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', sans-serif;
     color:white;
     padding:.5em;
     padding-left:.7em;
     background-color:#980101;
     border: solid white 1px;
     border-radius: .5em;
-    font-weight: 900;
+    font-weight: 500;
     margin-left:.3em;
     margin-top:0em;
     margin-bottom:.7em;
