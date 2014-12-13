@@ -7,6 +7,7 @@
      This HTML resetter messes up the iPhone/mobile colors, although the rest works fine*-->
         <link rel="stylesheet" href="/css/degree-tracker.css" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
         @yield('head')
     </head>

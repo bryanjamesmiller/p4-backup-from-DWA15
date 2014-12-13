@@ -70,14 +70,14 @@ The below is mostly for the Degree Tracker Welcome/generic pages
 
 
 .welcome_header{
-    font-family: 'Lora', serif;
-    font-size:235%;
+    font-family: 'Lora ', serif;
+    font-size:259%;
     color:white;
     padding:.9em;
     background-color:#980101;
     border: solid white 1px;
     border-radius: .4em;
-    font-weight: 900;
+    font-weight: 500;
     margin:0em;
     width:79%;
 }
