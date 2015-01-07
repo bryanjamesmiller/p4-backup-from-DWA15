@@ -43,9 +43,26 @@ Route::filter('auth', function()
 		}
 		else
 		{
-			return Redirect::guest('login')->with('flash_message', 'You have to be signed in to do that!');
+			return Redirect::guest('login')->with('flash_message', 'You have to be signed in to do that.');
 		}
 	}
+});
+
+/*
+ * Makes sure one logged in user can't view another user's courses.  Due to the 'auth' filter above,
+ * a user must already be logged in to view any courses.  However, nothing stops them from viewing
+ * each other's courses besides this filter I (Bryan) have made.
+ */
+Route::filter('restrictPermission', function($route)
+{
+	$id = $route->parameter('id');
+	$course = Course::find($id);
+	$user_id = $course->user_id;
+	if(Auth::user()->id !== $user_id)
+		return Redirect::to('/')
+			->with('flash_message', 'Permission denied.');
+	# This compares the currently logged in user's id to the course's user ID (in the database)
+	# so that the logged in user can only view or delete their own courses.
 });
 
 

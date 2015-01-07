@@ -54,8 +54,7 @@ class CourseController extends \BaseController
         $course->tuition = Input::get('tuition');
         $course->course_title = Input::get('course_title');
 
-        $account = Account::search(Auth::user()->email);
-        if($account->degree_program === "Master's of Liberal Arts (ALM)") {
+        if(Auth::user()->degree_program === "Master's of Liberal Arts (ALM)") {
             if (Input::get('thesis') === 'y') {
                 $course->course_attributes_1 = "Thesis";
             } else {
@@ -84,31 +83,84 @@ class CourseController extends \BaseController
         }
         else
         {
+            $course_array = array();
+            for($j = 0; $j < 5; $j++)
+            {
+                $course_array[$j] = '';
+            }
+
+            $i=0;
             if (Input::get('sciences') === 'y') {
-                $course->course_attributes_1 = "Sciences";} else if (Input::get('social_sciences') === 'y'){
-                $course->course_attributes_1 = "Social Sciences";} else if (Input::get('humanities') === 'y'){
-                $course->course_attributes_1 = "Humanities";} else if (Input::get('expository_writing') === 'y'){
-                $course->course_attributes_1 = "Expository Writing";} else if (Input::get('writing_intensive') === 'y'){
-                $course->course_attributes_1 = "Writing Intensive";} else if (Input::get('foreign_language') === 'y'){
-                $course->course_attributes_1 = "Foreign Language";} else if (Input::get('moral_reasoning') === 'y'){
-                $course->course_attributes_1 = "Moral Reasoning";} else if (Input::get('quantitative_reasoning') === 'y'){
-                $course->course_attributes_1 = "Quantitative Reasoning";} else if (Input::get('foreign_language') === 'y'){
-                $course->course_attributes_1 = "Foreign Language";} else if (Input::get('minor') === 'y'){
-                $course->course_attributes_1 = "Minor";}
+                $course->course_concentration = "Sciences";} else if (Input::get('social_sciences') === 'y'){
+                $course->course_concentration = "Social Sciences";} else if (Input::get('humanities') === 'y'){
+                $course->course_concentration = "Humanities";} else if (Input::get('outside_concentrations') === 'y'){
+                $course->course_concentration = "Outside";}
+
+            if (Input::get('expository_writing') === 'y'){
+                $course_array[$i] = "Expository Writing";
+                $i = $i + 1;
+            }
+            if (Input::get('writing_intensive') === 'y'){
+                $course_array[$i] = "Writing Intensive";
+                $i = $i + 1;
+            }
+            if (Input::get('foreign_language_lower') === 'y'){
+                $course_array[$i] = "Foreign Language (lower)";
+                $i = $i + 1;
+            }
+            else if(Input::get('foreign_language_upper') === 'y'){
+                $course_array[$i] = "Foreign Language (upper)";
+                $i = $i + 1;
+            }
+            if (Input::get('moral_reasoning') === 'y'){
+                $course_array[$i] = "Moral Reasoning";
+                $i = $i + 1;
+            }
+            else if (Input::get('quantitative_reasoning') === 'y'){
+                $course_array[$i] = "Quantitative Reasoning";
+                $i = $i + 1;
+            }
             if (Input::get('harvard_instructor') === 'y'){
-                $course->course_attributes_2 = "Harvard Instructor";}
+                $course_array[$i] = "Harvard Instructor";
+                $i = $i + 1;
+            }
             if (Input::get('upper_level_course') === 'y'){
-                $course->course_attributes_3 = "Upper Level Course";}
+                $course_array[$i] = "Upper Level Course";
+                $i = $i + 1;
+            }
             if (Input::get('residency') === 'y'){
-                $course->course_attributes_4 = "Residency";}
+                $course_array[$i] = "Residency";
+                $i = $i + 1;
+            }
+
+            if($i>5){
+                return Redirect::to('/course/create')
+                    ->with('flash_message', 'Error:  Select a maximum of 5 course attributes.')
+                    ->withInput();
+            }
+
+            $course->course_attributes_1 = $course_array[0];
+            $course->course_attributes_2 = $course_array[1];
+            $course->course_attributes_3 = $course_array[2];
+            $course->course_attributes_4 = $course_array[3];
+            $course->course_attributes_5 = $course_array[4];
+
             if (Input::get('field_of_study') === 'y'){
-                $course->course_attributes_5 = "Field of Study";}
+                $course->field_of_study = Auth::user()->field_of_study;
+            }
+            if (Input::get('minor_1') === 'y'){
+                $course->minor = Auth::user()->minor_1;
+            }
+            else if(Input::get('minor_2') === 'y'){
+                $course->minor = Auth::user()->minor_2;
+            }
 
         }
-        $course->semester = Input::get('semester');
-        $course->days = Input::get('days');
-        $course->times = Input::get('times');
-        $course->year = Input::get('year');
+        $semester_year = Input::get('semester_year');
+        $semester_term = Input::get('semester_term');
+        $semester = $semester_year . " " . $semester_term;
+        $course->semester_and_year = $semester;
+        $course->days_and_times = Input::get('days_and_times');
         $course->professors = Input::get('professors');
         $course->status = Input::get('status');
         $lg = Input::get('letter_grade');
@@ -141,15 +193,11 @@ class CourseController extends \BaseController
         $course->transfer_credits = Input::get('transfer_credits');
         $course->hes_credits = Input::get('hes_credits');
 
-        #add in the student's database so we can pull up one student's courses at a time
-        $all_the_accounts = Account::all();
-        if ($all_the_accounts->isEmpty() != TRUE) {
-            foreach ($all_the_accounts as $possible_account) {
-                if ($possible_account->email == Auth::user()->email) {
-                    $course->account()->associate($possible_account);
-                }
-            }
-        }
+        # I'm not sure if the below line is necessar since I removed the "accounts" database;
+        # however, I think it just associates a particular user with a particular course.
+        $course->user()->associate(Auth::user());
+
+        # Save all the new course information added above.
         $course->save();
 
         # The all() method will fetch all the rows from a Model/table
@@ -157,7 +205,7 @@ class CourseController extends \BaseController
 
         return Redirect::to('/course')
             ->with('allCourses', $allCourses)
-            ->with('flash_message', 'New course added!');
+            ->with('flash_message', 'New course added.');
     }
 
 
@@ -171,8 +219,7 @@ class CourseController extends \BaseController
     {
         //
     }
-
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -185,7 +232,7 @@ class CourseController extends \BaseController
             $course = Course::findOrFail($id);
         }
         catch(exception $e){
-            return Redirect::to('/course')->with('flash_message', 'Course not found!');
+            return Redirect::to('/course')->with('flash_message', 'Course not found.');
         }
 
         return View::make('course_edit')
@@ -204,7 +251,7 @@ class CourseController extends \BaseController
             $course = Course::findOrFail(Input::get('id'));
         }
         catch(exception $e) {
-            return Redirect::to('/course')->with('flash_message', 'Course not found!');
+            return Redirect::to('/course')->with('flash_message', 'Course not found.');
         }
 
         $edit_option = Input::get('edit_options');
@@ -240,7 +287,26 @@ class CourseController extends \BaseController
         $course->save();
 
         $link = Input::get('id');
-        return Redirect::to('/course_edit/' . $link)->with('flash_message','Your changes have been saved!');
+        return Redirect::to('/course_edit/' . $link)->with('flash_message','Your changes have been saved.');
+    }
+
+    /**
+     * Show the form for confirming to delete the specified resource.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function confirm($id)
+    {
+        try{
+            $course = Course::findOrFail($id);
+        }
+        catch(exception $e){
+            return Redirect::to('/course')->with('flash_message', 'Course not found.');
+        }
+
+        return View::make('course_confirm_delete')
+            ->with('course', $course);
     }
 
     /**
@@ -249,17 +315,18 @@ class CourseController extends \BaseController
      * @param  int $id
      * @return Response
      */
-    public function delete($format)
+    public function delete($id)
     {
-        $all_the_courses = Course::all();
-        if ($all_the_courses->isEmpty() != TRUE) {
-            foreach ($all_the_courses as $possible_course_to_delete) {
-                if ($possible_course_to_delete->id == $format) {
-                    $possible_course_to_delete->delete();
-                }
-            }
+        try{
+            $course = Course::findOrFail($id);
         }
+        catch(exception $e){
+            return Redirect::to('/course')->with('flash_message', 'Course not found.');
+        }
+
+        $course->delete();
+
         return Redirect::to('/course')
-            ->with('flash_message', 'Course deleted!');
+            ->with('flash_message', 'Course deleted.');
     }
 }

@@ -16,27 +16,27 @@
  * because they have really weird put/delete methods
 */
 
+// The auth filter prevents people who aren't logged in from gaining access to the below URLs.
 Route::group(array('before' => 'auth'), function()
 {
     Route::get('/course', 'CourseController@index');
     Route::get('/course/create', 'CourseController@create');
     Route::post('/course', 'CourseController@store');
-    Route::get('/course/{course_id}', 'CourseController@show');
-    Route::get('/course_edit/{id?}', 'CourseController@edit');
     Route::post('/course_edit', 'CourseController@update');
-    Route::get('/delete/{format?}', 'CourseController@delete');
-});
+    Route::post('/user_settings', 'UserController@postSettings');
+    Route::get('/user_settings', 'UserController@getSettings');
 
-/*
-* Potential RESTful Routes for the "Account" thing
-*
-Route::get('/account', 'AccountController@index');
-Route::get('/account/create', 'AccountController@create');
-Route::post('/account', 'AccountController@store');
-Route::get('/account/{account_id}', 'AccountController@show');
-Route::get('/account/{account_id}/edit', 'AccountController@edit');
-Route::put('/account/{account_id}', 'AccountController@update');
-Route::delete('/account/{account_id}', 'AccountController@destroy');
+
+    // The restrictPermission filter prevents a user from accessing other users' data by altering the URL.
+    // Eventually it would be best to remove the id value from the URL entirely, as this is possible.
+    Route::group(array('before' => 'restrictPermission'), function()
+    {
+        //Route::get('/course/{course_id}', 'CourseController@show');
+        Route::get('/course_edit/{id?}', 'CourseController@edit');
+        Route::get('/course_confirm_delete/{id?}', 'CourseController@confirm');
+        Route::get('/delete/{id?}', 'CourseController@delete');
+    });
+});
 
 /*
 * Potential RESTful Routes for the "User" thing - not sure if I want this one though!
@@ -51,7 +51,6 @@ Route::delete('/user/{user_id}', 'UserController@destroy');
 */
 
 Route::get('/', 'IndexController@getIndex');
-Route::get('/welcome', 'IndexController@getIndex');
 
 Route::get('/signup', 'UserController@getSignup');
 Route::post('/signup', 'UserController@postSignup');
@@ -67,7 +66,10 @@ Route::post('/password/remind', 'RemindersController@postRemind');
 Route::get('/password/reset/{token}', 'RemindersController@getReset');
 Route::post('/password/reset', 'RemindersController@postReset');
 
-
+Route::get('register/verify/{confirmationCode}', [
+    'as' => 'confirmation_path',
+    'uses' => 'UserController@confirm'
+]);
 
 
 

@@ -25,14 +25,19 @@ class RemindersController extends Controller {
 	public function postRemind()
 	{
         $email = Input::get('email');
-		switch ($response = Password::remind(Input::only('email')))
+
+		switch ($response = Password::remind(Input::only('email'), function($message)
+		{
+			$message->subject('A reset for your Degree Tracker password has been requested');
+		}))
 		{
 			case Password::INVALID_USER:
-				return Redirect::back()->with('error', Lang::get($response));
+				return Redirect::back()->with('error', Lang::get($response))
+				->with('flash_message','Sorry, the following email address has not been registered with Degree Tracker:&nbsp;&nbsp;' . $email . '.&nbsp;&nbsp;Please try again or sign up a new account.');
 
 			case Password::REMINDER_SENT:
 				return Redirect::back()->with('status', Lang::get($response))
-                    ->with('flash_message','A password reset email has been sent to you at ' . $email);
+                    ->with('flash_message','An email has been sent to ' . $email . ' with a link to reset your password.');
 		}
 	}
 
@@ -75,7 +80,8 @@ class RemindersController extends Controller {
 				return Redirect::back()->with('error', Lang::get($response));
 
 			case Password::PASSWORD_RESET:
-				return Redirect::to('/');
+				return Redirect::to('/')
+					->with('flash_message', 'Password successfully reset.');
 		}
 	}
 

@@ -12,19 +12,17 @@ Welcome to Degree Tracker PET
 @stop
 
 @section('middle')
-<div class="new">
-<h2>Need to create a new account?</h2>
-<a href="/signup">Click here to Sign Up</a>
-</div>
+<div class="indent_over_from_left_margin">
+<div class="custom_h2">Need to create a new account?</div>
+<a href="/signup" class="font_wrapper2">Click here to Sign Up.</a>
 <br><br>
 
-<div class="old">
-<h2>If you already have an account,</h2>
-<a href="/login">Click here to Log In</a>
-</div>
+<div class="custom_h2">If you already have an account,</div>
+<a href="/login" class="font_wrapper2">Click here to Log In.</a>
 </div>
 @stop
 
 @section('bottom')
-
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    @include('includes.footer')
 @stop

@@ -8,9 +8,9 @@
 
 class Course extends Eloquent {
 
-    public function account(){
+    public function user(){
         #Course belongs to Account
         # Defines an inverse one-to-many relationship
-        return $this->belongsTo('Account');
+        return $this->belongsTo('User');
     }
 }

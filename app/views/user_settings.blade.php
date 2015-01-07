@@ -1,21 +1,23 @@
+<div class="padding_welcome">
+</div>
+
 @extends('_base')
 
 @section('head')
-    @include('includes.reusable_functions')
 @stop
 
 @section('title')
-Degree Tracker PET
+    Degree Tracker PET
 @stop
 
 @section('top')
 @stop
 
 @section('middle')
-    @include('includes.forms_for_creating_a_new_course')
+    @include('includes.forms_for_user_settings')
 @stop
 
 @section('bottom')
-    @include('output')
     @include('includes.footer')
 @stop
+

@@ -1,9 +1,61 @@
 /*
+Globals
+*/
+.negative_table_pink_border_issue_indent_over_from_left_margin{
+    margin-left:-.5em;
+}
+
+.indent_over_from_left_margin{
+    margin-left:2em;
+}
+
+.indent_over_from_left_margin2{
+    margin-left:1em;
+}
+
+.indent_over_from_left_margin3{
+    margin-left:.7em;
+}
+
+.indent_from_right_margin{
+    margin-right:10em;
+}
+
+.indent_both_sides_for_table_shrinking{
+
+}
+
+.negative_vertical{
+    margin-top:-1.7em;
+}
+
+.custom_h2{
+    font-family: 'Verdana', sans-serif;
+    font-size:150%;
+    padding-top:.3em;
+    padding-bottom:.3em;
+}
+
+.custom_h3{
+    font-family: 'Verdana', sans-serif;
+    font-size:125%;
+}
+
+/*
+For the create/add new course page
+*/
+.create_course_color{
+    text-decoration: underline;
+    /* background-color:#BFBBBC;
+    margin-right:39.5em; */
+}
+
+/*
 The below controls buttons and links
 */
 
 input[type="submit"]{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-size:125%;
     border-radius:.4em;
     border: solid #980101 1px;
@@ -18,10 +70,176 @@ input[type="submit"]:hover{
     background-color:yellow;
 }
 
+.font_wrapper_select_item_to_edit{
+
+}
+
+.font_wrapper_edit_buttons{
+    font-family: 'Verdana', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:20em;
+    text-align:center;
+    background-color: white;
+    padding:.1em;
+    padding-left:3.75em;
+    padding-right:3.75em;
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom:1em;
+}
+
+.font_wrapper_edit_buttons:hover{
+    background-color:yellow;
+}
+
+.font_wrapper_delete_confirmation_buttons{
+    font-family: 'Verdana', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:20em;
+    text-align:center;
+    margin-bottom:0em;
+    background-color: white;
+    margin-right:1em;
+    padding:.1em;
+    padding-left:.2em;
+    padding-right:.2em;
+}
+
+.font_wrapper_delete_confirmation_buttons:hover{
+    background-color:yellow;
+}
+
+.font_wrapper_delete_confirmation_buttons2{
+    font-family: 'Verdana', sans-serif;
+    font-size:125%;
+    border-radius:.4em;
+    border: solid #980101 1px;
+    width:20em;
+    text-align:center;
+    background-color: white;
+    margin-bottom:1em;
+    margin-right:1em;
+    padding:.1em;
+    padding-left:.2em;
+    padding-right:.2em;
+}
+
+.font_wrapper_edit_confirmation_buttons2{
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 2.5px 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size:125%;
+    border-radius:.4em;
+    width:20em;
+    text-align:center;
+    margin-bottom:1em;
+    margin-right:1em;
+    padding:.1em;
+    padding-left:0em;
+    padding-right:0em;
+}
+
+.font_wrapper_edit_confirmation_buttons2:hover{
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+
+.font_wrapper_edit_confirmation_buttons2:active{
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+.edit_delete_buttons{
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 2.5px 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.edit_delete_buttons:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+.edit_delete_buttons:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+.header_butttons{
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 2.5px 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-bottom:10px;
+}
+
+.header_buttons:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+.header_buttons:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
 
 .font_wrapper_new_course{
     margin-left:.3em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-size:125%;
     border-radius:.4em;
     border: solid #980101 1px;
@@ -29,16 +247,27 @@ input[type="submit"]:hover{
     text-align:center;
     margin-bottom:1em;
     background-color: white;
+    margin-right:1em;
+    margin-top:.7em;
 }
 
 .font_wrapper_new_course:hover{
     background-color:yellow;
 }
 
+.graduation_eligibility{
+    color:#BFBBBC;
+    background-color:black;
+    text-align:center;
+    margin-left:-30px;
+    margin-right:-4px;
+    padding:1.4em;
+}
+
 nav ul li {
     display:inline;
     margin-right:7px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-weight:500;
     color:#980101;
     font-size:75%;
@@ -50,16 +279,16 @@ a:link{
 }
 
 a:visited{
-    text-decoration:underline;
+    text-decoration:none;
     color:black;
 }
 
 a:hover {
-    text-decoration:underline;
-    color:#980101;
+    text-decoration:none;
+    color:white;
 }
 a:active {
-    text-decoration:underline;
+    text-decoration:none;
     color:yellow;
 }
 
@@ -68,54 +297,158 @@ a:active {
 The below is mostly for the Degree Tracker Welcome/generic pages
 */
 .padding_welcome{
-    padding-left:.7em;
+    padding-left:0em;
+}
+
+.hes_header{
+    font-family: 'Verdana',sans-serif;
+    font-size:230%;
+    color:white;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 0em;
+    padding-right:1em;
+    background-color:#980101;
+    border: solid white 1px;
+    /*border-radius: .4em;
+    width:79%;*/
+    width:100%;
+    font-weight: 600;
+    margin:0em;
+    margin-top:.1em;
+    margin-left:-.3em;
+    text-align:center;
+}
+
+.box_wrapper_to_keep_headers_lined_up_flush_on_the_right_side{
+
+}
+
+.shields_header{
+    /*font-family: 'Verdana',sans-serif;
+    font-size:230%;
+    font-weight: 600;*/
+    color:white;
+    padding-top: .5em;
+    padding-bottom: .1em;
+    padding-left: 0em;
+    padding-right:2.2em;
+    background-color:#B4191C;
+    border: solid white 1px;
+    /*border-radius: .4em;
+    width:79%;*/
+    width:100%;
+    margin:0em;
+    margin-top:.1em;
+    margin-left:-.7em;
+    text-align:center;
 }
 
 .welcome_header{
-    font-family: 'Lora ', serif;
-    font-size:259%;
+    font-family: 'Verdana',sans-serif;
+    font-size:230%;
     color:white;
-    padding:.7em;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right:1.5em;
     background-color:#980101;
     border: solid white 1px;
-    border-radius: .4em;
-    font-weight: 500;
+    /*border-radius: .4em;
+    width:79%;*/
+    width:100%;
+    font-weight: 600;
     margin:0em;
-    width:79%;
-    margin-top:.3em;
+    margin-top:.1em;
+    margin-left:-.3em;
+    text-align:center;
 }
 
-.welcome_header_subtitle{
-    font-size:50%;
-    padding-top:.5em;
+.blurb_header{
+    font-family: 'Verdana',sans-serif;
+    color:white;
+    padding:.5em;
+    padding-left:0em;
+    padding-right:1.7em;
+    background-color:#980101;
+    border: solid white 1px;
+    /*border-radius: .5em;
+    width:98.5%;*/
+    width:100%;
+    font-weight: 500;
+    margin-top:0em;
+    margin-bottom:1em;
+    margin-left:-.5em;
+    font-size:125%;
+    text-align:center;
+}
+
+.student_name_and_concentration_header{
+    font-family: 'Verdana',sans-serif;
+    color:white;
+    padding:.5em;
+    padding-left:0em;
+    padding-right:1.7em;
+    background-color:#980101;
+    border: solid white 1px;
+    /*border-radius: .5em;
+    width:98.5%;*/
+    width:100%;
+    font-weight: 500;
+    margin-top:0em;
+    margin-bottom:.3em;
+    margin-left:-.5em;
+    font-size:110%;
+    text-align: center;
+}
+.smaller_subheader{
+    font-size:100%;
+}
+
+.vertical_mark{
+    margin-left:.5em;
+    margin-right:1em;
+}
+
+.account_settings_link{
+    margin-right:2em;
 }
 
 .login_logout_signup_welcome{
-    padding-top:1.5em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     margin-left:1em;
+    margin-right:2em;
+    text-align:right;
 }
 
 .login_logout_signup{
-    padding-top:1.5em;
-    font-family: 'Open Sans', sans-serif;
-    margin-left:1em;
+    font-family: 'Verdana', sans-serif;
+    margin-left:1.5em;
+    margin-right:2em;
+    float:right;
 }
 
-.new{
-    font-family: 'Open Sans', sans-serif;
+.footer{
+    font-family: 'Verdana', sans-serif;
+    margin-left:1.5em;
+    margin-right:2em;
+    text-align:center;
 }
 
-.old{
-    font-family: 'Open Sans', sans-serif;
+.link_home{
+    font-family: 'Verdana', sans-serif;
+    margin-left:1.5em;
+    float:left;
 }
 
+.clear_floats{
+    clear:both;
+}
 
 
 /*
 The below is mostly for the HES specific pages
 */
-
 
 /*
 This wraps most of the font on the whole website with whatever you choose!
@@ -130,60 +463,85 @@ This wraps most of the font on the whole website with whatever you choose!
 }
 
 .font_wrapper{
-    font-family: 'Open Sans', sans-serif;
-    font-size:90%;
+    font-family: 'Verdana', sans-serif;
+    font-size:80%;
+}
+
+.font_wrapper2{
+    font-family: 'Verdana', sans-serif;
+    font-size:100%;
+}
+
+.font_wrapper_delete_confirmation{
+    font-family: 'Verdana', sans-serif;
+    font-size:125%;
+    padding:1em;
 }
 
 .fine_print{
-    font-size:70%;
+    font-family: 'Verdana', sans-serif;
+    font-size:93%;
+}
+
+.fine_print_headers{
+    font-family: 'Verdana', sans-serif;
+    font-size:93%;
+    text-decoration: underline;
+}
+
+.fine_print_email{
+    font-family: 'Verdana', sans-serif;
+    font-size:93%;
+    text-align:right;
+    margin-right:2em;
 }
 
 .font_wrapper_sign_in_log_in{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
-.hes_header{
-    font-family: 'Open Sans', sans-serif;
-    font-size:200%;
-    color:white;
-    padding:.9em;
-    padding-left:.7em;
-    background-color:#980101;
-    border: solid white 1px;
-    border-radius: .5em;
-    font-weight: 900;   
-    margin:.3em;
-    width:98%;
-    padding-right:0em;
-    margin-bottom:.2em;
+.student_name_spacer{
+    margin-right:.3em;
+    padding-left:.3em;
 }
 
-#studentNameHeader{
-    font-family: 'Lora', sans-serif;
-    color:white;
-    padding:.5em;
-    padding-left:.7em;
-    background-color:#980101;
-    border: solid white 1px;
-    border-radius: .5em;
-    font-weight: 500;
+.student_name_and_concentration_spacer{
     margin-left:.3em;
-    margin-top:0em;
-    margin-bottom:.7em;
-    width:98.5%;
-    font-size:150%;
-    padding-right:0em;
+    margin-right:.1em;
 }
 
-/*
-This just gives a left margin to the create course headers and checkboxes
-*/
+.concentration_and_field_of_study_spacer{
+    margin-left:.3em;
+    margin-right:.1em;
+}
+
+.field_of_study_and_minor_spacer{
+    margin-left:.3em;
+    margin-right:.1em;
+}
+
+.minor_and_minor_spacer{
+    margin-left:.3em;
+}
+
+.no_wrap{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.indent_more{
+    margin-left:2em;
+}
+
+.indent_even_more{
+    margin-left:2em;
+}
+
 .indent_over_from_left_margin{
-  margin-left:2em;
+    margin-left:2em;
 }
 
 table{
-    background-color:#ffe4ee;
     border-collapse:collapse;
     border:3px solid black;
     width:100%;
@@ -208,6 +566,18 @@ table,th,td
     font-size:1em;
 }
 
+.email_font{
+    font-family: Verdana, sans-serif;
+    font-size:100%;
+}
+
+.email_header{
+    font-family: Verdana, sans-serif;
+    font-size:125%;
+    font-weight:bold;
+    color:darkblue;
+}
+
 /*
 The below are for the INPUT FORMS (with no suffixes)
 They have #ffe4ee backgrounds, except for the drop-down boxes, which are grey
@@ -218,120 +588,135 @@ They have #ffe4ee backgrounds, except for the drop-down boxes, which are grey
     background-color:#ffe4ee;
 }
 
-.student_name{
-    width:7.7em;
-    background-color:#ffe4ee;
-}
 
-.concentration{
-    width:7.7em;
-    background-color:#ffe4ee;
-}
 
 .degree_program{
     width:7.7em;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .course_number{
     background-color:#ffe4ee;
-    width:7.7em;
+    width:93%;
+    font-family: 'Verdana', sans-serif;
 }
 
 .course_delivery{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .crn_number{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .tuition{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .section{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .course_title{
-    width:21em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
-.course_attributes{
-    width:7.7em;
-    background-color:#ffe4ee;}
-
-.semester{
-    width:7.7em;
+.course_concentration{
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+
+
+
+.course_attributes{
+    width:93%;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.minor {
+    width: 93%;
+    background-color: #ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.semester_term{
+    width:46%;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.semester_year{
+    width:46%;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .status{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .letter_grade{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
-.days{
-    width:7.7em;
+.days_and_times{
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
-.times{
-    width:7.7em;
+.course_field_of_study{
+    width:93%;
     background-color:#ffe4ee;
-}
-
-.year{
-    width:7.7em;
-    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .professors{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .grade_points{
-    width:7.7em;
+    width:93%;
     background-color:#980101;
     font-weight:900;
     color:white;
+    font-family: 'Verdana', sans-serif;
 }
 
 .transfer_credits{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
 }
 
 .hes_credits{
-    width:7.7em;
+    width:93%;
     background-color:#ffe4ee;
-}
-
-.flash-message {
-    width:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    background-color:yellow;
-    text-align:center;
-    padding:5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 .textboxes{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-weight:500;
 }
 
@@ -354,16 +739,21 @@ These are for the grey headers on the tables with the _header suffixes
 }
 
 .tuition_header{
-    min-width:5em;
+    min-width:3em;
     background-color:#BFBBBC;
 }
 
 .section_header{
-    min-width:5em;
+    min-width:3em;
     background-color:#BFBBBC;
 }
 
 .course_title_header{
+    min-width:2em;
+    background-color:#BFBBBC;
+}
+
+.concentration_header{
     min-width:5em;
     background-color:#BFBBBC;
 }
@@ -378,18 +768,17 @@ These are for the grey headers on the tables with the _header suffixes
     background-color:#BFBBBC;
 }
 
-
-.days_header{
+.minor_header{
     min-width:5em;
     background-color:#BFBBBC;
 }
 
-.times_header{
+.days_and_times_header{
     min-width:5em;
     background-color:#BFBBBC;
 }
 
-.year_header{
+.field_of_study_header{
     min-width:5em;
     background-color:#BFBBBC;
 }
@@ -403,7 +792,6 @@ These are for the grey headers on the tables with the _header suffixes
     min-width:5em;
     background-color:#BFBBBC;
 }
-
 
 .letter_grade_header{
     min-width:5em;
@@ -428,13 +816,13 @@ These are for the grey headers on the tables with the _header suffixes
     background-color:#BFBBBC;
 }
 
- .edit_or_delete_rows{
+.edit_or_delete_rows{
     background-color:#ffe4ee;
     vertical-align: top;
-     padding:.4em;
-     height:.7em;
+    padding:.4em;
+    padding-bottom:.5em;
 }
- .edit_or_delete_text{
+.edit_or_delete_text{
     vertical-align: top;
     padding:.4em;
 }
@@ -452,12 +840,13 @@ These are for the grey headers on the tables with the _header suffixes
     border-style:hidden;
 }
 
-.data_row
+.edit_delete_row
 {
 }
 
 /**
-These control the #ffe4ee table rows
+These control the background of the table rows except for the ones that are in the add/create new
+course table rows
 **/
 .course_number_box{
     height: 1.5em;
@@ -482,24 +871,33 @@ These control the #ffe4ee table rows
 
 .tuition_box{
     height: 1.5em;
-    min-width:5em;
+    min-width:3em;
     background-color:#ffe4ee;
     text-align:center;
 }
 
 .section_box{
     height: 1.5em;
-    min-width:5em;
+    min-width:3em;
     background-color:#ffe4ee;
     text-align:center;
 }
 
 .course_title_box{
     height: 1.5em;
+    min-width:2em;
+    background-color:#ffe4ee;
+    text-align:center;
+}
+
+.concentration_box{
+    height: 1.5em;
     min-width:5em;
     background-color:#ffe4ee;
     text-align:center;
 }
+
+
 .course_attributes_box{
     height: 1.5em;
     min-width:5em;
@@ -521,21 +919,21 @@ These control the #ffe4ee table rows
     text-align:center;
 }
 
-.days_box{
+.days_and_times_box{
     height: 1.5em;
     min-width:5em;
     background-color:#ffe4ee;
     text-align:center;
 }
 
-.times_box{
+.field_of_study_box{
     height: 1.5em;
     min-width:5em;
     background-color:#ffe4ee;
     text-align:center;
 }
 
-.year_box{
+.minor_box{
     height: 1.5em;
     min-width:5em;
     background-color:#ffe4ee;
@@ -578,4 +976,156 @@ These control the #ffe4ee table rows
     min-width:5em;
     background-color:#ffe4ee;
     text-align:center;
+}
+
+.padder{
+    margin-top:.3em;
+}
+
+.textboxes{
+    font-family: 'Verdana', sans-serif;
+    font-weight:500;
+}
+
+/*
+These are for the yellow table headers on the create/add new course page.
+*/
+.add_course_number_header{
+    background-color:#BFBBBC;
+    min-width:5em;
+}
+
+.add_course_delivery_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_crn_number_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_tuition_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_section_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_course_title_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_course_attributes_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_semester_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_days_and_times_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_professors_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_status_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_letter_grade_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_grade_points_header{
+    min-width:5em;
+    background-color:#980101;
+    font-weight:900;
+    color:white;
+}
+
+.add_transfer_credits_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+.add_hes_credits_header{
+    min-width:5em;
+    background-color:#BFBBBC;
+}
+
+/*
+  The following affect the change user settings input forms
+*/
+
+.settings_school_name{
+    width:20em;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.settings_student_name{
+    width:20em;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.settings_degree_program{
+    width:20em;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.settings_concentration{
+    width: 20em;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.settings_minor{
+    width: 20em;
+    background-color: #ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.settings_email_or_password{
+    width:20em;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.settings_field_of_study{
+    width:20em;
+    background-color:#ffe4ee;
+    font-family: 'Verdana', sans-serif;
+}
+
+.lined_up{
+    position:absolute;
+    left:23em;
+}
+
+.lined_up_for_sign_up{
+    text-align:right;
+    float:right;
+    margin-right:50px;
+}
+
+.lined_up_for_log_in{
+    text-align:right;
+    float:right;
+    margin-right:50px;
 }

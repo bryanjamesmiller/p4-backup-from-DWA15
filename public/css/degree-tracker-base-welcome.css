@@ -1,0 +1,16 @@
+.flash-message {
+    width:100%;
+    position:static;
+  /*  color:#980101;
+   background-color:#BFBBBC; */
+    color:#BFBBBC;
+    background-color:black;
+    text-align:center;
+    padding:7px;
+    font-family: 'Verdana', sans-serif;
+    padding-left:0em;
+    padding-right:1.7em;
+    margin-top:-18px;
+    margin-left:-.5em;
+
+}
